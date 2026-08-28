@@ -128,7 +128,46 @@ essas fotografias sem uma nova decisão dele.
 
 ## Tarefas pendentes
 
-Nenhuma tarefa pendente.
+- [>] Formulário HTML do questionário do Wallace
+
+  TAREFA: Criar formulário portátil do questionário da WL Tour
+
+  OBJETIVO: existir um arquivo `questionario-wallace.html` que Wallace possa
+  receber pelo WhatsApp, abrir diretamente no navegador, responder e usar para
+  baixar ou compartilhar um arquivo Markdown com as respostas.
+
+  ARQUIVOS: criar somente `questionario-wallace.html`. A especificação aprovada
+  está em
+  `docs/superpowers/specs/2026-08-28-formulario-questionario-wallace-design.md` e
+  as 137 perguntas canônicas estão em `docs/DADOS-DO-CLIENTE.md`.
+
+  REGRAS APLICÁVEIS:
+  - preservar as 137 perguntas, sua numeração e seu sentido;
+  - mostrar primeiro as perguntas indispensáveis para Google e IAs definidas na
+    especificação aprovada;
+  - mostrar as demais em blocos recolhíveis por assunto;
+  - usar campos de uma linha e salvar automaticamente no navegador;
+  - liberar download e compartilhamento somente após todas as indispensáveis;
+  - gerar `respostas-wl-tour-AAAA-MM-DD.md` e usar `Pendente` nas adicionais
+    vazias;
+  - funcionar offline e não enviar nenhuma informação pela rede;
+  - não alterar a landing page ou qualquer arquivo de produção existente;
+  - nunca pedir senha, token, código, cartão ou documento pessoal.
+
+  CASOS DE BORDA: armazenamento local indisponível mantém o formulário usável
+  com aviso; compartilhamento de arquivo indisponível baixa o Markdown e orienta
+  o envio manual; tentativa de finalizar com resposta indispensável vazia mostra
+  a quantidade restante e leva à primeira pergunta; respostas longas permanecem
+  completas apesar do campo visual de uma linha.
+
+  PRONTO QUANDO: as 137 perguntas aparecem uma vez; somente as indispensáveis
+  bloqueiam a geração; respostas sobrevivem ao recarregamento; o Markdown
+  baixado preserva perguntas, respostas e pendências; compartilhamento e fallback
+  funcionam; a página é conferida em desktop e 390 px; não há erro no console nem
+  requisição de rede.
+
+  FORA DE ESCOPO: publicar o formulário, criar backend, gerar link público,
+  enviar automaticamente ao WhatsApp ou alterar `docs/DADOS-DO-CLIENTE.md`.
 
 ## Depende do Douglas
 
