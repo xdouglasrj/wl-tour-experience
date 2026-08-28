@@ -1,0 +1,8 @@
+node_modules
+dist
+.playwright-cli
+.git
+static
+index.original.html
+CLAUDE.md
+*.log

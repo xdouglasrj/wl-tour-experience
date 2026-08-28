@@ -1,0 +1,1234 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap");
+:root {
+  --ink: #080907;
+  --coal: #151410;
+  --yellow: #e8a521;
+  --bright: #f5b52a;
+  --paper: #f0ede5;
+  --muted: #b0babb;
+  --line: rgba(240, 237, 229, 0.16);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: Montserrat, sans-serif;
+  /* Textos pequenos em toda a página usam o peso aprovado para continuarem
+     legíveis sobre o véu de 20%. Títulos com `font` próprio não são afetados. */
+  font-weight: 700;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+}
+.site-shell {
+  /* `overflow: hidden` cria um contexto de rolagem próprio e desliga o
+     position: sticky da seção principal (efeito E6). `clip` corta a rolagem
+     horizontal do mesmo jeito, sem criar esse contexto. */
+  overflow-x: clip;
+  background: var(--ink);
+}
+.header {
+  height: 82px;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5.5vw;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  line-height: 0.82;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+}
+.brand b {
+  color: var(--yellow);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.brand-mark {
+  font-family: "Bebas Neue";
+  font-size: 38px;
+  line-height: 1;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+  padding: 1px 4px;
+  letter-spacing: -2px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+.nav > a:not(.cta) {
+  color: rgba(240, 237, 229, 0.72);
+  transition: color 0.25s;
+}
+.nav > a:not(.cta):hover {
+  color: var(--yellow);
+}
+.header-actions {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+.languages {
+  display: flex;
+  gap: 6px;
+}
+.languages button {
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.languages .active {
+  color: var(--yellow);
+  border-bottom: 1px solid var(--yellow);
+}
+.menu-button {
+  display: none;
+  color: var(--paper);
+  border: 0;
+  background: transparent;
+}
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 16px 21px;
+  background: var(--yellow);
+  color: var(--ink);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition:
+    transform 0.25s,
+    background-color 0.25s,
+    box-shadow 0.25s;
+}
+.cta:hover {
+  background: var(--bright);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(232, 165, 33, 0.2);
+}
+.cta-small {
+  padding: 12px 16px;
+}
+.cta-ghost {
+  background: transparent;
+  color: var(--paper);
+  border: 1px solid var(--line);
+}
+.cta-ghost:hover {
+  color: var(--ink);
+  border-color: var(--yellow);
+}
+.hero {
+  min-height: 800px;
+  height: 100vh;
+  max-height: 980px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 8vw 12vh;
+}
+/* A fotografia da seção principal vive fora do `.hero` para que o efeito
+   cortina (E6) possa prender só ela, deixando o texto rolar em qualquer tela. */
+.curtain {
+  position: relative;
+}
+.curtain-photo {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  height: 100vh;
+  min-height: 800px;
+  max-height: 980px;
+  margin-bottom: -100vh;
+  overflow: hidden;
+}
+/* Cada seção com fundo opaco, para nenhuma deixar a foto aparecer por baixo
+   durante a cortina. */
+main section:not(.hero) {
+  position: relative;
+  background-color: var(--ink);
+}
+/* E6. A fotografia continua visível enquanto o conteúdo inicial passa sobre
+   ela. A seção da história, fora de `.curtain`, encerra o sticky e empurra a
+   fotografia para cima. O véu aprovado é igual em desktop e smartphone. */
+.curtain .hero-image:before {
+  background-image: linear-gradient(
+    rgba(8, 9, 7, 0.2),
+    rgba(8, 9, 7, 0.2)
+  );
+}
+.curtain > section:not(.hero) {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(8, 9, 7, 0.2);
+}
+.curtain .manifest:before {
+  display: none;
+}
+.hero-image {
+  position: absolute;
+  inset: 0;
+}
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  scale: 1.05;
+  transform-origin: center top;
+  animation: slow-zoom 22s ease-out 1 forwards;
+  background-image: url("./assets/hero-rocinha-desktop.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+.hero-image:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 9, 7, 0.94) 0%,
+      rgba(8, 9, 7, 0.63) 42%,
+      rgba(8, 9, 7, 0.25)
+    ),
+    linear-gradient(0deg, rgba(8, 9, 7, 0.88), transparent 55%);
+}
+.hero-image:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.12;
+  background-image: radial-gradient(#fff 1px, transparent 1px);
+  background-size: 5px 5px;
+}
+.hero-grid {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 32%,
+      rgba(232, 165, 33, 0.12) 32.1%,
+      transparent 32.2%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 0 76%,
+      rgba(240, 237, 229, 0.12) 76.1%,
+      transparent 76.2%
+    );
+  opacity: 0.35;
+}
+@keyframes slow-zoom {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.14);
+  }
+}
+.hero-content {
+  position: relative;
+  z-index: 4;
+  max-width: 780px;
+}
+.eyebrow,
+.section-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--yellow);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.eyebrow {
+  margin-bottom: 26px;
+  display: inline-block;
+  color: #080907;
+  background: #E8A521;
+  padding: 5px 8px;
+  font-weight: 700;
+}
+.hero-title,
+.display-title {
+  font: normal clamp(52px, 7.2vw, 112px) / 0.85 "Bebas Neue";
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.hero-title span,
+.display-title span {
+  display: block;
+}
+.hero-title em {
+  color: var(--yellow);
+  font-style: normal;
+}
+.hero-copy {
+  max-width: 500px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 27px 0 30px;
+}
+.hero-actions {
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
+}
+.scroll-cue {
+  position: absolute;
+  z-index: 4;
+  bottom: 32px;
+  right: 8vw;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.scroll-cue span {
+  font-size: 23px;
+  color: var(--yellow);
+}
+.section-pad {
+  padding: 125px 8vw;
+}
+.manifest {
+  background: var(--coal);
+  position: relative;
+}
+.manifest:before,
+.other:before {
+  content: "WL";
+  position: absolute;
+  right: 7vw;
+  top: 50px;
+  color: rgba(232, 165, 33, 0.08);
+  font: 220px/0.8 "Bebas Neue";
+}
+.manifest-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 12%;
+  align-items: end;
+}
+.display-title {
+  font-size: clamp(55px, 7vw, 105px);
+}
+.display-title i {
+  color: var(--yellow);
+  font-style: normal;
+}
+.lead-copy {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 525px;
+}
+.rule {
+  height: 1px;
+  background: var(--line);
+  margin: 35px 0 20px;
+}
+.micro {
+  font-size: 9px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  color: var(--yellow);
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 65px;
+}
+.compact {
+  font-size: clamp(48px, 5vw, 74px);
+  margin-top: 22px;
+}
+.corner-note {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.benefit-wrap {
+  background: var(--ink);
+}
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.benefit-card {
+  padding: 30px 23px 38px;
+  border-right: 1px solid var(--line);
+  min-height: 165px;
+}
+.benefit-card:last-child {
+  border: 0;
+}
+.benefit-media-title {
+  display: block;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+.benefit-media-title:hover {
+  color: var(--yellow);
+}
+.media-title-button {
+  display: block;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+.media-title-button:hover {
+  color: var(--yellow);
+}
+.benefit-media-title:focus-visible,
+.media-title-button:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+.media-popup-close:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.92);
+  outline-offset: 2px;
+}
+.benefit-card h3,
+.timeline-item h3,
+.experience-row h3,
+.why-item h3 {
+  font: normal 28px/1 "Bebas Neue";
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.benefit-card p,
+.timeline-item p,
+.experience-row p {
+  font-size: 11px;
+  line-height: 1.75;
+  color: var(--muted);
+  margin: 0;
+}
+
+.media-popup {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  padding: clamp(16px, 4vw, 54px);
+  place-items: center;
+  background: rgba(0, 0, 0, 0.92);
+}
+.media-popup-frame {
+  position: relative;
+  display: flex;
+  width: min(1100px, 100%);
+  height: min(82vh, 780px);
+  align-items: center;
+  justify-content: center;
+}
+.media-popup-content {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+.media-popup-close {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(12, 12, 12, 0.58);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: opacity 180ms ease;
+}
+.media-popup-close.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.media-gallery-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  transform: translateY(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(12, 12, 12, 0.62);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+.media-gallery-arrow:hover:not(:disabled) {
+  background: rgba(30, 30, 30, 0.82);
+}
+.media-gallery-arrow:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.92);
+  outline-offset: 2px;
+}
+.media-gallery-arrow:disabled {
+  opacity: 0.22;
+  cursor: default;
+}
+.media-gallery-previous {
+  left: 10px;
+}
+.media-gallery-next {
+  right: 10px;
+}
+.disclaimer {
+  font-size: 10px;
+  color: #9A9A9A;
+  margin-top: 14px;
+}
+.story {
+  background: var(--coal);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9%;
+  align-items: center;
+  isolation: isolate;
+}
+/* Transição entre as duas fotografias: esta faixa acompanha a chegada da
+   história e escurece a fotografia fixa até o preto. Como 18vh corresponde a
+   18% do hero de 100vh, a proporção permanece igual em qualquer tela. */
+.story:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  top: -18vh;
+  height: 18vh;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--coal));
+}
+.story > * {
+  position: relative;
+  z-index: 1;
+}
+.story-image {
+  position: relative;
+}
+.story-image img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  filter: grayscale(0.15);
+}
+.story-copy {
+  max-width: 500px;
+}
+/* Tarefa 5: desloca o rótulo amarelo para começar depois do acento de "É"
+   do título, evitando sobreposição. Vale nos três idiomas e em desktop/mobile. */
+.story-copy .story-kicker {
+  margin-left: 30px;
+}
+@media (min-width: 801px) {
+  .story-copy .story-kicker {
+    margin-left: 42px;
+  }
+}
+.story-copy .lead-copy {
+  margin: 32px 0;
+}
+.quote {
+  font: 23px/1.15 "Bebas Neue";
+  letter-spacing: 0.5px;
+  color: var(--paper);
+  max-width: 260px;
+}
+.route {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 12%;
+  background: var(--ink);
+}
+.route-intro {
+  position: sticky;
+  top: 120px;
+  height: max-content;
+}
+.route-intro .lead-copy {
+  margin-top: 30px;
+}
+.timeline {
+  border-top: 1px solid var(--line);
+}
+.timeline-item {
+  display: grid;
+  gap: 14px;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+  transition: padding 0.25s;
+}
+.timeline-item:hover {
+  padding-left: 10px;
+}
+.timeline-item h3 {
+  margin: 0 0 9px;
+  font-size: 25px;
+}
+.gallery {
+  background: var(--coal);
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 0.9fr;
+  grid-template-rows: 280px 230px;
+  gap: 13px;
+}
+.gallery-item {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background: #222;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 0.5s,
+    filter 0.5s;
+  filter: saturate(0.82);
+}
+.gallery-item:hover img {
+  transform: scale(1.04);
+  filter: saturate(1.1);
+}
+.gallery-1 {
+  grid-row: span 2;
+}
+.gallery-4 {
+  grid-column: span 2;
+}
+.why {
+  background: var(--yellow);
+  color: var(--ink);
+}
+.why .section-label {
+  color: var(--ink);
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 55px;
+}
+.why-item {
+  border-top: 1px solid rgba(8, 9, 7, 0.3);
+  padding: 23px 14px 23px 0;
+  display: flex;
+  align-items: center;
+}
+.why-item h3 {
+  margin: 0;
+  font-size: 29px;
+}
+.other {
+  position: relative;
+  background: var(--coal);
+}
+.other .display-title {
+  position: relative;
+  margin: 25px 0 68px;
+}
+.experience-list {
+  max-width: 900px;
+  border-top: 1px solid var(--line);
+  position: relative;
+}
+.experience-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 15px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  transition: color 0.25s;
+}
+.experience-row:hover {
+  color: var(--yellow);
+}
+.experience-row h3 {
+  margin: 0;
+  font-size: 31px;
+}
+.experience-row p {
+  font-size: 11px;
+}
+.social-proof {
+  background: var(--ink);
+  padding-bottom: 70px;
+}
+.social-card {
+  border: 1px solid var(--line);
+  padding: 55px 6vw;
+  position: relative;
+  background: linear-gradient(110deg, #151410, rgba(21, 20, 16, 0.35));
+}
+.social-card:after {
+  content: "★";
+  position: absolute;
+  right: 8%;
+  top: 25%;
+  font-size: 110px;
+  color: rgba(232, 165, 33, 0.15);
+}
+.coming {
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+  padding-top: 25px;
+  max-width: 580px;
+  position: relative;
+  z-index: 1;
+}
+.coming strong {
+  font: 30px "Bebas Neue";
+  text-transform: uppercase;
+}
+.coming p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 400px;
+}
+.coming-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--yellow);
+  margin-right: 10px;
+}
+.instagram {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 10%;
+  align-items: center;
+  background: var(--yellow);
+  color: var(--ink);
+}
+/* A regra global das seções usada pelo efeito cortina tem especificidade maior.
+   Este seletor preserva o fundo amarelo aprovado e o contraste dos textos. */
+main section.instagram {
+  background: var(--yellow);
+  color: var(--ink);
+}
+.instagram .section-label {
+  color: var(--ink);
+}
+.instagram-visual {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid rgba(8, 9, 7, 0.35);
+  background: rgba(8, 9, 7, 0.08);
+}
+.instagram-visual > svg {
+  position: absolute;
+  right: 24px;
+  top: 22px;
+}
+.qr-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.qr-frame img {
+  width: 150px;
+  height: 150px;
+  padding: 8px;
+  background: var(--yellow);
+}
+.qr-frame span {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.instagram-copy .lead-copy {
+  color: rgba(8, 9, 7, 0.7);
+  margin: 25px 0;
+}
+.handle {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.handle svg:last-child {
+  margin-left: 8px;
+}
+.qr-text {
+  color: var(--ink);
+  margin-top: 45px;
+}
+.final-cta {
+  background: var(--coal);
+  position: relative;
+}
+.final-watermark {
+  position: absolute;
+  right: 9vw;
+  top: 30px;
+  color: rgba(232, 165, 33, 0.1);
+  font: 300px/0.8 "Bebas Neue";
+}
+.final-cta .display-title {
+  position: relative;
+  margin: 25px 0;
+}
+.final-cta .lead-copy {
+  margin-bottom: 30px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 30px;
+  align-items: start;
+  padding: 55px 8vw 32px;
+  background: #050605;
+  border-top: 1px solid var(--line);
+}
+.footer > p {
+  font: 22px/1 "Bebas Neue";
+  margin: 0;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.footer-contact a:hover {
+  color: var(--yellow);
+}
+.footer-note {
+  grid-column: 1/-1;
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+  color: #8F938F;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: center;
+}
+.footer-note span {
+  color: #777B77;
+  letter-spacing: 1px;
+}
+.footer-credit {
+  display: inline-block;
+  margin-top: 8px;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  transition: none;
+}
+.footer-credit:hover {
+  color: inherit;
+}
+.footer-credit:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.social-float {
+  position: fixed;
+  z-index: 19;
+  right: 24px;
+  bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-float-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  box-shadow: 0 8px 24px #0008;
+  transition: transform 0.25s;
+}
+.social-float-button:hover {
+  transform: translateY(-3px);
+}
+.social-float-button:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 3px;
+}
+.social-float-instagram {
+  background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+}
+.social-float-whatsapp {
+  background: #25d366;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay-1 {
+  transition-delay: 0.12s;
+}
+.delay-2 {
+  transition-delay: 0.23s;
+}
+.delay-3 {
+  transition-delay: 0.34s;
+}
+@media (max-width: 800px) {
+  /* A altura mínima móvel preserva o enquadramento aprovado em telas baixas. */
+  .curtain-photo {
+    min-height: 760px;
+  }
+  .hero-photo {
+    background-image: url("./assets/hero-rocinha-mobile.png");
+    background-position: center;
+    transform-origin: center center;
+  }
+  .header {
+    padding: 0 6vw;
+    height: 68px;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--coal);
+    padding: 25px 6vw 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-open {
+    display: flex;
+  }
+  .menu-button {
+    display: block;
+  }
+  .hero {
+    min-height: 760px;
+    padding: 0 7vw 80px;
+  }
+  .hero-title {
+    font-size: 57px;
+  }
+  .hero-copy {
+    font-size: 12px;
+  }
+  .scroll-cue {
+    right: auto;
+    left: 7vw;
+  }
+  .section-pad {
+    padding: 80px 7vw;
+  }
+  .manifest-grid,
+  .story,
+  .route,
+  .instagram {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .manifest:before,
+  .other:before {
+    font-size: 130px;
+  }
+  .benefit-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .benefit-card:nth-child(2) {
+    border-right: 0;
+  }
+  .benefit-card:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+  .story-image {
+    order: 2;
+  }
+  .story-copy {
+    order: 1;
+  }
+  /* No celular, a primeira fotografia continua aparecendo por trás do bloco de
+     texto. O próprio `.story-copy` mede o degradê, que termina exatamente no
+     início da fotografia do Cristo mesmo quando PT, EN ou ES muda a altura do
+     conteúdo. */
+  main section.story {
+    background: transparent;
+  }
+  .story:before {
+    display: none;
+  }
+  .story-copy {
+    isolation: isolate;
+  }
+  .story-copy:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: calc(-80px - 18vh);
+    right: -7vw;
+    bottom: -50px;
+    left: -7vw;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, var(--ink));
+  }
+  /* A partir da fotografia do Cristo, o fundo volta a ser preto sólido. Esta
+     camada fica atrás da imagem e cobre somente as laterais e o espaço abaixo,
+     impedindo a fotografia fixa de aparecer ao redor dela. */
+  .story-image:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: -7vw;
+    bottom: -80px;
+    left: -7vw;
+    pointer-events: none;
+    background: var(--ink);
+  }
+  .route-intro {
+    position: static;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 180px 180px;
+  }
+  .gallery-1 {
+    grid-row: span 1;
+  }
+  .gallery-3 {
+    grid-column: span 2;
+  }
+  .gallery-4 {
+    grid-column: span 1;
+  }
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .experience-row {
+    grid-template-columns: 1fr;
+  }
+  .experience-row p {
+    display: none;
+  }
+  .experience-row h3 {
+    font-size: 27px;
+  }
+  .social-card {
+    padding: 40px 7vw;
+  }
+  .instagram-visual {
+    min-height: 260px;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer > p {
+    grid-column: 1/-1;
+    order: 3;
+  }
+  .footer-contact {
+    order: 2;
+  }
+  .footer-note {
+    order: 4;
+  }
+  .cta {
+    padding: 15px 17px;
+  }
+  .social-float {
+    right: 14px;
+    bottom: 14px;
+  }
+}
+@media (max-width: 430px) {
+  .hero-title {
+    font-size: 51px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-actions .cta {
+    width: 100%;
+  }
+  /* Os botões flutuantes do Instagram e do WhatsApp ficam sobre o canto
+     inferior direito. O CTA da seção principal recua para não passar por
+     baixo deles. */
+  .hero .hero-actions {
+    padding-right: 68px;
+  }
+
+  .section-heading {
+    display: block;
+  }
+  .corner-note {
+    display: block;
+    margin-top: 17px;
+  }
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+  .benefit-card {
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+  .benefit-card:last-child {
+    border-bottom: 0 !important;
+  }
+  .media-popup {
+    padding: 14px;
+  }
+  .media-popup-frame {
+    height: 86vh;
+  }
+  .media-popup-close {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+  }
+  .media-gallery-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .media-gallery-previous {
+    left: 6px;
+  }
+  .media-gallery-next {
+    right: 6px;
+  }
+  .display-title {
+    font-size: 56px;
+  }
+  .brand {
+    font-size: 15px;
+  }
+  .brand-mark {
+    font-size: 30px;
+  }
+  .languages {
+    gap: 1px;
+  }
+  .instagram-copy {
+    padding-bottom: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  /* E6 desligado: a fotografia volta a rolar junto com a página. */
+  .curtain-photo {
+    position: absolute;
+    margin-bottom: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

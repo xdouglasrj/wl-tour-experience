@@ -1,0 +1,16 @@
+- iframe [ref=e2]:
+  - generic [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - generic:
+          - img "Matrix Code"
+          - img "Matrix Code"
+          - img "Matrix Code"
+          - img "Matrix Code"
+          - img "Matrix Code"
+          - img "Matrix Code"
+        - img "Emergent Logo" [ref=f1e6]
+      - region "Notifications (F8)":
+        - list
+    - region "Notifications (F8)":
+      - list

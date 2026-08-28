@@ -1,0 +1,11 @@
+name: wl-tour-experience
+
+services:
+  web:
+    build:
+      context: .
+    image: wl-tour-experience:local
+    container_name: wl-tour-experience
+    ports:
+      - "127.0.0.1:8080:80"
+    restart: unless-stopped

@@ -1,0 +1,195 @@
+- generic [ref=f10e2]:
+  - generic [ref=f10e3]:
+    - generic [ref=f10e5]:
+      - iframe [ref=f10e6]:
+        - main [ref=f17e3]:
+          - generic [ref=f17e4]:
+            - link "M • MARTINS EXPLORER RJ" [ref=f17e5] [cursor=pointer]:
+              - /url: "#top"
+              - generic [ref=f17e6]:
+                - text: M
+                - generic [ref=f17e7]: •
+              - generic [ref=f17e8]: MARTINSEXPLORER RJ
+            - navigation [ref=f17e9]:
+              - button "Experiências" [ref=f17e10] [cursor=pointer]
+              - button "A história" [ref=f17e11] [cursor=pointer]
+              - button "Galeria" [ref=f17e12] [cursor=pointer]
+              - button "Falar com Gabriel" [ref=f17e13] [cursor=pointer]
+            - generic [ref=f17e17]:
+              - button "PT" [ref=f17e18] [cursor=pointer]
+              - button "EN" [ref=f17e19] [cursor=pointer]
+              - button "ES" [ref=f17e20] [cursor=pointer]
+          - generic [ref=f17e21]:
+            - generic [ref=f17e25]:
+              - paragraph [ref=f17e26]: RIO DE JANEIRO · GUIA LOCAL
+              - heading "Conheça o Rio com quem realmente vive o Rio." [level=1] [ref=f17e27]
+              - paragraph [ref=f17e28]: Experiências autênticas pela Rocinha, Vidigal, Santa Marta, Morro Dois Irmãos e pelos lugares mais incríveis do Rio com Gabriel, guia local credenciado.
+              - generic [ref=f17e29]:
+                - button "Consultar disponibilidade" [ref=f17e30] [cursor=pointer]
+                - button "Explorar experiências" [ref=f17e34] [cursor=pointer]
+              - paragraph [ref=f17e38]: ✦ Guia credenciado · +5 anos de experiência · PT / EN / ES
+            - generic [ref=f17e39]:
+              - text: MARTINSEXPLORER
+              - generic [ref=f17e40]: RIO DE JANEIRO
+            - generic [ref=f17e41]: SCROLL TO DISCOVER
+          - generic [ref=f17e45]:
+            - generic [ref=f17e46]: 01 / THE OTHER SIDE
+            - generic [ref=f17e47]:
+              - generic [ref=f17e48]:
+                - paragraph [ref=f17e49]: RIO DE JANEIRO · GUIA LOCAL
+                - heading "Existe um Rio que não cabe nos cartões-postais." [level=2] [ref=f17e50]
+              - generic [ref=f17e51]:
+                - paragraph [ref=f17e52]: Muito além da paisagem que você já conhece, existe um Rio feito de encontros, histórias, sabores e caminhos que só quem vive aqui consegue compartilhar.
+                - button "Conheça quem guia" [ref=f17e53] [cursor=pointer]
+            - generic [ref=f17e57]:
+              - img "Aerial view of Rocinha" [ref=f17e58]
+              - img "Martins Explorer visual identity" [ref=f17e59]
+              - generic [ref=f17e60]: Rocinhaseen from within
+          - generic [ref=f17e61]:
+            - generic [ref=f17e62]:
+              - generic [ref=f17e63]:
+                - generic [ref=f17e64]: 02 / THE EXPERIENCES
+                - heading "Escolha como você quer viver o Rio" [level=2] [ref=f17e65]
+              - paragraph [ref=f17e66]: Respectful routes.Real connections.
+            - generic [ref=f17e67]:
+              - article [ref=f17e68] [cursor=pointer]:
+                - img "Rocinha" [ref=f17e69]
+                - generic [ref=f17e71]:
+                  - text: THE ORIGINAL
+                  - heading "Rocinha" [level=3] [ref=f17e72]
+                  - paragraph [ref=f17e73]: A comunidade onde Gabriel nasceu e cresceu, contada por dentro e com respeito.
+                  - generic [ref=f17e74]: Consultar roteiro
+              - article [ref=f17e78] [cursor=pointer]:
+                - img "Vidigal" [ref=f17e79]
+                - generic [ref=f17e81]:
+                  - text: VIEWS & STORIES
+                  - heading "Vidigal" [level=3] [ref=f17e82]
+                  - paragraph [ref=f17e83]: Caminhos, cultura, histórias e vistas memoráveis do Vidigal.
+                  - generic [ref=f17e84]: Consultar roteiro
+              - article [ref=f17e88] [cursor=pointer]:
+                - img "Morro Dois Irmãos" [ref=f17e89]
+                - generic [ref=f17e91]:
+                  - text: SUNRISE HIKE
+                  - heading "Morro Dois Irmãos" [level=3] [ref=f17e92]
+                  - paragraph [ref=f17e93]: Uma trilha extraordinária para ver o Rio nascer do alto.
+                  - generic [ref=f17e94]: Consultar roteiro
+              - article [ref=f17e98] [cursor=pointer]:
+                - img "Moto Experience" [ref=f17e99]
+                - generic [ref=f17e101]:
+                  - text: LOCAL MOBILITY
+                  - heading "Moto Experience" [level=3] [ref=f17e102]
+                  - paragraph [ref=f17e103]: Mobilidade característica da comunidade, por caminhos onde carros não chegam.
+                  - generic [ref=f17e104]: Consultar roteiro
+              - article [ref=f17e108] [cursor=pointer]:
+                - img "Rio City Tour" [ref=f17e109]
+                - generic [ref=f17e111]:
+                  - text: THE CLASSICS
+                  - heading "Rio City Tour" [level=3] [ref=f17e112]
+                  - paragraph [ref=f17e113]: Cristo, Selarón, Pão de Açúcar e um roteiro combinado com Gabriel.
+                  - generic [ref=f17e114]: Consultar roteiro
+              - article [ref=f17e118] [cursor=pointer]:
+                - img "Seu roteiro" [ref=f17e119]
+                - generic [ref=f17e121]:
+                  - text: MADE FOR YOU
+                  - heading "Seu roteiro" [level=3] [ref=f17e122]
+                  - paragraph [ref=f17e123]: Combine experiências e monte um dia que tenha a sua cara.
+                  - generic [ref=f17e124]: Consultar roteiro
+          - generic [ref=f17e128]:
+            - generic [ref=f17e129]:
+              - img "Gabriel, local guide from Rocinha" [ref=f17e130]
+              - generic [ref=f17e131]: GABRIEL · LOCAL GUIDE
+            - generic [ref=f17e132]:
+              - generic [ref=f17e133]: 03 / THE GUIDE
+              - paragraph [ref=f17e134]: A pessoa por trás da experiência
+              - heading "Seu guia. Sua conexão com o Rio." [level=2] [ref=f17e135]
+              - paragraph [ref=f17e136]: Meu nome é Gabriel. Sou nascido e criado na Rocinha e há mais de 5 anos trabalho mostrando o Rio para pessoas do mundo inteiro. Sou guia credenciado e quero que você conheça não apenas lugares, mas histórias, cultura e experiências que fazem parte do verdadeiro Rio.
+              - blockquote [ref=f17e137]: “Você não está apenas contratando um passeio. Está conhecendo o Rio acompanhado de alguém que chama esse lugar de casa.”
+              - button "Falar com Gabriel" [ref=f17e141] [cursor=pointer]
+          - generic [ref=f17e144]:
+            - generic [ref=f17e145]:
+              - generic [ref=f17e146]:
+                - generic [ref=f17e147]: 04 / FIELD NOTES
+                - heading "Real people. Real experiences. Real Rio." [level=2] [ref=f17e148]
+              - link "@martins.explorerj" [ref=f17e149] [cursor=pointer]:
+                - /url: https://instagram.com/martins.explorerj
+            - generic [ref=f17e156]:
+              - img "Moto experience" [ref=f17e157]
+              - img "Rio beach landscape" [ref=f17e158]
+              - img "Martins Explorer flyer" [ref=f17e159]
+              - img "Rio coastline from above" [ref=f17e160]
+          - generic [ref=f17e161]:
+            - generic [ref=f17e162]: 05 / SIMPLE BY DESIGN
+            - heading "Do primeiro oi ao seu dia no Rio" [level=2] [ref=f17e163]
+            - generic [ref=f17e164]:
+              - generic [ref=f17e165]:
+                - text: ✦
+                - heading "Escolha sua experiência" [level=3] [ref=f17e166]
+                - paragraph [ref=f17e167]: Rocinha, trilha, city tour ou um roteiro só seu.
+              - generic [ref=f17e168]:
+                - text: ✦
+                - heading "Fale com Gabriel" [level=3] [ref=f17e169]
+                - paragraph [ref=f17e170]: Diga a data, o tamanho do grupo e o que você quer viver.
+              - generic [ref=f17e171]:
+                - text: ✦
+                - heading "Viva o seu Rio" [level=3] [ref=f17e172]
+                - paragraph [ref=f17e173]: Gabriel confirma disponibilidade, valores e todos os detalhes do seu roteiro.
+          - generic [ref=f17e174]:
+            - generic [ref=f17e175]:
+              - generic [ref=f17e176]: 06 / LET'S TALK
+              - heading "Conte quando você vem" [level=2] [ref=f17e177]
+              - paragraph [ref=f17e178]: Gabriel confirma disponibilidade, valores e todos os detalhes do seu roteiro.
+              - generic [ref=f17e179]:
+                - generic [ref=f17e180]: Segunda a domingo mediante disponibilidade
+                - generic [ref=f17e183]: "Sem preços fixos: cada roteiro é combinado"
+            - generic [ref=f17e186]:
+              - generic [ref=f17e187]:
+                - text: Seu nome
+                - textbox "Seu nome" [ref=f17e188]:
+                  - /placeholder: Gabriel...
+              - generic [ref=f17e189]:
+                - text: País de origem
+                - textbox "País de origem" [ref=f17e190]:
+                  - /placeholder: Brasil
+              - generic [ref=f17e191]:
+                - text: Data pretendida
+                - textbox "Data pretendida" [ref=f17e192]
+              - generic [ref=f17e193]:
+                - text: Pessoas
+                - spinbutton "Pessoas" [ref=f17e194]
+              - generic [ref=f17e195]:
+                - text: Experiência desejada
+                - combobox "Experiência desejada" [ref=f17e196]:
+                  - option "Ainda não decidi" [selected]
+                  - option "Rocinha"
+                  - option "Vidigal"
+                  - option "Morro Dois Irmãos"
+                  - option "Moto Experience"
+                  - option "Rio City Tour"
+                  - option "Seu roteiro"
+              - button "Continuar pelo WhatsApp" [ref=f17e197] [cursor=pointer]
+              - generic [ref=f17e200]: WhatsApp · +55 21 99797-7378
+          - generic [ref=f17e201]:
+            - img "Rio de Janeiro landscape" [ref=f17e202]
+            - generic [ref=f17e204]:
+              - generic [ref=f17e205]: MARTINS EXPLORER RJ
+              - heading "Seu próximo Rio começa aqui." [level=2] [ref=f17e206]
+              - paragraph [ref=f17e207]: Conte para Gabriel quando você vem. O resto vocês planejam juntos.
+              - button "Falar com Gabriel no WhatsApp" [ref=f17e208] [cursor=pointer]
+          - generic [ref=f17e212]:
+            - generic [ref=f17e213]:
+              - generic [ref=f17e214]:
+                - text: M
+                - generic [ref=f17e215]: •
+              - generic [ref=f17e216]: MARTINSEXPLORER RJ
+            - paragraph [ref=f17e217]: Conheça o Rio com quem realmente vive o Rio.
+            - link "Instagram" [ref=f17e218] [cursor=pointer]:
+              - /url: https://instagram.com/martins.explorerj
+            - generic [ref=f17e222]: © 2026 Martins Explorer RJ · Rio de Janeiro
+          - button "Falar com Gabriel" [ref=f17e223] [cursor=pointer]
+      - generic [ref=f10e8]:
+        - paragraph [ref=f10e9]: Frontend Preview Only. Please wake servers to enable backend functionality.
+        - button "Wake up servers" [ref=f10e10] [cursor=pointer]
+    - region "Notifications (F8)":
+      - list
+  - region "Notifications (F8)":
+    - list

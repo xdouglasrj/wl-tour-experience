@@ -1,0 +1,224 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - link "WL TOUR EXPERIENCE" [ref=f2e5] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=f2e6]: WL
+      - generic [ref=f2e7]: TOUREXPERIENCE
+    - navigation [ref=f2e8]:
+      - link "Início" [ref=f2e9] [cursor=pointer]:
+        - /url: "#top"
+      - link "Experiência" [ref=f2e10] [cursor=pointer]:
+        - /url: "#experience"
+      - link "Roteiro" [ref=f2e11] [cursor=pointer]:
+        - /url: "#route"
+      - link "Outros passeios" [ref=f2e12] [cursor=pointer]:
+        - /url: "#other"
+      - link "Instagram" [ref=f2e13] [cursor=pointer]:
+        - /url: "#instagram"
+      - link "Reservar" [ref=f2e14] [cursor=pointer]:
+        - /url: https://wa.me/5521995550707?text=Ol%C3%A1!%20Quero%20conhecer%20a%20WL%20Tour%20Experience%20e%20saber%20mais%20sobre%20os%20passeios.
+    - generic [ref=f2e19]:
+      - button "PT" [ref=f2e20] [cursor=pointer]
+      - button "EN" [ref=f2e21] [cursor=pointer]
+      - button "ES" [ref=f2e22] [cursor=pointer]
+  - main [ref=f2e23]:
+    - generic [ref=f2e24]:
+      - generic [ref=f2e28]:
+        - paragraph [ref=f2e29]: RIO DE JANEIRO · ROCINHA
+        - heading "Mais que um tour. Uma experiência no coração do Rio." [level=1] [ref=f2e30]:
+          - generic [ref=f2e31]: Mais que um tour.
+          - generic [ref=f2e32]: Uma experiência no coração do Rio.
+        - paragraph [ref=f2e33]: Conheça a Rocinha por uma perspectiva diferente. Viva uma experiência guiada com moto, cultura local, histórias, vistas incríveis do Rio e registros para guardar essa viagem para sempre.
+        - link "Quero viver essa experiência" [ref=f2e35] [cursor=pointer]:
+          - /url: https://wa.me/5521995550707?text=Ol%C3%A1!%20Quero%20conhecer%20a%20WL%20Tour%20Experience%20e%20saber%20mais%20sobre%20os%20passeios.
+      - link "↓ Explorar o roteiro" [ref=f2e39] [cursor=pointer]:
+        - /url: "#experience"
+        - generic [ref=f2e40]: ↓
+        - text: Explorar o roteiro
+    - generic [ref=f2e41]:
+      - text: WL
+      - generic [ref=f2e42]: EXPERIÊNCIA
+      - generic [ref=f2e43]:
+        - heading "Conheça o Rio por dentro. Viva a cidade de perto." [level=2] [ref=f2e44]:
+          - generic [ref=f2e45]: Conheça o Rio por dentro.
+          - generic [ref=f2e46]: Viva a cidade de perto.
+        - generic [ref=f2e47]:
+          - paragraph [ref=f2e48]: A WL Tour Experience cria passeios turísticos para quem quer ir além do óbvio. Somos uma empresa de experiências no Rio de Janeiro, com destaque para a Rocinha, São Conrado e a Zona Sul. Os passeios reúnem aventura, cultura local e paisagens que ficam na memória.
+          - paragraph [ref=f2e50]: RIO DE JANEIRO · BRASILROCINHA / SÃO CONRADO / ZONA SUL
+    - generic [ref=f2e51]:
+      - generic [ref=f2e52]:
+        - generic [ref=f2e53]:
+          - generic [ref=f2e54]: Uma perspectiva que só quem vive aqui pode compartilhar.
+          - heading "Uma experiência com propósito." [level=2] [ref=f2e55]: Uma experiênciacom propósito.
+        - generic [ref=f2e56]: CAMINHO · CULTURA · MEMÓRIA
+      - generic [ref=f2e57]:
+        - article [ref=f2e58]:
+          - heading "Pilotos experientes" [level=3] [ref=f2e59]
+          - paragraph [ref=f2e60]: Experiência acompanhada por quem conhece a região.
+        - article [ref=f2e61]:
+          - heading "Experiência local" [level=3] [ref=f2e62]
+          - paragraph [ref=f2e63]: Histórias, cultura e lugares através de uma perspectiva local.
+        - article [ref=f2e64]:
+          - heading "Registros profissionais" [level=3] [ref=f2e65]
+          - paragraph [ref=f2e66]: Transforme momentos da viagem em lembranças para guardar.
+        - article [ref=f2e67]:
+          - heading "Vídeo / registro aéreo" [level=3] [ref=f2e68]
+          - paragraph [ref=f2e69]: Quando possível, registre a experiência também de uma perspectiva aérea.
+      - paragraph [ref=f2e70]: "* Registros aéreos sujeitos às condições climáticas, operacionais e às regras aplicáveis."
+    - generic [ref=f2e71]:
+      - generic [ref=f2e72]:
+        - img "Vista panorâmica do Rio de Janeiro" [ref=f2e73]
+        - generic [ref=f2e74]: 22° 59' S / 43° 14' W
+      - generic [ref=f2e75]:
+        - generic [ref=f2e76]: NÃO É SÓ UM PASSEIO
+        - heading "É uma história para contar." [level=2] [ref=f2e77]:
+          - generic [ref=f2e78]: É uma história
+          - generic [ref=f2e79]: para contar.
+        - paragraph [ref=f2e80]: O passeio reúne aventura, histórias da Rocinha, cultura local e diferentes vistas do Rio. Ao longo do caminho, você também faz registros para guardar a lembrança da experiência.
+        - paragraph [ref=f2e81]: “A aventura começa onde o mapa termina.”
+    - generic [ref=f2e82]:
+      - generic [ref=f2e83]:
+        - generic [ref=f2e84]: O ROTEIRO
+        - heading "O Rio visto de dentro." [level=2] [ref=f2e85]:
+          - generic [ref=f2e86]: O Rio visto
+          - generic [ref=f2e87]: de dentro.
+        - paragraph [ref=f2e88]: Um passeio guiado para conhecer a Rocinha, ouvir histórias locais e ver o Rio de outros pontos.
+      - generic [ref=f2e89]:
+        - article [ref=f2e90]:
+          - generic [ref=f2e91]:
+            - heading "Subida até o topo" [level=3] [ref=f2e92]
+            - paragraph [ref=f2e93]: A aventura começa com o deslocamento de moto táxi até o topo da Rocinha.
+        - article [ref=f2e94]:
+          - generic [ref=f2e95]:
+            - heading "Vista panorâmica" [level=3] [ref=f2e96]
+            - paragraph [ref=f2e97]: Parada para contemplar e fotografar referências como o Cristo Redentor, Lagoa, Pão de Açúcar, Ipanema e São Conrado.
+        - article [ref=f2e98]:
+          - generic [ref=f2e99]:
+            - heading "Capoeira" [level=3] [ref=f2e100]
+            - paragraph [ref=f2e101]: Uma importante manifestação cultural brasileira, apresentada por quem mantém essa arte viva.
+        - article [ref=f2e102]:
+          - generic [ref=f2e103]:
+            - heading "Laje com vista" [level=3] [ref=f2e104]
+            - paragraph [ref=f2e105]: Um momento para fotos, contemplação e histórias sobre a Rocinha e São Conrado.
+        - article [ref=f2e106]:
+          - generic [ref=f2e107]:
+            - heading "Registro aéreo" [level=3] [ref=f2e108]
+            - paragraph [ref=f2e109]: Você vive o momento. A gente registra para você lembrar dele. Quando possível.
+        - article [ref=f2e110]:
+          - generic [ref=f2e111]:
+            - heading "Graffiti" [level=3] [ref=f2e112]
+            - paragraph [ref=f2e113]: Visita a um estúdio de graffiti de um morador e artista local.
+        - article [ref=f2e114]:
+          - generic [ref=f2e115]:
+            - heading "Futebol" [level=3] [ref=f2e116]
+            - paragraph [ref=f2e117]: Passagem pela quadra conhecida da região, com possibilidade de participar quando disponível.
+        - article [ref=f2e118]:
+          - generic [ref=f2e119]:
+            - heading "Curva do S" [level=3] [ref=f2e120]
+            - paragraph [ref=f2e121]: Conheça a Curva do S e ouça histórias e curiosidades sobre a região.
+        - article [ref=f2e122]:
+          - generic [ref=f2e123]:
+            - heading "Rua popular" [level=3] [ref=f2e124]
+            - paragraph [ref=f2e125]: Uma das ruas mais movimentadas e ligadas à vida cultural e aos eventos locais.
+        - article [ref=f2e126]:
+          - generic [ref=f2e127]:
+            - heading "Outras experiências" [level=3] [ref=f2e128]
+            - paragraph [ref=f2e129]: Ao final, conheça outras experiências disponíveis pela WL Tour.
+    - generic [ref=f2e130]:
+      - generic [ref=f2e132]:
+        - generic [ref=f2e133]: GALERIA
+        - heading "Fotos dos nossos passeios pelo Rio." [level=2] [ref=f2e134]
+      - generic [ref=f2e135]:
+        - figure [ref=f2e136]:
+          - img "Passeio turístico com vista panorâmica da Rocinha e Rio de Janeiro" [ref=f2e137]
+        - figure [ref=f2e138]:
+          - img "Graffiti e cultura urbana na Rocinha" [ref=f2e139]
+        - figure [ref=f2e140]:
+          - img "Vista do Rio de Janeiro com o Cristo Redentor" [ref=f2e141]
+        - figure [ref=f2e142]:
+          - img "Experiência turística de moto no Rio de Janeiro" [ref=f2e143]
+        - figure:
+          - img "Montanhas e paisagem urbana do Rio de Janeiro"
+    - generic [ref=f2e144]:
+      - generic [ref=f2e145]: Por que fazer o tour com a WL?
+      - generic [ref=f2e146]:
+        - heading "Experiência local" [level=3] [ref=f2e148]
+        - heading "Cultura" [level=3] [ref=f2e150]
+        - heading "Atendimento personalizado" [level=3] [ref=f2e152]
+        - heading "Roteiro" [level=3] [ref=f2e154]
+        - heading "Registros" [level=3] [ref=f2e156]
+        - heading "Aventura" [level=3] [ref=f2e158]
+    - generic [ref=f2e159]:
+      - text: WL
+      - generic [ref=f2e160]:
+        - generic [ref=f2e161]: OUTRAS EXPERIÊNCIAS
+        - heading "Sua experiência no Rio pode continuar." [level=2] [ref=f2e162]:
+          - generic [ref=f2e163]: Sua experiência no Rio
+          - generic [ref=f2e164]: pode continuar.
+      - generic [ref=f2e165]:
+        - generic [ref=f2e166]:
+          - heading "Trilha ao amanhecer" [level=3] [ref=f2e167]
+          - paragraph [ref=f2e168]: Veja o Rio despertar em um cenário inesquecível.
+        - generic [ref=f2e169]:
+          - heading "Baile funk" [level=3] [ref=f2e170]
+          - paragraph [ref=f2e171]: Uma experiência noturna ligada à cultura urbana carioca.
+        - generic [ref=f2e172]:
+          - heading "Jet ski" [level=3] [ref=f2e173]
+          - paragraph [ref=f2e174]: Adrenalina, água e paisagens do Rio.
+        - generic [ref=f2e175]:
+          - heading "Helicóptero" [level=3] [ref=f2e176]
+          - paragraph [ref=f2e177]: Uma nova perspectiva para contemplar a cidade.
+        - generic [ref=f2e178]:
+          - heading "Lancha" [level=3] [ref=f2e179]
+          - paragraph [ref=f2e180]: Navegue pelo Rio e aproveite uma experiência especial.
+    - generic [ref=f2e182]:
+      - generic [ref=f2e183]: DEPOIMENTOS
+      - heading "Relatos de quem fez o passeio." [level=2] [ref=f2e184]
+      - generic [ref=f2e185]:
+        - strong [ref=f2e187]: Depoimentos em breve
+        - paragraph [ref=f2e188]: Estamos preparando este espaço para reunir histórias reais de quem viveu a experiência com a WL Tour.
+      - text: ★
+    - generic [ref=f2e189]:
+      - generic [ref=f2e191]:
+        - img "QR Code para seguir a WL Tour no Instagram" [ref=f2e192]
+        - generic [ref=f2e193]: SCAN / FOLLOW
+      - generic [ref=f2e197]:
+        - generic [ref=f2e198]: SIGA NO INSTAGRAM
+        - heading "Siga a WL Tour" [level=2] [ref=f2e199]
+        - paragraph [ref=f2e200]: Quer ver mais experiências, bastidores e registros dos nossos passeios?
+        - link "@wl.rocinha95" [ref=f2e201] [cursor=pointer]:
+          - /url: https://www.instagram.com/wl.rocinha95/
+        - paragraph [ref=f2e208]: APONTE A CÂMERA PARA ABRIR O INSTAGRAM
+    - generic [ref=f2e209]:
+      - generic [ref=f2e210]: WL
+      - generic [ref=f2e211]: CONTATO
+      - heading "Pronto para viver essa experiência?" [level=2] [ref=f2e212]:
+        - generic [ref=f2e213]: Pronto para viver
+        - generic [ref=f2e214]: essa experiência?
+      - paragraph [ref=f2e215]: Fale com a WL Tour para consultar datas e disponibilidade.
+      - generic [ref=f2e216]:
+        - link "Quero viver essa experiência" [ref=f2e217] [cursor=pointer]:
+          - /url: https://wa.me/5521995550707?text=Ol%C3%A1!%20Quero%20conhecer%20a%20WL%20Tour%20Experience%20e%20saber%20mais%20sobre%20os%20passeios.
+        - link "Ligar agora" [ref=f2e221] [cursor=pointer]:
+          - /url: tel:+5521995550707
+  - contentinfo [ref=f2e225]:
+    - link "WL TOUR EXPERIENCE" [ref=f2e226] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=f2e227]: WL
+      - generic [ref=f2e228]: TOUREXPERIENCE
+    - paragraph [ref=f2e229]: Mais que um tour.Uma experiência.
+    - generic [ref=f2e230]:
+      - link "@wl.rocinha95" [ref=f2e231] [cursor=pointer]:
+        - /url: https://www.instagram.com/wl.rocinha95/
+      - link "+55 21 99555-0707" [ref=f2e232] [cursor=pointer]:
+        - /url: https://wa.me/5521995550707?text=Ol%C3%A1!%20Quero%20conhecer%20a%20WL%20Tour%20Experience%20e%20saber%20mais%20sobre%20os%20passeios.
+    - generic [ref=f2e233]:
+      - text: Passeios sujeitos a disponibilidade, condições climáticas, operacionais e regras aplicáveis.© 2025 WL TOUR EXPERIENCE · RIO DE JANEIRO, BRASIL
+      - link [ref=f2e234] [cursor=pointer]:
+        - /url: https://www.xdouglas.com.br
+        - strong [ref=f2e235]: Desenvolvido e administrado por xDouglas
+  - generic [ref=f2e236]:
+    - link "Siga a WL Tour no Instagram" [ref=f2e237] [cursor=pointer]:
+      - /url: https://www.instagram.com/wl.rocinha95/
+    - link "Fale com a WL Tour pelo WhatsApp" [ref=f2e241] [cursor=pointer]:
+      - /url: https://wa.me/5521995550707?text=Ol%C3%A1!%20Quero%20conhecer%20a%20WL%20Tour%20Experience%20e%20saber%20mais%20sobre%20os%20passeios.
