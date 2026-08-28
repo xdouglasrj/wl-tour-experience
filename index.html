@@ -9,7 +9,7 @@
       content="Viva uma experiência diferente no Rio de Janeiro. Conheça a Rocinha com passeio guiado, cultura, vistas incríveis, registros profissionais e outras experiências."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="index.html" />
+    <link rel="canonical" href="https://wlfavelatour.com.br/" />
     <meta
       property="og:title"
       content="WL Tour Experience. Mais que um tour. Uma experiência."
@@ -19,14 +19,13 @@
       content="Passeio guiado na Rocinha e experiências turísticas no Rio de Janeiro."
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://rocinha-tour.preview.emergentagent.com/"
-    />
+    <meta property="og:url" content="https://wlfavelatour.com.br/" />
     <meta
       property="og:image"
-      content="/src/assets/hero-rocinha-desktop.jpg"
+      content="https://wlfavelatour.com.br/og-image.jpg"
     />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="WL Tour Experience" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -46,6 +45,85 @@
     <title>
       WL Tour Experience | Passeio na Rocinha e Experiências no Rio de Janeiro
     </title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "TravelAgency",
+            "@id": "https://wlfavelatour.com.br/#organizacao",
+            "name": "WL Tour Experience",
+            "url": "https://wlfavelatour.com.br/",
+            "description": "Guia local de turismo com passeio guiado na Rocinha e experiências no Rio de Janeiro.",
+            "telephone": "+5521995550707",
+            "image": "https://wlfavelatour.com.br/og-image.jpg",
+            "sameAs": ["https://www.instagram.com/wl.rocinha95/"],
+            "availableLanguage": ["pt-BR", "en", "es"],
+            "areaServed": {
+              "@type": "City",
+              "name": "Rio de Janeiro",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Rio de Janeiro",
+                "addressRegion": "RJ",
+                "addressCountry": "BR"
+              }
+            }
+          },
+          {
+            "@type": "TouristTrip",
+            "@id": "https://wlfavelatour.com.br/#passeio-rocinha",
+            "name": "Passeio guiado na Rocinha",
+            "description": "Passeio guiado na Rocinha com guia local: subida ao topo com deslocamento de moto táxi, vista panorâmica, capoeira, graffiti, Curva do S e registros fotográficos profissionais.",
+            "touristType": ["Turismo cultural", "Turismo comunitário"],
+            "inLanguage": ["pt-BR", "en", "es"],
+            "provider": { "@id": "https://wlfavelatour.com.br/#organizacao" },
+            "itinerary": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "TouristAttraction",
+                    "name": "Topo da Rocinha e vista panorâmica"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "TouristAttraction",
+                    "name": "Roda de capoeira"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "TouristAttraction",
+                    "name": "Graffiti da comunidade"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "item": { "@type": "TouristAttraction", "name": "Curva do S" }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://wlfavelatour.com.br/#site",
+            "url": "https://wlfavelatour.com.br/",
+            "name": "WL Tour Experience",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://wlfavelatour.com.br/#organizacao" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

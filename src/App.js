@@ -10,38 +10,38 @@ import {
 import "./App.css";
 
 const mediaFiles = {
-  christ: new URL("../img/2.jpeg", import.meta.url).href,
-  local: new URL("../img/1.jpeg", import.meta.url).href,
-  records: new URL("../img/8.jpeg", import.meta.url).href,
-  pilots: new URL("../img/video 6.mp4", import.meta.url).href,
-  aerial: new URL("../img/video 2.mp4", import.meta.url).href,
-  rideToTop: new URL("../img/video 7.mp4", import.meta.url).href,
-  routeAerial: new URL("../img/video 9.mp4", import.meta.url).href,
-  trailVideo10: new URL("../img/video 10.mp4", import.meta.url).href,
-  trailVideo12: new URL("../img/video 12.mp4", import.meta.url).href,
-  trailVideo11: new URL("../img/video 11.mp4", import.meta.url).href,
-  trailPhoto12: new URL("../img/12.jpeg", import.meta.url).href,
-  trailPhoto13: new URL("../img/13.jpeg", import.meta.url).href,
-  trailPhoto14: new URL("../img/14.jpeg", import.meta.url).href,
-  
-  panoramic: new URL("../img/11.jpeg", import.meta.url).href,
-  capoeiraVideo19: new URL("../img/video 19.mp4", import.meta.url).href,
-  capoeiraVideo20: new URL("../img/video 20.mp4", import.meta.url).href,
-  capoeiraVideo21: new URL("../img/video 21.mp4", import.meta.url).href,
-  lajeView: new URL("../img/9.jpeg", import.meta.url).href,
-  graffiti6: new URL("../img/6.jpeg", import.meta.url).href,
-  graffiti15: new URL("../img/15.jpeg", import.meta.url).href,
-  graffiti16: new URL("../img/16.jpeg", import.meta.url).href,
-  futebolVideo14: new URL("../img/video 14.mp4", import.meta.url).href,
-  futebolVideo15: new URL("../img/video 15.mp4", import.meta.url).href,
-  futebolPhoto20: new URL("../img/20.jpeg", import.meta.url).href,
-  curvaVideo17: new URL("../img/video 17.mp4", import.meta.url).href,
-  curvaVideo18: new URL("../img/video 18.mp4", import.meta.url).href,
-  ruaVideo16: new URL("../img/video 16.mp4", import.meta.url).href,
-  ruaVideo8: new URL("../img/video 8.mp4", import.meta.url).href,
-  ruaPhoto17: new URL("../img/17.jpeg", import.meta.url).href,
-  ruaPhoto18: new URL("../img/18.jpeg", import.meta.url).href,
-  ruaPhoto19: new URL("../img/19.jpeg", import.meta.url).href,
+  christ: "/img/2.jpeg",
+  local: "/img/1.jpeg",
+  records: "/img/8.jpeg",
+  pilots: "/img/video%206.mp4",
+  aerial: "/img/video%202.mp4",
+  rideToTop: "/img/video%207.mp4",
+  routeAerial: "/img/video%209.mp4",
+  trailVideo10: "/img/video%2010.mp4",
+  trailVideo12: "/img/video%2012.mp4",
+  trailVideo11: "/img/video%2011.mp4",
+  trailPhoto12: "/img/12.jpeg",
+  trailPhoto13: "/img/13.jpeg",
+  trailPhoto14: "/img/14.jpeg",
+
+  panoramic: "/img/11.jpeg",
+  capoeiraVideo19: "/img/video%2019.mp4",
+  capoeiraVideo20: "/img/video%2020.mp4",
+  capoeiraVideo21: "/img/video%2021.mp4",
+  lajeView: "/img/9.jpeg",
+  graffiti6: "/img/6.jpeg",
+  graffiti15: "/img/15.jpeg",
+  graffiti16: "/img/16.jpeg",
+  futebolVideo14: "/img/video%2014.mp4",
+  futebolVideo15: "/img/video%2015.mp4",
+  futebolPhoto20: "/img/20.jpeg",
+  curvaVideo17: "/img/video%2017.mp4",
+  curvaVideo18: "/img/video%2018.mp4",
+  ruaVideo16: "/img/video%2016.mp4",
+  ruaVideo8: "/img/video%208.mp4",
+  ruaPhoto17: "/img/17.jpeg",
+  ruaPhoto18: "/img/18.jpeg",
+  ruaPhoto19: "/img/19.jpeg",
 };
 
 const C = {
@@ -124,20 +124,20 @@ const trailGallery = {
 
 const testimonials = [
   {
-    src: new URL("../img/depoimento 01.jpeg", import.meta.url).href,
+    src: "/img/depoimento%2001.jpeg",
     instagram: "@miguelfreitasjj",
     profile: "https://www.instagram.com/miguelfreitasjj/",
   },
   {
-    src: new URL("../img/depoimento 02.jpeg", import.meta.url).href,
+    src: "/img/depoimento%2002.jpeg",
     instagram: "@hamzasosa",
     profile: "https://www.instagram.com/hamzasosa/",
   },
   {
-    src: new URL("../img/depoimento 03.jpeg", import.meta.url).href,
+    src: "/img/depoimento%2003.jpeg",
   },
   {
-    src: new URL("../img/depoimento 04.jpeg", import.meta.url).href,
+    src: "/img/depoimento%2004.jpeg",
   },
 ];
 const copy = {
@@ -207,7 +207,7 @@ const copy = {
     final: "Ready to live\nthis experience?",
     finalBody: "Contact WL Tour to check dates and availability.",
   },
-es: {
+  es: {
     nav: ["Inicio", "Experiencia", "Itinerario", "Más paseos", "Instagram"],
     lang: "ES",
     heroKicker: "RÍO DE JANEIRO · ROCINHA",
@@ -313,106 +313,100 @@ const benefits = [
 ];
 const gallery = [
   [
-    new URL("../img/13.jpeg", import.meta.url).href,
+    "/img/13.jpeg",
     "Passeio turístico na Rocinha com vista para a comunidade e montanhas",
   ],
-  [
-    new URL("../img/11.jpeg", import.meta.url).href,
-    "Graffiti colorido nas vielas da Rocinha",
-  ],
-  [
-    new URL("../img/3.jpeg", import.meta.url).href,
-    "Trilha guiada pela Rocinha com grupo de turistas",
-  ],
-  [
-    new URL("../img/9.jpeg", import.meta.url).href,
-    "Vista do Rio de Janeiro a partir de um mirante na Rocinha",
-  ],
+  ["/img/11.jpeg", "Graffiti colorido nas vielas da Rocinha"],
+  ["/img/3.jpeg", "Trilha guiada pela Rocinha com grupo de turistas"],
+  ["/img/9.jpeg", "Vista do Rio de Janeiro a partir de um mirante na Rocinha"],
 ];
 const localized = {
-pt: {
-      reserve: "Reservar",
-      benefitHead: ["Uma experiência", "com propósito."],
-      quote: "“A aventura começa onde o mapa termina.”",
-      why: [
-        "Experiência local",
-        "Cultura",
-        "Atendimento personalizado",
-        "Roteiro",
-        "Registros",
-        "Aventura",
-      ],
-      other: [
-        "Veja o Rio despertar em um cenário inesquecível.",
-        "Uma experiência noturna ligada à cultura urbana carioca.",
-        "Adrenalina, água e paisagens do Rio.",
-        "Uma nova perspectiva para contemplar a cidade.",
-        "Navegue pelo Rio e aproveite uma experiência especial.",
-      ],
-      footerLead: ["Mais que um tour.", "Uma experiência."],
-      footerNote:
-        "Passeios sujeitos a disponibilidade, condições climáticas, operacionais e regras aplicáveis.",
-      footerCredit: "Desenvolvido e administrado por xDouglas",
-      aria: "Fale com a WL Tour pelo WhatsApp",
-      ariaInstagram: "Siga a WL Tour no Instagram",
-      scan: "APONTE A CÂMERA PARA ABRIR O INSTAGRAM",
-      labels: {
-        experience: "EXPERIÊNCIA",
-        gallery: "GALERIA",
-        testimonials: "DEPOIMENTOS",
-        contact: "CONTATO",
-        instagram: "SIGA NO INSTAGRAM",
-        motto: "CAMINHO · CULTURA · MEMÓRIA",
-      },
-      benefits,
+  pt: {
+    reserve: "Reservar",
+    benefitHead: ["Uma experiência", "com propósito."],
+    quote: "“A aventura começa onde o mapa termina.”",
+    why: [
+      "Experiência local",
+      "Cultura",
+      "Atendimento personalizado",
+      "Roteiro",
+      "Registros",
+      "Aventura",
+    ],
+    other: [
+      "Veja o Rio despertar em um cenário inesquecível.",
+      "Uma experiência noturna ligada à cultura urbana carioca.",
+      "Adrenalina, água e paisagens do Rio.",
+      "Uma nova perspectiva para contemplar a cidade.",
+      "Navegue pelo Rio e aproveite uma experiência especial.",
+    ],
+    footerLead: ["Mais que um tour.", "Uma experiência."],
+    footerNote:
+      "Passeios sujeitos a disponibilidade, condições climáticas, operacionais e regras aplicáveis.",
+    footerCredit: "Desenvolvido e administrado por xDouglas",
+    aria: "Fale com a WL Tour pelo WhatsApp",
+    ariaInstagram: "Siga a WL Tour no Instagram",
+    scan: "APONTE A CÂMERA PARA ABRIR O INSTAGRAM",
+    labels: {
+      experience: "EXPERIÊNCIA",
+      gallery: "GALERIA",
+      testimonials: "DEPOIMENTOS",
+      contact: "CONTATO",
+      instagram: "SIGA NO INSTAGRAM",
+      motto: "CAMINHO · CULTURA · MEMÓRIA",
     },
-en: {
-      reserve: "Book",
-      benefitHead: ["An experience", "with purpose."],
-      quote: "“Adventure begins where the map ends.”",
-      why: [
+    benefits,
+  },
+  en: {
+    reserve: "Book",
+    benefitHead: ["An experience", "with purpose."],
+    quote: "“Adventure begins where the map ends.”",
+    why: [
+      "Local experience",
+      "Culture",
+      "Personal service",
+      "Itinerary",
+      "Records",
+      "Adventure",
+    ],
+    other: [
+      "Watch Rio wake up in an unforgettable setting.",
+      "A night experience connected to Rio's urban culture.",
+      "Adrenaline, water and Rio landscapes.",
+      "A new perspective to take in the city.",
+      "Sail through Rio and enjoy a special experience.",
+    ],
+    footerLead: ["More than a tour.", "An experience."],
+    footerNote:
+      "Tours subject to availability, weather, operational conditions and applicable rules.",
+    footerCredit: "Desenvolvido e administrado por xDouglas",
+    aria: "Talk to WL Tour on WhatsApp",
+    ariaInstagram: "Follow WL Tour on Instagram",
+    scan: "SCAN THE QR CODE TO OPEN INSTAGRAM",
+    labels: {
+      experience: "EXPERIENCE",
+      gallery: "GALLERY",
+      testimonials: "TESTIMONIALS",
+      contact: "CONTACT",
+      instagram: "FOLLOW ON INSTAGRAM",
+      motto: "ROAD · CULTURE · MEMORY",
+    },
+    benefits: [
+      [
+        "Experienced riders",
+        "An experience guided by people who know the area.",
+      ],
+      [
         "Local experience",
-        "Culture",
-        "Personal service",
-        "Itinerary",
-        "Records",
-        "Adventure",
+        "Stories, culture and places through a local perspective.",
       ],
-      other: [
-        "Watch Rio wake up in an unforgettable setting.",
-        "A night experience connected to Rio's urban culture.",
-        "Adrenaline, water and Rio landscapes.",
-        "A new perspective to take in the city.",
-        "Sail through Rio and enjoy a special experience.",
+      ["Professional records", "Turn travel moments into memories to keep."],
+      [
+        "Video / aerial record",
+        "When possible, record the experience from above.",
       ],
-      footerLead: ["More than a tour.", "An experience."],
-      footerNote:
-        "Tours subject to availability, weather, operational conditions and applicable rules.",
-      footerCredit: "Desenvolvido e administrado por xDouglas",
-      aria: "Talk to WL Tour on WhatsApp",
-      ariaInstagram: "Follow WL Tour on Instagram",
-      scan: "SCAN THE QR CODE TO OPEN INSTAGRAM",
-      labels: {
-        experience: "EXPERIENCE",
-        gallery: "GALLERY",
-        testimonials: "TESTIMONIALS",
-        contact: "CONTACT",
-        instagram: "FOLLOW ON INSTAGRAM",
-        motto: "ROAD · CULTURE · MEMORY",
-      },
-      benefits: [
-        ["Experienced riders", "An experience guided by people who know the area."],
-        [
-          "Local experience",
-          "Stories, culture and places through a local perspective.",
-        ],
-        ["Professional records", "Turn travel moments into memories to keep."],
-        [
-          "Video / aerial record",
-          "When possible, record the experience from above.",
-        ],
-      ],
-    },
+    ],
+  },
   es: {
     reserve: "Reservar",
     benefitHead: ["Una experiencia", "con propósito."],
@@ -475,7 +469,13 @@ function track(event, label) {
 }
 function WhatsAppIcon() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      width="22"
+      height="22"
+      fill="currentColor"
+      aria-hidden="true"
+    >
       <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.82c2.16 0 4.19.84 5.72 2.37a8.03 8.03 0 0 1 2.37 5.72c0 4.46-3.63 8.09-8.09 8.09a8.1 8.1 0 0 1-4.12-1.13l-.3-.18-3.06.8.82-2.99-.19-.31a8.03 8.03 0 0 1-1.24-4.28c0-4.46 3.63-8.09 8.09-8.09zM8.6 6.94c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.22-.16-.46-.28-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.19-.46-.39-.4-.54-.41h-.46z" />
     </svg>
   );
@@ -511,7 +511,10 @@ function MediaPopup({ media, onClose }) {
     if (!currentIsVideo) return;
     window.clearTimeout(hideCloseTimer.current);
     setCloseVisible(true);
-    hideCloseTimer.current = window.setTimeout(() => setCloseVisible(false), 2000);
+    hideCloseTimer.current = window.setTimeout(
+      () => setCloseVisible(false),
+      2000,
+    );
   };
 
   useEffect(() => {
@@ -534,16 +537,27 @@ function MediaPopup({ media, onClose }) {
     window.clearTimeout(hideCloseTimer.current);
     setCloseVisible(true);
     if (currentIsVideo) {
-      hideCloseTimer.current = window.setTimeout(() => setCloseVisible(false), 2000);
+      hideCloseTimer.current = window.setTimeout(
+        () => setCloseVisible(false),
+        2000,
+      );
     }
     return () => window.clearTimeout(hideCloseTimer.current);
   }, [media, galleryIndex, currentIsVideo]);
 
   useEffect(() => {
-    if (!isGallery || !autoGallery || currentIsVideo || galleryIndex >= lastGalleryIndex) {
+    if (
+      !isGallery ||
+      !autoGallery ||
+      currentIsVideo ||
+      galleryIndex >= lastGalleryIndex
+    ) {
       return undefined;
     }
-    const photoTimer = window.setTimeout(() => setGalleryIndex((index) => index + 1), 10000);
+    const photoTimer = window.setTimeout(
+      () => setGalleryIndex((index) => index + 1),
+      10000,
+    );
     return () => window.clearTimeout(photoTimer);
   }, [autoGallery, currentIsVideo, galleryIndex, isGallery, lastGalleryIndex]);
 
@@ -551,7 +565,9 @@ function MediaPopup({ media, onClose }) {
 
   const useGalleryArrow = (direction) => {
     setAutoGallery(false);
-    setGalleryIndex((index) => Math.min(lastGalleryIndex, Math.max(0, index + direction)));
+    setGalleryIndex((index) =>
+      Math.min(lastGalleryIndex, Math.max(0, index + direction)),
+    );
   };
 
   const handleVideoTime = (event) => {
@@ -667,23 +683,6 @@ function App() {
           : "WL Tour Experience | Paseos en Rocinha y experiencias en Río";
   }, [language]);
   useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "WL Tour Experience",
-      url: window.location.origin,
-      sameAs: [C.instagram],
-      telephone: "+5521995550707",
-      description:
-        "Empresa de turismo e experiências guiadas na Rocinha e no Rio de Janeiro.",
-    };
-    const el = document.createElement("script");
-    el.type = "application/ld+json";
-    el.textContent = JSON.stringify(schema);
-    document.head.appendChild(el);
-    return () => el.remove();
-  }, []);
-  useEffect(() => {
     const blocks = document.querySelectorAll(".reveal");
     const observer = new IntersectionObserver(
       (entries) => {
@@ -761,114 +760,114 @@ function App() {
             seção "É uma história para contar" empurra a primeira para fora e o
             resto da página rola normalmente. */}
         <div className="curtain">
-        <div className="curtain-photo">
-          <div className="hero-image">
-            <div className="hero-photo" />
-          </div>
-          <div className="hero-grid" />
-        </div>
-        <section className="hero" id="top" data-testid="hero-section">
-          <div className="hero-content">
-            <p className="eyebrow reveal">
-              {t.heroKicker}
-            </p>
-            <h1 className="hero-title reveal delay-1">
-              {t.heroTitle.split("\n").map((line, i) => (
-                <span key={line}>{line}</span>
-              ))}
-            </h1>
-            <p className="hero-copy reveal delay-2">{t.heroBody}</p>
-            <div className="hero-actions reveal delay-3">
-              <LinkCTA
-                href={C.whatsapp}
-                testid="hero-whatsapp-button"
-                onClick={() => whatsapp("hero")}
-              >
-                {t.primary}
-              </LinkCTA>
+          <div className="curtain-photo">
+            <div className="hero-image">
+              <div className="hero-photo" />
             </div>
+            <div className="hero-grid" />
           </div>
-          <a
-            className="scroll-cue"
-            href="#experience"
-            data-testid="hero-scroll-link"
-          >
-            <span>↓</span>
-            {t.explore}
-          </a>
-        </section>
-        <section
-          className="manifest section-pad"
-          id="experience"
-          data-testid="positioning-section"
-        >
-          <div className="section-label">{l.labels.experience}</div>
-          <div className="manifest-grid">
-            <h2 className="display-title">
-              {t.manifest.split("\n").map((x) => (
-                <span key={x}>{x}</span>
-              ))}
-            </h2>
-            <div>
-              <p className="lead-copy">{t.intro}</p>
-              <div className="rule" />
-              <p className="micro">
-                RIO DE JANEIRO · BRASIL
-                <br />
-                ROCINHA / SÃO CONRADO / ZONA SUL
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className="benefit-wrap section-pad">
-          <div className="section-heading">
-            <div>
-              <div className="section-label">{t.benefitTitle}</div>
-              <h2 className="display-title compact">
-                {l.benefitHead[0]}
-                <br />
-                <i>{l.benefitHead[1]}</i>
-              </h2>
-            </div>
-            <span className="corner-note">{l.labels.motto}</span>
-          </div>
-          <div className="benefit-grid">
-            {l.benefits.map(([title, body], i) => (
-              <article
-                key={title}
-                className="benefit-card reveal"
-                style={{ transitionDelay: revealDelays[i] }}
-                data-testid={`benefit-card-${String(i + 1).padStart(2, "0")}`}
-              >
-                <button
-                  className="benefit-media-title"
-                  type="button"
-                  onClick={(event) => openMedia(benefitMedia[i], title, event.currentTarget)}
-                  aria-label={`Abrir mídia: ${title}`}
-                  data-testid={`benefit-media-${String(i + 1).padStart(2, "0")}`}
+          <section className="hero" id="top" data-testid="hero-section">
+            <div className="hero-content">
+              <p className="eyebrow reveal">{t.heroKicker}</p>
+              <h1 className="hero-title reveal delay-1">
+                {t.heroTitle.split("\n").map((line, i) => (
+                  <span key={line}>{line}</span>
+                ))}
+              </h1>
+              <p className="hero-copy reveal delay-2">{t.heroBody}</p>
+              <div className="hero-actions reveal delay-3">
+                <LinkCTA
+                  href={C.whatsapp}
+                  testid="hero-whatsapp-button"
+                  onClick={() => whatsapp("hero")}
                 >
-                  <h3>{title}</h3>
-                </button>
-                <p>{body}</p>
-              </article>
-            ))}
-          </div>
-          <p className="disclaimer">
-            *{" "}
-            <span
-              data-ve-dynamic="true"
-              style={{
-                display: "contents",
-              }}
+                  {t.primary}
+                </LinkCTA>
+              </div>
+            </div>
+            <a
+              className="scroll-cue"
+              href="#experience"
+              data-testid="hero-scroll-link"
             >
-              {language === "pt"
-                ? "Registros aéreos sujeitos às condições climáticas, operacionais e às regras aplicáveis."
-                : language === "en"
-                  ? "Aerial records subject to weather, operational conditions and applicable rules."
-                  : "Registros aéreos sujetos a condiciones climáticas, operativas y reglas aplicables."}
-            </span>
-          </p>
-        </section>
+              <span>↓</span>
+              {t.explore}
+            </a>
+          </section>
+          <section
+            className="manifest section-pad"
+            id="experience"
+            data-testid="positioning-section"
+          >
+            <div className="section-label">{l.labels.experience}</div>
+            <div className="manifest-grid">
+              <h2 className="display-title">
+                {t.manifest.split("\n").map((x) => (
+                  <span key={x}>{x}</span>
+                ))}
+              </h2>
+              <div>
+                <p className="lead-copy">{t.intro}</p>
+                <div className="rule" />
+                <p className="micro">
+                  RIO DE JANEIRO · BRASIL
+                  <br />
+                  ROCINHA / SÃO CONRADO / ZONA SUL
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="benefit-wrap section-pad">
+            <div className="section-heading">
+              <div>
+                <div className="section-label">{t.benefitTitle}</div>
+                <h2 className="display-title compact">
+                  {l.benefitHead[0]}
+                  <br />
+                  <i>{l.benefitHead[1]}</i>
+                </h2>
+              </div>
+              <span className="corner-note">{l.labels.motto}</span>
+            </div>
+            <div className="benefit-grid">
+              {l.benefits.map(([title, body], i) => (
+                <article
+                  key={title}
+                  className="benefit-card reveal"
+                  style={{ transitionDelay: revealDelays[i] }}
+                  data-testid={`benefit-card-${String(i + 1).padStart(2, "0")}`}
+                >
+                  <button
+                    className="benefit-media-title"
+                    type="button"
+                    onClick={(event) =>
+                      openMedia(benefitMedia[i], title, event.currentTarget)
+                    }
+                    aria-label={`Abrir mídia: ${title}`}
+                    data-testid={`benefit-media-${String(i + 1).padStart(2, "0")}`}
+                  >
+                    <h3>{title}</h3>
+                  </button>
+                  <p>{body}</p>
+                </article>
+              ))}
+            </div>
+            <p className="disclaimer">
+              *{" "}
+              <span
+                data-ve-dynamic="true"
+                style={{
+                  display: "contents",
+                }}
+              >
+                {language === "pt"
+                  ? "Registros aéreos sujeitos às condições climáticas, operacionais e às regras aplicáveis."
+                  : language === "en"
+                    ? "Aerial records subject to weather, operational conditions and applicable rules."
+                    : "Registros aéreos sujetos a condiciones climáticas, operativas y reglas aplicables."}
+              </span>
+            </p>
+          </section>
         </div>
         <section className="story section-pad">
           <div className="story-image reveal">
@@ -878,7 +877,10 @@ function App() {
               loading="lazy"
             />
           </div>
-          <div className="story-copy reveal" style={{ transitionDelay: "120ms" }}>
+          <div
+            className="story-copy reveal"
+            style={{ transitionDelay: "120ms" }}
+          >
             <div className="section-label story-kicker">{t.storyKicker}</div>
             <h2 className="display-title">
               {t.storyTitle.split("\n").map((x) => (
@@ -908,7 +910,9 @@ function App() {
               <article
                 key={name}
                 className="timeline-item reveal"
-                style={{ transitionDelay: revealDelays[i % revealDelays.length] }}
+                style={{
+                  transitionDelay: revealDelays[i % revealDelays.length],
+                }}
                 data-testid={`route-step-${i + 1}`}
               >
                 <div>
@@ -916,7 +920,9 @@ function App() {
                     <button
                       className="media-title-button"
                       type="button"
-                      onClick={(event) => openMedia(routeMedia[i], name, event.currentTarget)}
+                      onClick={(event) =>
+                        openMedia(routeMedia[i], name, event.currentTarget)
+                      }
                       aria-label={`Abrir mídia: ${name}`}
                       data-testid={`route-media-${i + 1}`}
                     >
@@ -1032,7 +1038,7 @@ function App() {
             ))}
           </div>
         </section>
-<section className="social-proof section-pad">
+        <section className="social-proof section-pad">
           <div className="social-card">
             <div className="section-label">{l.labels.testimonials}</div>
             <h2 className="display-title">{t.testimonials}</h2>
@@ -1046,11 +1052,14 @@ function App() {
                       openMedia(
                         { type: "image", src: testimonial.src },
                         `Print de depoimento de cliente da WL Tour${testimonial.instagram ? ` ${testimonial.instagram}` : ""}`,
-                        event.currentTarget
+                        event.currentTarget,
                       )
                     }
                   >
-                    <img src={testimonial.src} alt={`Print de depoimento de cliente da WL Tour${testimonial.instagram ? ` ${testimonial.instagram}` : ""}`} />
+                    <img
+                      src={testimonial.src}
+                      alt={`Print de depoimento de cliente da WL Tour${testimonial.instagram ? ` ${testimonial.instagram}` : ""}`}
+                    />
                   </button>
                   {testimonial.instagram && (
                     <div className="testimonial-handle">
@@ -1059,7 +1068,8 @@ function App() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Instagram size={18} />&nbsp;{testimonial.instagram}
+                        <Instagram size={18} />
+                        &nbsp;{testimonial.instagram}
                       </a>
                     </div>
                   )}
