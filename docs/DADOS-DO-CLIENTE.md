@@ -116,6 +116,21 @@ por convite.
 | Bing Places / Webmaster Tools | Cliente não sabe | Verificação pendente |
 | Local exibível no mapa | Informou que existe | Falta indicar qual endereço ou ponto pode ser publicado |
 
+### Verificações técnicas concluídas em 29/08/2026
+
+- `https://www.wlfavelatour.com.br/` responde normalmente com status 200.
+- `https://www.wlfavelatour.com.br/robots.txt` está publicado e permite o
+  rastreamento do site.
+- `https://www.wlfavelatour.com.br/sitemap.xml` está publicado e referencia a
+  página principal.
+- O DNS do domínio publica uma entrada TXT `google-site-verification`, indicando
+  que uma verificação do Google já foi iniciada por alguma conta Google.
+- Uma busca pública por `site:wlfavelatour.com.br` ainda não apresentou
+  resultados; o site não aparenta estar indexado neste momento.
+- Para confirmar a propriedade existente, enviar o sitemap e solicitar
+  indexação, ainda é necessário acessar a conta Google que criou a verificação
+  ou receber acesso de proprietário no Search Console.
+
 ### Atendimento e gestão dos contatos
 
 | Dado | Resposta de Wallace | Situação |
