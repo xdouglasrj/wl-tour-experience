@@ -103,7 +103,7 @@ por convite.
 
 | Dado | Resposta de Wallace | Situação |
 |---|---|---|
-| Domínio informado | `www.wlfalevatour.com.br` | **Conflita com `wlfavelatour.com.br`, usado atualmente no site; confirmar grafia antes de qualquer configuração** |
+| Domínio oficial | `https://www.wlfavelatour.com.br/` | Confirmado por Douglas em 29/08/2026 |
 | Titular e autorização de publicação | WL Tour | Confirmado pelo cliente |
 | Hospedagem | Cliente informou “ainda não” | O projeto usa Vercel; alinhar entendimento e titularidade |
 | E-mail no domínio | Será criado | Pendente |
@@ -130,8 +130,6 @@ por convite.
 
 - 35 perguntas adicionais permanecem sem resposta: 19, 44–46, 53, 55–63,
   70–81, 92–93, 123–124, 126–128 e 134–135.
-- Confirmar se o domínio correto é `wlfavelatour.com.br` ou
-  `wlfalevatour.com.br`.
 - Confirmar dias e horários exatos do passeio e do atendimento.
 - Explicar quem conduz o passeio em inglês.
 - Informar valor ou regra do desconto para grupos a partir de cinco pessoas.
