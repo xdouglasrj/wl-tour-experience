@@ -1,16 +1,18 @@
 # Dados do cliente — WL Tour Experience
 
-Atualizado em 27/08/2026. Este documento reúne os dados atuais do projeto e o
-questionário que deve ser respondido por Wallace antes da publicação definitiva,
-configuração de SEO, campanhas e integrações.
+Atualizado em 29/08/2026. Este documento reúne os dados atuais do projeto e as
+respostas enviadas por Wallace para publicação, presença em buscadores,
+campanhas e integrações.
 
 ## Estado da coleta
 
-**Status: aguardando confirmação dos dados e acessos do cliente.**
+**Status: respostas indispensáveis recebidas; 35 perguntas adicionais e algumas
+confirmações objetivas continuam pendentes.**
 
-A estrutura de coleta está pronta. As informações encontradas no site são dados
-atuais do projeto, mas precisam ser confirmadas por Wallace antes de serem
-tratadas como declarações comerciais definitivas.
+Wallace respondeu 102 das 137 perguntas em 29/08/2026. As respostas abaixo foram
+registradas como declarações do cliente. Informações incompletas, conflitantes ou
+que exigem comprovação continuam marcadas como pendentes e não devem ser
+publicadas como fato confirmado.
 
 Não colocar senhas, códigos de recuperação, tokens, chaves de API, cartões ou
 documentos pessoais neste arquivo. Acessos a plataformas devem ser concedidos
@@ -38,6 +40,106 @@ por convite.
 | Imagens locais aprovadas | `hero-rocinha-desktop.jpg` e `hero-rocinha-mobile.png` | Confirmar autoria e autorização de uso comercial |
 | Outras imagens do site | Unsplash e Pexels | Registrar licenças e decidir se serão substituídas por mídias próprias |
 | QR Code | Aponta para o Instagram `@wl.rocinha95` | Confirmar destino antes da publicação |
+
+## Respostas recebidas em 29/08/2026
+
+### Identidade e contatos confirmados pelo cliente
+
+| Dado | Resposta de Wallace | Situação de uso |
+|---|---|---|
+| Nome completo | Wallace Oliveira | Confirmado pelo cliente |
+| Nome público autorizado | WL Tour | Confirmado pelo cliente |
+| Marca | WL Tour Experience | Confirmada como nome definitivo |
+| Razão social/CNPJ/MEI para exibição | Não possui dado a exibir | Confirmado pelo cliente |
+| WhatsApp | +55 21 99555-0707 | Confirmado; recebe ligações e mensagens |
+| E-mail comercial e de privacidade | `Wallacetoretto37@gmail.com` | Confirmado pelo cliente |
+| Instagram | `https://www.instagram.com/wl.rocinha95` | Confirmado como oficial e profissional |
+| TikTok | `https://www.tiktok.com/@wl.rocinhaa` | Confirmado pelo cliente |
+| Facebook | Não existe | Confirmado pelo cliente |
+| Endereço público | Atendimento sem endereço público | Confirmado pelo cliente |
+| Atendimento no WhatsApp | Todos os dias, das 6h às 23h | Interpretado da resposta “de 6 às 23”; confirmar se é realmente todos os dias |
+| Tempo habitual de resposta | 5 a 10 minutos | Confirmado pelo cliente |
+| Idiomas no WhatsApp | Português, inglês e espanhol | Confirmado pelo cliente |
+| Idiomas conduzidos pessoalmente | Português e espanhol | Inglês durante o passeio precisa ser explicado, pois também foi citado em outras respostas |
+
+### Responsável e confiança
+
+| Dado | Resposta de Wallace | Situação de uso |
+|---|---|---|
+| Guia/anfitrião | O próprio Wallace | Confirmado pelo cliente |
+| Relação com a Rocinha | Nasceu e foi criado na Rocinha | Autorizado pelo cliente para publicação |
+| Experiência com turismo | 2 anos e meio | Falta mês e ano de início para publicação precisa |
+| Cadastur | Ainda não cadastrado; informou que concluirá o curso neste mês e pretende cadastrar-se no mês seguinte | Não publicar como cadastrado até receber comprovação |
+| Cursos | Primeiros socorros e direção defensiva | Solicitar nome, instituição, data e comprovação antes de publicar como credencial |
+| Seguro | Informou existir seguro para turistas pelo aplicativo “Favela Tour” | Solicitar nome correto do aplicativo, cobertura, validade e comprovação |
+| Associação/cooperativa | Não participa | Confirmado pelo cliente |
+| Avaliações públicas | Não possui | Confirmado pelo cliente |
+| Depoimentos autorizados | Informou possuir autorização | Textos, nomes, datas e autorizações ainda não foram enviados |
+
+### Público, área e passeio principal
+
+| Dado | Resposta de Wallace | Situação de uso |
+|---|---|---|
+| Público atendido | Brasileiros e estrangeiros; pessoas sozinhas, casais, famílias, crianças, idosos e grupos privados | Confirmado pelo cliente, mas restrições operacionais continuam pendentes |
+| Limite informado | Máximo de 30 pessoas; não informou mínimo | Confirmar capacidade segura, especialmente quando houver moto táxi |
+| Mobilidade reduzida | Informou que pode participar | Adaptações e limitações não foram explicadas |
+| Áreas atendidas | Rocinha, Vidigal e trilha do Morro Dois Irmãos | Confirmado pelo cliente |
+| Busca em hotel/aeroporto | Ainda não oferece | Não anunciar até o serviço existir |
+| Ponto de encontro | Saída C do metrô São Conrado | Confirmado pelo cliente; início e término no mesmo local |
+| Nome do passeio | Tour na Favela | Confirmado pelo cliente |
+| Descrição curta | “Emoções, culturas e vivências reais” | Resposta do cliente; precisa de redação final antes de publicar |
+| Duração | Aproximadamente 2 horas | Confirmado pelo cliente |
+| Disponibilidade | Todos os dias | Horários exatos continuam pendentes |
+| Formato | Privado ou compartilhado | Confirmado pelo cliente |
+| Idiomas anunciados no passeio | Português, inglês e espanhol | Conflita com a resposta de condução pessoal somente em português e espanhol; confirmar quem conduz em inglês |
+| Incluído | Moto táxi, espetáculo de capoeira, vídeo de drone e visita a uma laje para fotos | Confirmado como oferta, sujeito às pendências de segurança, operação e drone |
+| Não incluído | Caipirinha e cerveja | Confirmado pelo cliente |
+| Cancelamento por clima | Muita chuva | Falta regra objetiva de aviso e remarcação |
+| Pagamento | Ao final do passeio | Não responde integralmente cancelamento, atraso, ausência ou reembolso |
+| Formas de pagamento | Real, dólar, euro e cartão de crédito | Confirmado pelo cliente |
+| Preço | R$ 270 por pessoa; desconto a partir de 5 pessoas | Falta informar valor ou regra do desconto |
+
+### Presença digital e Google
+
+| Dado | Resposta de Wallace | Situação |
+|---|---|---|
+| Domínio informado | `www.wlfalevatour.com.br` | **Conflita com `wlfavelatour.com.br`, usado atualmente no site; confirmar grafia antes de qualquer configuração** |
+| Titular e autorização de publicação | WL Tour | Confirmado pelo cliente |
+| Hospedagem | Cliente informou “ainda não” | O projeto usa Vercel; alinhar entendimento e titularidade |
+| E-mail no domínio | Será criado | Pendente |
+| Perfil da Empresa no Google | Ainda não existe | Precisa ser criado após fechar nome, categoria, área, horário e domínio |
+| Proprietário do Perfil da Empresa | WL Tour | Confirmado pelo cliente |
+| Categoria/área/horário no Google | Não respondidos; informou apenas o telefone | Pendente |
+| Google Search Console | Ainda não existe | Precisa ser criado/verificado após confirmar o domínio correto |
+| Google Analytics 4 / Tag Manager | Ainda não existem | Pendente de decisão e criação |
+| Google Ads | Ainda não existe | Sem ação até haver decisão de campanha |
+| Bing Places / Webmaster Tools | Cliente não sabe | Verificação pendente |
+| Local exibível no mapa | Informou que existe | Falta indicar qual endereço ou ponto pode ser publicado |
+
+### Atendimento e gestão dos contatos
+
+| Dado | Resposta de Wallace | Situação |
+|---|---|---|
+| Responsável pelos contatos | WL Tour / Wallace | Confirmado pelo cliente |
+| Prazo pretendido de resposta | 10 a 15 minutos no máximo | Confirmado pelo cliente |
+| Dado mínimo do interessado | Quantidade de pessoas | Confirmado, mas pode ser insuficiente para reserva |
+| Controle das reservas | Planilha e WhatsApp | Confirmado pelo cliente |
+| Responsável por políticas e informações | Wallace | Confirmado pelo cliente |
+
+## Pendências após as respostas
+
+- 35 perguntas adicionais permanecem sem resposta: 19, 44–46, 53, 55–63,
+  70–81, 92–93, 123–124, 126–128 e 134–135.
+- Confirmar se o domínio correto é `wlfavelatour.com.br` ou
+  `wlfalevatour.com.br`.
+- Confirmar dias e horários exatos do passeio e do atendimento.
+- Explicar quem conduz o passeio em inglês.
+- Informar valor ou regra do desconto para grupos a partir de cinco pessoas.
+- Enviar comprovação dos cursos, do seguro e, quando concluído, do Cadastur.
+- Enviar os depoimentos com texto, identificação permitida, data e autorização.
+- Informar categoria, área de atendimento e horário que devem aparecer no Google.
+- Informar qual ponto ou local pode ser exibido publicamente no mapa.
+- Detalhar cancelamento, atraso, ausência, remarcação e reembolso.
 
 ## Mensagem pronta para enviar ao cliente
 
