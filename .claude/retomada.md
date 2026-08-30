@@ -1,4 +1,24 @@
-# Retomada — 27/08/2026 (noite)
+# Retomada — 30/08/2026
+
+## Última parte concluída
+
+- Google Search Console confirmou que `https://wlfavelatour.com.br/` está no
+  Google, indexada e servida por HTTPS.
+- SEO técnico preparado localmente para padronizar canonical, Open Graph,
+  JSON-LD, `robots.txt` e `sitemap.xml` em
+  `https://www.wlfavelatour.com.br/`.
+- `npm run build` e `node quick-verify.cjs` passaram.
+- A versão pública ainda serve os sinais SEO sem `www`; falta deploy autorizado.
+
+## Próxima parte
+
+- Publicar o commit de SEO quando Douglas autorizar deploy/push.
+- Depois do deploy, abrir a URL pública, `robots.txt` e `sitemap.xml` e confirmar
+  que todos apontam para o domínio com `www`.
+
+---
+
+# Registro anterior — 27/08/2026 (noite)
 
 ## Última parte concluída
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wlfavelatour.com.br/sitemap.xml
+Sitemap: https://www.wlfavelatour.com.br/sitemap.xml
