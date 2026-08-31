@@ -462,10 +462,8 @@ const localized = {
   },
 };
 function track(event, label) {
-  window.gtag?.("event", event, {
-    event_category: "engagement",
-    event_label: label,
-  });
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event, event_category: "engagement", event_label: label });
 }
 function WhatsAppIcon() {
   return (
