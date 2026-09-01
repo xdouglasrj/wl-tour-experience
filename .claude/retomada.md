@@ -28,9 +28,8 @@ Três tarefas entregues e auditadas no navegador:
 
 - Uma linha de recuo torto: `<section className="social-proof section-pad">` em
   `src/App.js` está encostada na margem. Só estética do código.
-- `@miguelfreitassjj` (do print) abre um perfil indisponível; o Instagram
-  redireciona para `@miguelfreitasjj`, com um "s" a menos. Falta o Douglas dizer
-  qual é o certo.
+- `@miguelfreitasjj` (um "s") confirmado pelo Douglas em 01/09/2026 como o perfil
+  certo do depoimento 01. O `src/App.js` já estava com esse valor: nada a corrigir.
 - `depoimento 03.jpeg` já veio recortado da origem, com o texto colado nas
   bordas. Não é defeito da página.
 - H1 — Publicação: só o Douglas.
