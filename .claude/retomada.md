@@ -47,13 +47,36 @@ e tags de evento. S3 concluída.
   `canonical` e o `og:url` apontam para a forma com `www`, então o sinal para o
   Google está certo, mas o redirecionamento 301 não existe.
 
+## Conferido dentro dos painéis (01/09/2026)
+
+Feito pelo Chrome logado, na conta `xdouglasdj@gmail.com`. A conta ativa do
+navegador era `tvoryntis@gmail.com`, que não enxerga nada deste projeto — foi
+preciso trocar. Vale lembrar disso na próxima sessão.
+
+- **GTM:** versão 2 ativa, publicada em 31/08 por `xDouglasdj@gmail.com`. Duas
+  tags e um acionador de evento personalizado. Zero alteração pendente.
+- **GA4:** propriedade "WL Favela Tour - Site". O tempo real mostrou
+  `whatsapp_click` 10, `instagram_click` 6 e `phone_click` 2 — exatamente os
+  dois testes que rodei no navegador (5+5, 3+3, 1+1). S4 fechada.
+- **Search Console:** o sitemap que existia era o da forma **sem** `www`,
+  enviado em 28/08. Enviei o da forma `www`, com sua autorização: consta
+  `Processado`, 1 página, sem erro. Os dois continuam na lista; não removi
+  nenhum. S5 fechada.
+- **Indexação:** `https://www.wlfavelatour.com.br/` **não** está indexada — está
+  como "Página alternativa com tag canônica adequada". O último rastreamento foi
+  30/08 às 22:04, antes do push, quando o canonical ainda apontava para a forma
+  sem `www`. O teste ao vivo de hoje diz "O URL está disponível para o Google" e
+  indexável, então a página nova está certa; falta o Google reler. Com sua
+  autorização, pedi indexação: "Indexação solicitada", fila prioritária.
+- **H2:** `wlfavelatour@gmail.com` está como Administrador com **convite
+  pendente**.
+
 ## Pendente
 
-- S3: criar no GTM os três acionadores de evento personalizado e as tags de
-  evento do GA4. Falta só isso; a configuração já está publicada.
-- S4: confirmar no DebugView, depois do S3.
-- S5: enviar o sitemap no Search Console.
-- S6: travado no H4 — o Wallace não mandou categoria, horários e descrição.
-- H2: o convite do GTM em `wlfavelatour@gmail.com` continua sem aceite.
+- Esperar o Google reler e trocar o canonical do apex para o `www`. Sem prazo.
+  Conferir de novo em alguns dias pela Inspeção de URL.
+- S6, travada no H4: o Wallace não mandou categoria, horários e descrição.
+- H3: quais eventos viram conversão no GA4 — decisão sua.
+- Decidir o redirecionamento de `wlfavelatour.com.br` para `www` na Vercel.
+  Hoje os dois respondem `200` sem redirecionar entre si.
 - `origin` ainda tem a branch `feat/questionario-wallace`.
-- Novo: decidir se entra o 301 de `wlfavelatour.com.br` para a forma com `www`.

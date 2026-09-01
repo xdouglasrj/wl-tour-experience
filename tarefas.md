@@ -14,42 +14,19 @@ console: o `gtm.js?id=GTM-5B2SLVVG` responde `200`, a tag de configuração do
 GA4 `G-G9SGTTXK6F` já está publicada no contêiner e manda o `page_view`, e o
 `dataLayer` recebe os nove cliques da página.
 
-Os três eventos também chegam ao GA4: os nove cliques saem num único POST em
-lote para `google-analytics.com/g/collect`, com o `event_category` e o
-`event_label` certos em cada um. O S3 está inteiro.
+Conferido também dentro dos painéis, em 01/09/2026, pela conta
+`xdouglasdj@gmail.com`:
+
+- **GTM:** contêiner `GTM-5B2SLVVG` na conta "WL Favela Tour", versão 2 ativa,
+  publicada em 31/08. Duas tags — `GA4 - Configuração - Todas as páginas` e
+  `GA4 - Eventos de contato` — e um acionador de evento personalizado,
+  `Contato - WhatsApp, telefone e Instagram`. Zero alteração pendente.
+- **GA4:** o tempo real registrou `whatsapp_click` 10, `instagram_click` 6 e
+  `phone_click` 2, batendo exatamente com os dois testes feitos no navegador.
+- **Search Console:** o sitemap na forma `www` foi enviado e já consta
+  `Processado`, com 1 página e sem erro.
 
 ## Tarefas pendentes
-
-### S4. Ver os eventos no painel do GA4
-
-OBJETIVO: confirmar no painel que o GA4 aceitou e guardou o que o navegador
-mandou.
-ARQUIVOS: nenhum.
-JÁ PROVADO fora do painel, em 01/09/2026: os nove cliques saem para
-`google-analytics.com/g/collect` num POST em lote, resposta `204`, cada linha
-do corpo com o `en` certo (`whatsapp_click`, `instagram_click`,
-`phone_click`), `event_category: engagement` e o `event_label` da posição.
-Falta só a metade que exige estar logado na conta.
-CASOS DE BORDA: o `en` do GA4 viaja no **corpo** do POST, não na URL — ler só a
-URL do `collect` faz parecer que nenhum evento saiu.
-PRONTO QUANDO: o relatório de tempo real registra a visita e os três eventos
-aparecem listados.
-FORA DE ESCOPO: marcar evento como conversão — é o H3.
-
-### S5. Enviar o sitemap no Search Console e conferir a indexação
-
-OBJETIVO: o Google recebe o sitemap na forma oficial do domínio e começa a
-indexar.
-ARQUIVOS: nenhum no repositório; painel do Search Console.
-REGRAS APLICÁVEIS: um domínio só — o sitemap enviado tem que ser exatamente o
-mesmo endereço do `canonical`.
-CASOS DE BORDA: a propriedade existente é de domínio e a página principal já
-aparece indexada (inspeção de 30/08/2026), mas na forma **sem** `www`. Depois do
-push, o canonical muda para `www`: conferir se o Google segue a mudança em vez
-de tratar como página nova.
-PRONTO QUANDO: o sitemap aparece como "Enviado" e sem erro; a inspeção da URL
-oficial mostra a página como indexável.
-FORA DE ESCOPO: pedir indexação de página que ainda não subiu.
 
 ### S6. Perfil da Empresa no Google
 
@@ -94,9 +71,11 @@ pessoalmente.
 
 ### H2. Aceite do convite do Google Tag Manager
 
-O Wallace precisa abrir o e-mail do GTM em `wlfavelatour@gmail.com` e aceitar o
-convite de administrador. Enquanto não aceitar, o cliente não tem acesso ao
-contêiner — mas isso **não** trava o S3, que roda pela conta administradora.
+Conferido no painel em 01/09/2026: em Administrador > Gerenciamento de usuários
+da conta, `wlfavelatour@gmail.com` consta como **Administrador** com status
+**Convite pendente**. O Wallace precisa abrir o e-mail nessa caixa e aceitar.
+Nada mais depende disso — o contêiner já está publicado pela conta
+`xdouglasdj@gmail.com`, que tem acesso.
 
 ### H3. Quais eventos viram conversão no GA4
 
