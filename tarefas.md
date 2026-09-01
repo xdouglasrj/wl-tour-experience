@@ -5,34 +5,29 @@ O método de trabalho é global, em `~/.claude/CLAUDE.md`.
 
 ## Onde o projeto parou (01/09/2026)
 
-O GTM `GTM-5B2SLVVG` e os três eventos do GA4 estavam escritos, mas presos numa
-branch que nunca entrou no `main` — e a Vercel publica o `main`. Isso foi
-resolvido: o `main` local já tem o GTM instalado, o `track()` empurrando para o
-`dataLayer` e todos os sinais de indexação em `https://www.wlfavelatour.com.br/`.
+O `main` foi publicado. O `origin` já tinha dois commits com o mesmo trabalho
+de GTM e SEO, feitos por outro caminho; o `index.html` era idêntico ao local, e
+os dois lados foram juntados por merge. O site no ar está em `8165b67`.
 
-**Falta o `git push`, que é do Douglas.** Enquanto não subir, o site no ar
-continua sem GTM e com os sinais na forma sem `www`.
+Conferido no navegador em `https://www.wlfavelatour.com.br/`, sem erro no
+console: o `gtm.js?id=GTM-5B2SLVVG` responde `200`, a tag de configuração do
+GA4 `G-G9SGTTXK6F` já está publicada no contêiner e manda o `page_view`, e o
+`dataLayer` recebe os nove cliques da página.
+
+**O que falta é o miolo do S3:** os nove eventos entram no `dataLayer` e
+nenhum vira hit do GA4 — o contêiner não tem acionador nem tag para
+`whatsapp_click`, `instagram_click` e `phone_click`.
 
 ## Tarefas pendentes
 
-### S2. Conferir no site publicado que o GTM carrega
-
-OBJETIVO: provar que o contêiner carrega no domínio de verdade, não só no build
-local.
-ARQUIVOS: nenhum. É verificação no navegador.
-REGRAS APLICÁVEIS: o gate é abrir e clicar; build verde convive com tag morta.
-CASOS DE BORDA: `www` e sem `www` são dois endereços — conferir nos dois qual
-responde e se um redireciona para o outro.
-PRONTO QUANDO: abrindo `https://www.wlfavelatour.com.br/`, a aba de rede mostra
-a requisição para `googletagmanager.com/gtm.js?id=GTM-5B2SLVVG` com resposta
-`200`, e `window.dataLayer` existe no console.
-FORA DE ESCOPO: publicar. Esta tarefa só roda depois do push.
-
 ### S3. Criar e publicar a tag do GA4 dentro do GTM
 
-OBJETIVO: o contêiner `GTM-5B2SLVVG` dispara a tag Google com o ID
-`G-G9SGTTXK6F` em todas as páginas, e os três eventos do site viram evento no
-GA4.
+OBJETIVO: os três eventos do site viram evento no GA4.
+
+JÁ FEITO, medido no site publicado em 01/09/2026: a tag de configuração do GA4
+com o ID `G-G9SGTTXK6F` existe, está publicada e manda o `page_view`. **Falta
+só a parte dos eventos** — nenhum dos três dispara hit, porque o contêiner não
+tem acionador nem tag para eles.
 ARQUIVOS: nenhum arquivo do repositório. O trabalho é no painel do GTM.
 REGRAS APLICÁVEIS: o GA4 é administrado pelo GTM, para não duplicar tag; não
 publicar contêiner vazio.
@@ -106,8 +101,12 @@ pessoalmente.
 
 ### H1. Publicação
 
-- `git push` da branch `main` — três commits locais esperando, entre eles o que
-  instala o GTM. Sem isso, S2, S3, S4 e S5 não saem do lugar.
+- ~~`git push` da branch `main`~~ — feito em 01/09/2026, commit `8165b67`.
+- Decidir o redirecionamento 301 de `wlfavelatour.com.br` para a forma com
+  `www`. Hoje os dois endereços respondem `200` e servem a mesma página, sem
+  redirecionar. O `canonical` e o `og:url` já apontam para `www`, então o sinal
+  ao Google está certo, mas o 301 não existe. É configuração de domínio na
+  Vercel, e domínio é seu.
 - Deploy, hospedagem, domínio e DNS.
 - Qualquer credencial, chave de API ou configuração em provedor externo.
 

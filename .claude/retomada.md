@@ -2,40 +2,54 @@
 
 ## Última parte concluída
 
-Configuração de entrada no ambiente novo, mais o resgate do trabalho de SEO e
-GTM que estava perdido numa branch.
+Push do `main` e verificação do site publicado (S2).
 
-1. `CLAUDE.md` do projeto apagado. A regra do produto virou `docs/PRODUTO.md`,
-   com as medidas dos efeitos aprovados e a decisão da imagem principal, que
-   saíram do `tarefas.md`. Vale só o método global.
-2. Cofre criado em `D:/Dev/Projetos/_CEREBRO/landing-pages/rocinha-tour/`, com
-   mapa e cinco notas ligadas.
-3. `GTM-5B2SLVVG` instalado e domínio padronizado em `www` — trazido arquivo por
-   arquivo da branch `codex/seo-gmail-independent`, que nunca tinha entrado no
-   `main`.
-4. 586 MB movidos para `_descartavel/`: prints do Playwright, backup de fonte, o
-   `bundle.js` antigo e as cinco worktrees paradas. `git ls-files` caiu de 189
-   para 102 arquivos.
-5. Todas as branches removidas menos a `main`. Nenhum worktree aberto.
+1. O push foi recusado por divergência: o `origin/main` já tinha dois commits
+   (`a95ae15`, `33e4982`) com o mesmo trabalho de GTM e SEO, feito por outro
+   caminho. Conferido antes de reconciliar: o `index.html` local e o remoto são
+   byte a byte iguais. A diferença local era só apagar lixo, mover a regra do
+   produto e mexer no `.claude/`.
+2. Reconciliado por merge, não por força. O único conflito foi
+   `.claude/retomada.md`, resolvido pela versão local.
+3. `npm run build` verde e `node quick-verify.cjs` OK depois do merge.
+4. Push feito: `a95ae15..8165b67`.
+5. Site publicado conferido no navegador.
+
+## O que foi medido no site no ar
+
+Em `https://www.wlfavelatour.com.br/`, sem nenhum erro no console:
+
+- `gtm.js?id=GTM-5B2SLVVG` responde `200`.
+- A tag do GA4 `G-G9SGTTXK6F` **já existe e já está publicada** no contêiner:
+  o `gtag/js?id=G-G9SGTTXK6F` carrega e o `page_view` sai para o
+  `google-analytics.com/g/collect` com `204`.
+- O `window.dataLayer` existe e recebe os nove cliques da página:
+  `whatsapp_click` em `header`, `hero`, `final`, `footer` e `floating`;
+  `instagram_click` em `instagram-section`, `footer` e `floating`;
+  `phone_click` em `final`. Todos com `event_category: engagement`.
+
+## O defeito encontrado
+
+**Os nove eventos entram no `dataLayer` e nenhum vira hit do GA4.** Depois dos
+cliques, o único `collect` na rede continua sendo o `page_view`. Ou seja: o
+contêiner tem a tag de configuração do GA4, mas **não tem acionador nem tag para
+os três eventos personalizados**. É trabalho de painel, e o painel é do Douglas.
 
 ## Estado
 
-- `npm run build` verde. `node quick-verify.cjs` passa.
-- Servidor de preview local em `http://127.0.0.1:4180` (a porta 4173 estava
-  ocupada por outro processo). Para subir: `npm run preview -- --port 4180`.
-- Três commits locais no `main`, **sem push**.
-- Verificado no navegador em 390 px e em desktop, sem erro no console: o
-  `gtm.js` carrega, o `dataLayer` existe, e os três eventos entram nele ao
-  clicar — `whatsapp_click`, `instagram_click` e `phone_click`.
+- `main` local e remoto no mesmo commit, `8165b67`.
+- Dois endereços respondem `200` e **nenhum redireciona para o outro** —
+  `wlfavelatour.com.br` e `www.wlfavelatour.com.br` servem a mesma página. O
+  `canonical` e o `og:url` apontam para a forma com `www`, então o sinal para o
+  Google está certo, mas o redirecionamento 301 não existe.
 
 ## Pendente
 
-- **Push do `main`.** É do Douglas. Sem isso o site no ar continua sem GTM e com
-  os sinais de indexação na forma sem `www`.
-- Tag do GA4 `G-G9SGTTXK6F` dentro do GTM, com acionador para cada um dos três
-  eventos. Nada disso existe ainda no painel.
-- Perfil da Empresa no Google: falta o Wallace dizer categoria, horários e
-  descrição.
-- O convite do GTM em `wlfavelatour@gmail.com` continua sem aceite.
-- `origin` ainda tem a branch `feat/questionario-wallace`. A local foi apagada
-  porque o conteúdo já está no `main`; a remota é decisão do Douglas.
+- S3: criar no GTM os três acionadores de evento personalizado e as tags de
+  evento do GA4. Falta só isso; a configuração já está publicada.
+- S4: confirmar no DebugView, depois do S3.
+- S5: enviar o sitemap no Search Console.
+- S6: travado no H4 — o Wallace não mandou categoria, horários e descrição.
+- H2: o convite do GTM em `wlfavelatour@gmail.com` continua sem aceite.
+- `origin` ainda tem a branch `feat/questionario-wallace`.
+- Novo: decidir se entra o 301 de `wlfavelatour.com.br` para a forma com `www`.
