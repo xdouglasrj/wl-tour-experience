@@ -71,12 +71,34 @@ preciso trocar. Vale lembrar disso na próxima sessão.
 - **H2:** `wlfavelatour@gmail.com` está como Administrador com **convite
   pendente**.
 
+## Redirecionamento do apex (01/09/2026)
+
+Feito com autorização. A CLI da Vercel não tem comando para isso — o
+redirecionamento é configuração do domínio dentro do projeto, e foi aplicado
+pela API com o `VERCEL_TOKEN` que já estava no ambiente:
+
+```
+PATCH /v9/projects/<id>/domains/wlfavelatour.com.br
+{ "redirect": "www.wlfavelatour.com.br", "redirectStatusCode": 308 }
+```
+
+Nada foi escrito no repositório: não existe `vercel.json`, e não criei um. A
+Vercel emite **308**, não 301; para o Google os dois valem como permanente.
+
+Conferido no ar logo depois: `https://wlfavelatour.com.br/` responde `308` para
+`https://www.wlfavelatour.com.br/`, o caminho é preservado, e o `www` continua
+`200`.
+
+**De olho:** o sitemap antigo, na forma sem `www`, continua enviado no Search
+Console e agora responde `308`. Nos dois a leitura de hoje ainda consta
+`Processado`. O Google costuma seguir o redirecionamento, mas se em alguns dias
+aquela linha virar erro, é só removê-la — o sitemap na forma `www` já está
+enviado e cobre a mesma página.
+
 ## Pendente
 
 - Esperar o Google reler e trocar o canonical do apex para o `www`. Sem prazo.
   Conferir de novo em alguns dias pela Inspeção de URL.
 - S6, travada no H4: o Wallace não mandou categoria, horários e descrição.
 - H3: quais eventos viram conversão no GA4 — decisão sua.
-- Decidir o redirecionamento de `wlfavelatour.com.br` para `www` na Vercel.
-  Hoje os dois respondem `200` sem redirecionar entre si.
 - `origin` ainda tem a branch `feat/questionario-wallace`.

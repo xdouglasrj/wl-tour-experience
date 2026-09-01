@@ -60,12 +60,14 @@ pessoalmente.
 ### H1. Publicação
 
 - ~~`git push` da branch `main`~~ — feito em 01/09/2026, commit `8165b67`.
-- Decidir o redirecionamento de `wlfavelatour.com.br` para a forma com `www`.
-  Medido em 01/09/2026: o `http` para `https` já redireciona com `308` nas duas
-  formas, mas `https://wlfavelatour.com.br/` responde `200` e **não** manda para
-  o `www`. As duas formas servem a mesma página, e o `canonical` das duas aponta
-  para `www` — então o sinal ao Google está correto e isso não é urgente. É
-  configuração de domínio na Vercel, e domínio é seu.
+- ~~Redirecionamento do apex para a forma com `www`~~ — feito em 01/09/2026,
+  com sua autorização. Aplicado no domínio do projeto na Vercel, pela API, e não
+  em arquivo do repositório: `redirect: www.wlfavelatour.com.br`,
+  `redirectStatusCode: 308`. A Vercel emite **308**, não 301 — para o Google os
+  dois valem como permanente. Conferido no ar: `https://wlfavelatour.com.br/`
+  responde `308` para `https://www.wlfavelatour.com.br/`, o caminho é
+  preservado (`/sitemap.xml` cai no `/sitemap.xml` do `www`), e o `www`
+  continua `200`.
 - Deploy, hospedagem, domínio e DNS.
 - Qualquer credencial, chave de API ou configuração em provedor externo.
 
