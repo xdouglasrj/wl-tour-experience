@@ -121,3 +121,24 @@ dispensou o requisito de WebP em resolução maior:
 
 Estes são os arquivos finais. Nenhum agente troca, converte, amplia ou regenera
 essas fotografias sem uma nova decisão dele.
+## Preço nunca vai ao ar — decisão registrada
+
+Esta seção é referência permanente, não é tarefa.
+
+Em 01/09/2026 o Douglas decidiu que **nenhum valor aparece em lugar nenhum**: não
+no texto da página, não no dado estruturado, não em `Offer`, `priceRange` ou
+`priceSpecification`, em nenhum dos três idiomas. Nem valor fixo, nem faixa, nem
+"a partir de".
+
+O motivo, nas palavras dele: no turismo existem taxas que mudam de um dia para o
+outro, então o valor de ontem não é o valor de hoje, e manter número publicado
+vira trabalho recorrente. Além disso, "a partir de" é um piso que só cresce na
+negociação — publicar o piso faz o cliente chegar ancorado nele. O preço é
+negociado no ato.
+
+Isso vale mesmo sabendo o custo: a pergunta "quanto custa" é a mais buscada do
+ramo, e sem resposta no site quem responde por ela é um concorrente. O Douglas
+foi avisado disso e manteve a decisão.
+
+**Nenhum agente publica valor sem uma nova decisão dele.** Se uma tarefa pedir
+preço, a regra vence e a tarefa volta.

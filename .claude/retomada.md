@@ -95,10 +95,41 @@ Console e agora responde `308`. Nos dois a leitura de hoje ainda consta
 aquela linha virar erro, é só removê-la — o sitemap na forma `www` já está
 enviado e cobre a mesma página.
 
-## Pendente
+## Planejamento de 01/09/2026 — descoberta no Google e na IA
 
-- Esperar o Google reler e trocar o canonical do apex para o `www`. Sem prazo.
-  Conferir de novo em alguns dias pela Inspeção de URL.
-- S6, travada no H4: o Wallace não mandou categoria, horários e descrição.
-- H3: quais eventos viram conversão no GA4 — decisão sua.
-- `origin` ainda tem a branch `feat/questionario-wallace`.
+Sessão de planejamento, sem código e sem delegação. A fila foi refeita: as
+tarefas agora são **D1 a D7**, no `tarefas.md`.
+
+Sete decisões do Douglas, e o motivo de cada uma:
+
+1. Site e redes sociais são **a mesma identidade**, não é ranquear o Instagram.
+2. O método replicável mira **negócio local que atende pessoa** — não qualquer
+   cliente, e não só turismo.
+3. O escopo vai até **site + Perfil da Empresa + loop de avaliação**. Cadastro
+   em sites de terceiros ficou de fora.
+4. O replicável é **consertar e generalizar o questionário de 137**, e não criar
+   um pedido curto separado.
+5. Estrutura: **núcleo comum + blocos por ramo**.
+6. **Nenhum preço vai ao ar** — gravado em `docs/PRODUTO.md` como regra
+   permanente. As taxas mudam de um dia para o outro, e o "a partir de" ancora o
+   cliente no piso. Ele foi avisado do custo e manteve a decisão.
+7. **Entra FAQ visível** na página, nos três idiomas, sem valor nenhum.
+
+## O achado que explica o bloqueio
+
+O questionário de 137 perguntas marcou a **116** como obrigatória, mas ela pede
+quatro coisas num campo só: "categoria, área de atendimento, telefone e
+horário". O Wallace escreveu o telefone, o campo ficou preenchido, e o sistema
+contou como respondida. Categoria, área e horário nunca vieram — e são
+exatamente o que trava o Perfil da Empresa até hoje.
+
+Não é falta de esforço do cliente. É defeito do instrumento: **campo que aceita
+resposta parcial como completa.** É o conserto central do D7.
+
+## Próximo passo
+
+Executar o **D1**: mandar as oito perguntas ao Wallace, uma coisa por pergunta.
+Tudo depois disso depende delas.
+
+O D6 (reconferir a indexação do `www`) roda sozinho daqui a uma semana e não
+depende de ninguém.
