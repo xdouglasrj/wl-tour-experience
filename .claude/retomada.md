@@ -28,12 +28,16 @@ Em `https://www.wlfavelatour.com.br/`, sem nenhum erro no console:
   `instagram_click` em `instagram-section`, `footer` e `floating`;
   `phone_click` em `final`. Todos com `event_category: engagement`.
 
-## O defeito encontrado
+## A conclusão errada que quase entrou no relatório
 
-**Os nove eventos entram no `dataLayer` e nenhum vira hit do GA4.** Depois dos
-cliques, o único `collect` na rede continua sendo o `page_view`. Ou seja: o
-contêiner tem a tag de configuração do GA4, mas **não tem acionador nem tag para
-os três eventos personalizados**. É trabalho de painel, e o painel é do Douglas.
+Na primeira leitura pareceu que nenhum dos nove eventos chegava ao GA4: depois
+dos cliques, o único `collect` cuja URL trazia `en=` era o do `page_view`.
+
+Estava errado. O GA4 manda os eventos **em lote, no corpo do POST** — a URL não
+traz `en=` nenhum. Interceptando `sendBeacon`, `fetch` e `XMLHttpRequest`, os
+nove aparecem numa requisição só, cada um com `event_category: engagement` e o
+`event_label` da posição. O contêiner está completo: configuração, acionadores
+e tags de evento. S3 concluída.
 
 ## Estado
 

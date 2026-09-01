@@ -14,46 +14,27 @@ console: o `gtm.js?id=GTM-5B2SLVVG` responde `200`, a tag de configuração do
 GA4 `G-G9SGTTXK6F` já está publicada no contêiner e manda o `page_view`, e o
 `dataLayer` recebe os nove cliques da página.
 
-**O que falta é o miolo do S3:** os nove eventos entram no `dataLayer` e
-nenhum vira hit do GA4 — o contêiner não tem acionador nem tag para
-`whatsapp_click`, `instagram_click` e `phone_click`.
+Os três eventos também chegam ao GA4: os nove cliques saem num único POST em
+lote para `google-analytics.com/g/collect`, com o `event_category` e o
+`event_label` certos em cada um. O S3 está inteiro.
 
 ## Tarefas pendentes
 
-### S3. Criar e publicar a tag do GA4 dentro do GTM
+### S4. Ver os eventos no painel do GA4
 
-OBJETIVO: os três eventos do site viram evento no GA4.
-
-JÁ FEITO, medido no site publicado em 01/09/2026: a tag de configuração do GA4
-com o ID `G-G9SGTTXK6F` existe, está publicada e manda o `page_view`. **Falta
-só a parte dos eventos** — nenhum dos três dispara hit, porque o contêiner não
-tem acionador nem tag para eles.
-ARQUIVOS: nenhum arquivo do repositório. O trabalho é no painel do GTM.
-REGRAS APLICÁVEIS: o GA4 é administrado pelo GTM, para não duplicar tag; não
-publicar contêiner vazio.
-CASOS DE BORDA: o site empurra três eventos próprios para o `dataLayer` —
-`whatsapp_click`, `instagram_click` e `phone_click`, cada um com
-`event_category: engagement` e um `event_label`. Cada um precisa de um acionador
-de evento personalizado com o nome exato, senão a tag nunca dispara. Rótulos
-medidos no navegador em 01/09/2026: `header`, `hero`, `final` e `footer` para o
-WhatsApp; `instagram-section`, `footer` e `floating` para o Instagram; `final`
-para o telefone. Não existe evento de formulário nem de e-mail nesta página: o
-botão principal de reserva **é** o do WhatsApp.
-PRONTO QUANDO: no modo Preview do GTM, clicar no WhatsApp, no Instagram e no
-telefone acende as três tags; a versão do contêiner está publicada com descrição
-do que contém.
-FORA DE ESCOPO: criar evento novo no site.
-
-### S4. Confirmar o dado chegando no GA4
-
-OBJETIVO: a visita e os três eventos aparecem no GA4, não só no Preview do GTM.
+OBJETIVO: confirmar no painel que o GA4 aceitou e guardou o que o navegador
+mandou.
 ARQUIVOS: nenhum.
-REGRAS APLICÁVEIS: só se declara pronto o que foi visto chegando.
-CASOS DE BORDA: o DebugView só mostra a sessão com o Preview ligado; o relatório
-de tempo real mostra qualquer visita, mas demora alguns minutos.
-PRONTO QUANDO: o DebugView lista `whatsapp_click`, `instagram_click` e
-`phone_click` com o `event_label` certo, e o tempo real registra a visita.
-FORA DE ESCOPO: marcar evento como conversão — decisão do Douglas, item H3.
+JÁ PROVADO fora do painel, em 01/09/2026: os nove cliques saem para
+`google-analytics.com/g/collect` num POST em lote, resposta `204`, cada linha
+do corpo com o `en` certo (`whatsapp_click`, `instagram_click`,
+`phone_click`), `event_category: engagement` e o `event_label` da posição.
+Falta só a metade que exige estar logado na conta.
+CASOS DE BORDA: o `en` do GA4 viaja no **corpo** do POST, não na URL — ler só a
+URL do `collect` faz parecer que nenhum evento saiu.
+PRONTO QUANDO: o relatório de tempo real registra a visita e os três eventos
+aparecem listados.
+FORA DE ESCOPO: marcar evento como conversão — é o H3.
 
 ### S5. Enviar o sitemap no Search Console e conferir a indexação
 
@@ -102,11 +83,12 @@ pessoalmente.
 ### H1. Publicação
 
 - ~~`git push` da branch `main`~~ — feito em 01/09/2026, commit `8165b67`.
-- Decidir o redirecionamento 301 de `wlfavelatour.com.br` para a forma com
-  `www`. Hoje os dois endereços respondem `200` e servem a mesma página, sem
-  redirecionar. O `canonical` e o `og:url` já apontam para `www`, então o sinal
-  ao Google está certo, mas o 301 não existe. É configuração de domínio na
-  Vercel, e domínio é seu.
+- Decidir o redirecionamento de `wlfavelatour.com.br` para a forma com `www`.
+  Medido em 01/09/2026: o `http` para `https` já redireciona com `308` nas duas
+  formas, mas `https://wlfavelatour.com.br/` responde `200` e **não** manda para
+  o `www`. As duas formas servem a mesma página, e o `canonical` das duas aponta
+  para `www` — então o sinal ao Google está correto e isso não é urgente. É
+  configuração de domínio na Vercel, e domínio é seu.
 - Deploy, hospedagem, domínio e DNS.
 - Qualquer credencial, chave de API ou configuração em provedor externo.
 
