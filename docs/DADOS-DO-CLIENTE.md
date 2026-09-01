@@ -110,7 +110,7 @@ por convite.
 | Perfil da Empresa no Google | Ainda não existe | Precisa ser criado após fechar nome, categoria, área, horário e domínio |
 | Proprietário do Perfil da Empresa | WL Tour | Confirmado pelo cliente |
 | Categoria/área/horário no Google | Não respondidos; informou apenas o telefone | Pendente |
-| Google Search Console | Ainda não existe | Precisa ser criado/verificado após confirmar o domínio correto |
+| Google Search Console | Propriedade de domínio ativa; página principal indexada | Confirmado por inspeção de URL em 30/08/2026 |
 | Google Analytics 4 / Tag Manager | Ainda não existem | Pendente de decisão e criação |
 | Google Ads | Ainda não existe | Sem ação até haver decisão de campanha |
 | Bing Places / Webmaster Tools | Cliente não sabe | Verificação pendente |
@@ -125,11 +125,14 @@ por convite.
   página principal.
 - O DNS do domínio publica uma entrada TXT `google-site-verification`, indicando
   que uma verificação do Google já foi iniciada por alguma conta Google.
-- Uma busca pública por `site:wlfavelatour.com.br` ainda não apresentou
-  resultados; o site não aparenta estar indexado neste momento.
-- Para confirmar a propriedade existente, enviar o sitemap e solicitar
-  indexação, ainda é necessário acessar a conta Google que criou a verificação
-  ou receber acesso de proprietário no Search Console.
+- Em 30/08/2026, a inspeção de `https://wlfavelatour.com.br/` no Google Search
+  Console confirmou: “O URL está no Google”, “A página está indexada” e HTTPS
+  válido.
+- A confirmação acima vale para a página principal inspecionada. Não significa
+  que páginas futuras estejam automaticamente indexadas.
+- O ajuste local de canonical, Open Graph, JSON-LD, `robots.txt` e `sitemap.xml`
+  padroniza a URL oficial com `www`. Em 30/08/2026, a versão pública ainda
+  apresentava esses sinais sem `www`; o ajuste depende do próximo deploy.
 
 ### Atendimento e gestão dos contatos
 

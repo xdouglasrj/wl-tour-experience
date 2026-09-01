@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5B2SLVVG');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#080907" />
@@ -9,7 +12,7 @@
       content="Viva uma experiência diferente no Rio de Janeiro. Conheça a Rocinha com passeio guiado, cultura, vistas incríveis, registros profissionais e outras experiências."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://wlfavelatour.com.br/" />
+    <link rel="canonical" href="https://www.wlfavelatour.com.br/" />
     <meta
       property="og:title"
       content="WL Tour Experience. Mais que um tour. Uma experiência."
@@ -19,10 +22,10 @@
       content="Passeio guiado na Rocinha e experiências turísticas no Rio de Janeiro."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://wlfavelatour.com.br/" />
+    <meta property="og:url" content="https://www.wlfavelatour.com.br/" />
     <meta
       property="og:image"
-      content="https://wlfavelatour.com.br/og-image.jpg"
+      content="https://www.wlfavelatour.com.br/og-image.jpg"
     />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="WL Tour Experience" />
@@ -46,86 +49,137 @@
       WL Tour Experience | Passeio na Rocinha e Experiências no Rio de Janeiro
     </title>
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "TravelAgency",
-            "@id": "https://wlfavelatour.com.br/#organizacao",
-            "name": "WL Tour Experience",
-            "url": "https://wlfavelatour.com.br/",
-            "description": "Guia local de turismo com passeio guiado na Rocinha e experiências no Rio de Janeiro.",
-            "telephone": "+5521995550707",
-            "image": "https://wlfavelatour.com.br/og-image.jpg",
-            "sameAs": ["https://www.instagram.com/wl.rocinha95/"],
-            "availableLanguage": ["pt-BR", "en", "es"],
-            "areaServed": {
-              "@type": "City",
-              "name": "Rio de Janeiro",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Rio de Janeiro",
-                "addressRegion": "RJ",
-                "addressCountry": "BR"
-              }
-            }
-          },
-          {
-            "@type": "TouristTrip",
-            "@id": "https://wlfavelatour.com.br/#passeio-rocinha",
-            "name": "Passeio guiado na Rocinha",
-            "description": "Passeio guiado na Rocinha com guia local: subida ao topo com deslocamento de moto táxi, vista panorâmica, capoeira, graffiti, Curva do S e registros fotográficos profissionais.",
-            "touristType": ["Turismo cultural", "Turismo comunitário"],
-            "inLanguage": ["pt-BR", "en", "es"],
-            "provider": { "@id": "https://wlfavelatour.com.br/#organizacao" },
-            "itinerary": {
-              "@type": "ItemList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "item": {
-                    "@type": "TouristAttraction",
-                    "name": "Topo da Rocinha e vista panorâmica"
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "item": {
-                    "@type": "TouristAttraction",
-                    "name": "Roda de capoeira"
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "item": {
-                    "@type": "TouristAttraction",
-                    "name": "Graffiti da comunidade"
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 4,
-                  "item": { "@type": "TouristAttraction", "name": "Curva do S" }
+{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "TravelAgency",
+              "@id": "https://www.wlfavelatour.com.br/#organizacao",
+              "name": "WL Tour Experience",
+              "url": "https://www.wlfavelatour.com.br/",
+              "description": "Guia local de turismo com passeio guiado na Rocinha, Vidigal e trilha do Morro Dois Irmãos, incluindo experiências no Rio de Janeiro.",
+              "telephone": "+5521995550707",
+              "image": "https://www.wlfavelatour.com.br/og-image.jpg",
+              "sameAs": [
+                "https://www.instagram.com/wl.rocinha95/",
+                "https://www.tiktok.com/@wl.rocinhaa"
+              ],
+              "availableLanguage": ["pt-BR", "en", "es"],
+              "areaServed": {
+                "@type": "City",
+                "name": "Rio de Janeiro",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Rio de Janeiro",
+                  "addressRegion": "RJ",
+                  "addressCountry": "BR"
                 }
-              ]
+              }
+            },
+            {
+              "@type": "TouristTrip",
+              "@id": "https://www.wlfavelatour.com.br/#passeio-rocinha",
+              "name": "Tour na Favela",
+              "description": "Passeio guiado na Rocinha com deslocamento de moto táxi, espetáculo de capoeira, vídeo de drone e visita a uma laje para fotos.",
+              "touristType": ["Turismo cultural", "Turismo comunitário"],
+              "inLanguage": ["pt-BR", "es"],
+              "duration": "PT2H",
+              "provider": { "@id": "https://www.wlfavelatour.com.br/#organizacao" },
+              "itinerary": {
+                "@type": "ItemList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Subida até o topo"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Vista panorâmica"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Capoeira"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Laje com vista"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Registro aéreo"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Graffiti"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Futebol"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Curva do S"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 9,
+                    "item": {
+                      "@type": "TouristAttraction",
+                      "name": "Rua popular"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.wlfavelatour.com.br/#site",
+              "url": "https://www.wlfavelatour.com.br/",
+              "name": "WL Tour Experience",
+              "inLanguage": "pt-BR",
+              "publisher": { "@id": "https://www.wlfavelatour.com.br/#organizacao" }
             }
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://wlfavelatour.com.br/#site",
-            "url": "https://wlfavelatour.com.br/",
-            "name": "WL Tour Experience",
-            "inLanguage": "pt-BR",
-            "publisher": { "@id": "https://wlfavelatour.com.br/#organizacao" }
-          }
-        ]
-      }
-    </script>
+          ]
+        }
+</script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-5B2SLVVG'
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/index.js"></script>
