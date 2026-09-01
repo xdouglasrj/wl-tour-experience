@@ -133,3 +133,31 @@ Tudo depois disso depende delas.
 
 O D6 (reconferir a indexação do `www`) roda sozinho daqui a uma semana e não
 depende de ninguém.
+
+## D1 executado (01/09/2026)
+
+As oito perguntas foram enviadas pelo Douglas e respondidas pelo Wallace. Texto
+das perguntas e tabela de respostas em `docs/PERGUNTAS-D1.md`; os fatos entraram
+em `docs/DADOS-DO-CLIENTE.md`, seção "Respostas do D1".
+
+Confirmado: categoria "Agência de turismo"; passeio todos os dias das 09:00 às
+17:00; WhatsApp das 07:00 às 21:00 (**corrige** o 6h–23h que constava antes, nas
+duas linhas do documento); descrição em palavras do cliente; sem idade mínima
+desde que acompanhado de responsável maior de 18 anos.
+
+Nenhum horário estava escrito no `index.html` nem no `src/` — a correção do
+6h–23h ficou só na documentação.
+
+**Duas respostas vieram pela metade, e travam o D2:**
+
+- Chuva: ele disse que adia, mas não disse com quanta antecedência avisa nem se
+  remarca ou devolve o dinheiro.
+- Inglês: "suporte 100% em inglês" não responde quem conduz o passeio em inglês.
+
+O reenvio dessas duas (6b e 7b) está escrito no fim do `PERGUNTAS-D1.md`.
+
+## Próximo passo
+
+Reenviar 6b e 7b. Com elas, o D2 (perguntas frequentes) fica desbloqueado — as
+outras respostas do D1 já cobrem dias, horários e idade mínima. O D4 já pode
+começar: categoria, horários e descrição chegaram.

@@ -57,7 +57,7 @@ por convite.
 | TikTok | `https://www.tiktok.com/@wl.rocinhaa` | Confirmado pelo cliente |
 | Facebook | Não existe | Confirmado pelo cliente |
 | Endereço público | Atendimento sem endereço público | Confirmado pelo cliente |
-| Atendimento no WhatsApp | Todos os dias, das 6h às 23h | Interpretado da resposta “de 6 às 23”; confirmar se é realmente todos os dias |
+| Atendimento no WhatsApp | Todos os dias, das 07:00 às 21:00 | Confirmado pelo cliente em 01/09/2026 (D1); corrige o 6h–23h anterior |
 | Tempo habitual de resposta | 5 a 10 minutos | Confirmado pelo cliente |
 | Idiomas no WhatsApp | Português, inglês e espanhol | Confirmado pelo cliente |
 | Idiomas conduzidos pessoalmente | Português e espanhol | Inglês durante o passeio precisa ser explicado, pois também foi citado em outras respostas |
@@ -89,7 +89,7 @@ por convite.
 | Nome do passeio | Tour na Favela | Confirmado pelo cliente |
 | Descrição curta | “Emoções, culturas e vivências reais” | Resposta do cliente; precisa de redação final antes de publicar |
 | Duração | Aproximadamente 2 horas | Confirmado pelo cliente |
-| Disponibilidade | Todos os dias | Horários exatos continuam pendentes |
+| Disponibilidade | Todos os dias, das 09:00 às 17:00 | Confirmado pelo cliente em 01/09/2026 (D1) |
 | Formato | Privado ou compartilhado | Confirmado pelo cliente |
 | Idiomas anunciados no passeio | Português, inglês e espanhol | Conflita com a resposta de condução pessoal somente em português e espanhol; confirmar quem conduz em inglês |
 | Incluído | Moto táxi, espetáculo de capoeira, vídeo de drone e visita a uma laje para fotos | Confirmado como oferta, sujeito às pendências de segurança, operação e drone |
@@ -444,3 +444,21 @@ Após Wallace responder, converter as respostas em fatos confirmados neste
 documento. Marcar informações sensíveis como “verificadas, não armazenadas”, sem
 copiá-las. Informações que continuarem sem confirmação devem permanecer
 explicitamente como pendentes.
+
+---
+
+## Respostas do D1 (01/09/2026)
+
+Recebidas pelo Douglas e transcritas aqui como declaração do cliente. O texto
+das perguntas está em `docs/PERGUNTAS-D1.md`.
+
+| Assunto | Resposta | Observação |
+|---|---|---|
+| Categoria no Google | Agência de turismo | Confirmado; usar no Perfil da Empresa (D4) |
+| Dias do passeio | Todos os dias | Confirmado |
+| Horários do passeio | Das 09:00 às 17:00 | Confirmado |
+| Atendimento no WhatsApp | Das 07:00 às 21:00 | **Corrige** o 6h–23h registrado antes |
+| Descrição do passeio | “Uma experiência incrível que ficará guardada na memória. Total segurança para nossos clientes, passa confiança e mostra outro lado da favela que eles não conhecem.” | Palavras do cliente; precisa de redação final antes de publicar |
+| Regra de chuva | Em dia de chuva o passeio é adiado: a filmagem de drone não acontece e andar de moto na chuva fica perigoso | Antecedência do aviso e a escolha entre remarcar e devolver continuam **pendentes** |
+| Inglês | Suporte 100% em inglês | Quem conduz o passeio em inglês continua **pendente** |
+| Idade mínima | Não há idade mínima, desde que acompanhado de responsável legal maior de 18 anos | Confirmado |
