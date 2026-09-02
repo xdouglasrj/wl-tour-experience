@@ -462,3 +462,40 @@ das perguntas está em `docs/PERGUNTAS-D1.md`.
 | Regra de chuva | Em dia de chuva o passeio é adiado: a filmagem de drone não acontece e andar de moto na chuva fica perigoso | Antecedência do aviso e a escolha entre remarcar e devolver continuam **pendentes** |
 | Inglês | Suporte 100% em inglês | Quem conduz o passeio em inglês continua **pendente** |
 | Idade mínima | Não há idade mínima, desde que acompanhado de responsável legal maior de 18 anos | Confirmado |
+
+---
+
+## Perfil da Empresa no Google (D4) — criado em 02/09/2026
+
+Criado com autorização do Douglas, pela conta `xdouglasdj@gmail.com` (perfil
+"Zumatra", índice `u/2` no Chrome). **Não existia perfil anterior**: nada no
+Google Search, nada no Maps e nenhuma empresa nas três contas logadas.
+
+| Campo | Valor |
+|---|---|
+| Código da loja | `11038970354485641720` |
+| Nome | WL Favela Tour |
+| Categoria | Agência de turismo |
+| Local que o cliente visita | Não — empresa de área de serviço, nenhum endereço público |
+| Área de atendimento | Rocinha, Vidigal e São Conrado (Rio de Janeiro - RJ) |
+| Telefone | +55 21 99555-0707 |
+| Site | https://www.wlfavelatour.com.br/ |
+| Chat | Não ativado |
+| E-mails de novidades do Google | Não |
+| Estado | **Verificação obrigatória — não confirmado** |
+
+**Por que o nome não é "WL Tour":** já existe uma empresa chamada WL Tour na
+Praça Vinte e Quatro de Outubro, em Inhaúma — outra empresa, não é a do Wallace.
+"WL Favela Tour" bate com o domínio e com o Instagram, e não disputa o mesmo
+nome na busca local.
+
+**O que falta, e é do titular:** o Google pediu endereço de correspondência para
+enviar o código de verificação. Nenhum endereço foi informado — não se inventa
+endereço, e caixa postal não é aceita. Enquanto não for verificado, o perfil
+**não aparece** na Pesquisa nem no Maps.
+
+Ainda não existe URL pública do perfil, então o `sameAs` da `TravelAgency` no
+`index.html` continua sem ele. Isso entra depois da verificação.
+
+**Não foi preenchido ainda** (fica para depois da verificação): horários
+(todos os dias, 09:00–17:00), descrição do negócio, e fotos.

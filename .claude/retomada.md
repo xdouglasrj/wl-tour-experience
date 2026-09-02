@@ -161,3 +161,34 @@ O reenvio dessas duas (6b e 7b) está escrito no fim do `PERGUNTAS-D1.md`.
 Reenviar 6b e 7b. Com elas, o D2 (perguntas frequentes) fica desbloqueado — as
 outras respostas do D1 já cobrem dias, horários e idade mínima. O D4 já pode
 começar: categoria, horários e descrição chegaram.
+
+## D4 — Perfil da Empresa criado (02/09/2026)
+
+Criado com autorização, pela conta `xdouglasdj@gmail.com`, que é o índice
+**`u/2`** do Chrome (perfil "Zumatra"). Anotar isso: `u/0` é `tvoryntis@` e
+`u/1` é `xdouglasdj2020@` — nenhuma das duas serve.
+
+Antes de criar, procurei duplicado em três lugares e não achou nenhum: Google
+Search (só concorrentes), Maps (sete resultados, nenhum é o WL) e o gerenciador
+das três contas (zero empresa em todas).
+
+Perfil: código `11038970354485641720`, nome **WL Favela Tour**, categoria
+Agência de turismo, sem endereço público, áreas Rocinha, Vidigal e São Conrado,
+telefone `+55 21 99555-0707`, site `https://www.wlfavelatour.com.br/`.
+
+O nome não é "WL Tour" porque já existe uma empresa com esse nome em Inhaúma. O
+Douglas escolheu "WL Favela Tour", que casa com o domínio e com o Instagram.
+
+**Onde parou:** o Google pediu endereço de correspondência para mandar o código.
+Não informei nada — endereço não se inventa, e é do titular. O perfil está como
+"Verificação obrigatória", e enquanto isso **não aparece** na Pesquisa nem no
+Maps.
+
+**Por isso continuam abertos:** o `sameAs` no `index.html` (não existe URL
+pública ainda), os horários, a descrição e as fotos dentro do perfil, e o D5
+inteiro (o link de avaliação só nasce com o perfil verificado).
+
+## Próximo passo
+
+Decidir com o Wallace qual caminho de verificação usar. Depois disso: preencher
+horários e descrição no perfil, e só então o `sameAs` e o D5.
