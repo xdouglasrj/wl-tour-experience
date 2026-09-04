@@ -69,3 +69,16 @@ Duas perguntas voltaram pela metade. Reenviar só estas duas:
 passeio é remarcado para outro dia ou o dinheiro é devolvido?
 
 **7b.** Quem conduz o passeio em inglês — você mesmo, ou outra pessoa da equipe?
+
+---
+
+## Pergunta nova, nascida do D4 (02/09/2026)
+
+O perfil foi criado, mas o Google exige verificação e a primeira tela pede um
+endereço de correspondência. O endereço **não fica público** — serve para o
+Google saber onde a empresa opera e, a partir dele, oferecer os métodos de
+verificação (vídeo, telefone ou carta). Caixa postal não é aceita.
+
+**9.** Wallace, o Google pede um endereço para confirmar que a empresa existe.
+Esse endereço **não aparece para ninguém** — o passeio continua sem endereço
+público. Qual endereço você quer usar? Pode ser o seu, na Rocinha.

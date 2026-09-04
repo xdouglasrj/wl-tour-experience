@@ -158,7 +158,7 @@ O reenvio dessas duas (6b e 7b) está escrito no fim do `PERGUNTAS-D1.md`.
 
 ## Próximo passo
 
-Reenviar 6b e 7b. Com elas, o D2 (perguntas frequentes) fica desbloqueado — as
+Reenviar 6b, 7b e a 9 (endereço para a verificação do Perfil da Empresa). Com elas, o D2 (perguntas frequentes) fica desbloqueado — as
 outras respostas do D1 já cobrem dias, horários e idade mínima. O D4 já pode
 começar: categoria, horários e descrição chegaram.
 
