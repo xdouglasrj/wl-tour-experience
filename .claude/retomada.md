@@ -1,57 +1,56 @@
-# Retomada — 04/09/2026
+# Retomada — 04/09/2026 (tarde)
 
 ## Última parte concluída
 
-Preparação do site para agentes de IA (auditoria "Is Agentic", 69/100).
-Três commits em `main`, ainda **sem push**:
+Fechados os dois pontos que faltavam da auditoria "Is Agentic" (95/100):
+404 amigável a agentes e nomes alternativos da marca.
 
-- `b082f6f` — páginas institucionais, 404 com corpo markdown, llms.txt,
-  versões markdown, negociação por `Accept`, `vercel.json`, `verify-agents.cjs`
-- `e083a69` — links de `/about`, `/contact` e `/privacy` no rodapé da home
-- `a4a0fee` — `address`, `founder`, `legalName` e `foundingDate` no nó
-  `Organization` do JSON-LD, e verificação apertada
+Commits em `main`, ainda **sem push**:
+
+- `e519a46` — merge: 404 em markdown (`middleware.js` + `scripts/test-middleware.mjs`)
+- `669b51a` — prompts da tarefa
+- `551e873` — merge: `alternateName` no JSON-LD
+- último — prompt dos nomes alternativos
+
+## O que mudou
+
+- `middleware.js`: matcher passou a cobrir qualquer caminho sem extensão.
+  Caminho fora do mapa com `Accept: text/markdown` recebe `/md/404.md` com
+  status **404** e `Content-Type: text/markdown`. As rotas em português
+  (`/sobre`, `/contato`, `/privacidade`), que existem por rewrite do
+  `vercel.json`, entraram no mapa para não caírem no ramo do 404.
+- `index.html`: `alternateName` no nó `Organization` — "WL Favela Tour",
+  "WL Rocinha Tour", "Tour na Favela Rocinha".
 
 ## Baseline de testes (04/09/2026)
 
 - `node quick-verify.cjs` → `OK: Todas as validações passaram`
-- `node verify-agents.cjs` → `OK: 36 verificações` (arquivo novo desta tarefa)
+- `node verify-agents.cjs` → `OK: 36 verificações`
+- `node scripts/test-middleware.mjs` → `OK: 13 verificações` (novo)
 - `npm run build` → verde
 
-O `quick-verify.cjs` foi atualizado nesta tarefa: passou a aceitar `@type` em
-array, e as expectativas de `robots.txt` (linha do llms.txt) e de `sitemap.xml`
-(4 `<loc>` em vez de 1) acompanharam a mudança de comportamento.
+Mutação conferida duas vezes no teste novo: trocar `status: 404` por `200` e
+remover a chave `/sobre` derrubam o teste.
 
-## O que foi verificado, e como
+## Verificado clicando
 
-- Páginas `/about`, `/contact`, `/privacy` e `/404.html` abertas no navegador em
-  `vite preview`: renderizam com a identidade do site, texto completo, títulos
-  próprios.
-- Clique real no rodapé da home → abriu a página Sobre.
-- `middleware.js` testado em Node com `fetch` de mentira: devolve markdown com
-  `Vary: Accept, Accept-Encoding` quando o `Accept` pede, e `undefined` nos
-  outros três casos.
-- Mutação em quatro pontos (tipo `Organization`, `Vary` do `vercel.json`,
-  `text/markdown` do middleware, `address` do JSON-LD): o `verify-agents.cjs`
-  caiu nos quatro.
+`vercel dev` na porta 3999, no worktree da tarefa. Medido com `curl`:
+`/` e `/sobre` em markdown → 200; `/nao-existe-123` e `/outra/coisa` em
+markdown → 404 `text/markdown` com o corpo de `/md/404.md`; em HTML seguem o
+fluxo normal.
 
 ## Próximo passo
 
-1. **Push do `main`** — depende de autorização do Douglas.
-2. Depois do deploy, conferir no site publicado (o `vite preview` não reproduz
-   a Vercel):
-   - `curl -s -o /dev/null -w "%{http_code}" https://www.wlfavelatour.com.br/rota-inexistente` → 404
-   - `curl -sI -H "Accept: text/markdown" https://www.wlfavelatour.com.br/` →
-     `content-type: text/markdown` e `vary: Accept, Accept-Encoding`
-   - `/about`, `/contact`, `/privacy`, `/sobre`, `/contato`, `/privacidade` → 200
-3. Reenviar o site ao auditor "Is Agentic" e comparar a nota.
+**Push pendente de autorização do Douglas.** Enquanto não subir, o site no ar
+continua devolvendo HTML no 404 mesmo para quem pede markdown.
 
-## Pendente com o dono (não dá para resolver aqui)
+## Pendências que não são de código
 
-- **Descoberta pela marca**: "WL Tour Experience" não traz o domínio na busca.
-  Depende da verificação do Perfil da Empresa no Google (falta endereço de
-  correspondência do titular) e de citações externas com NAP igual.
-  Quando o perfil for verificado, entra a URL dele no `sameAs` do JSON-LD.
-- **Endereço no JSON-LD**: o `PostalAddress` traz só cidade, estado e país. Não
-  tem CEP nem logradouro porque a empresa é de área de serviço e não tem
-  endereço público. Se o cliente quiser publicar um, ele informa.
+O item "Brand name discoverability" da auditoria não se resolve no site: exige
+Perfil da Empresa no Google, citações com NAP consistente e menções externas
+apontando para o domínio. É o D4/D5 do `tarefas.md`.
 
+## Sujeira conhecida
+
+`_descartavel/wt-404md/` ficou no disco (o Windows travou a pasta durante a
+remoção do worktree). O worktree já foi removido do git; sobrou só a pasta.
