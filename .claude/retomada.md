@@ -39,10 +39,16 @@ remover a chave `/sobre` derrubam o teste.
 markdown → 404 `text/markdown` com o corpo de `/md/404.md`; em HTML seguem o
 fluxo normal.
 
-## Próximo passo
+## Estado
 
-**Push pendente de autorização do Douglas.** Enquanto não subir, o site no ar
-continua devolvendo HTML no 404 mesmo para quem pede markdown.
+Push feito em 04/09/2026. Deploy da Vercel no ar e conferido em producao:
+`/nao-existe-123` e `/outra/coisa` com `Accept: text/markdown` respondem
+404 `text/markdown` com o corpo de `/md/404.md`; em HTML seguem o 404 HTML;
+`/`, `/sobre` e `/about` intactos. O `alternateName` esta publicado no JSON-LD.
+
+## Proximo passo
+
+Nada pendente nesta tarefa.
 
 ## Pendências que não são de código
 
