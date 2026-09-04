@@ -113,9 +113,20 @@ function checkJsonLdOrganization(html) {
     throw new Error('Nó Organization não encontrado no JSON-LD');
   }
   
-  let addressNode = organizationNode['address'] || (organizationNode['areaServed'] && organizationNode['areaServed']['address']);
+  if (!organizationNode['email']) {
+    throw new Error('email não encontrado no nó Organization');
+  }
+  
+  const addressNode = organizationNode['address'];
   if (!addressNode || addressNode['@type'] !== 'PostalAddress') {
     throw new Error('Endereço PostalAddress não encontrado ou inválido no nó Organization');
+  }
+  
+  const requiredAddressFields = ['addressLocality', 'addressRegion', 'addressCountry', 'postalCode'];
+  for (const field of requiredAddressFields) {
+    if (!addressNode[field]) {
+      throw new Error(`Campo obrigatório ${field} não encontrado no endereço PostalAddress`);
+    }
   }
   
   if (!organizationNode['contactPoint'] || !Array.isArray(organizationNode['contactPoint']) || organizationNode['contactPoint'].length === 0) {
