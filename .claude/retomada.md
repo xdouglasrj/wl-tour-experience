@@ -192,3 +192,19 @@ inteiro (o link de avaliação só nasce com o perfil verificado).
 
 Decidir com o Wallace qual caminho de verificação usar. Depois disso: preencher
 horários e descrição no perfil, e só então o `sameAs` e o D5.
+
+## Próximo passo, único e consolidado (02/09/2026)
+
+Mandar ao Wallace as **três perguntas em aberto**, uma por vez. O texto pronto
+das três está no fim de `docs/PERGUNTAS-D1.md`:
+
+- **6b** — chuva: com quanta antecedência avisa, e se remarca ou devolve.
+- **7b** — quem conduz o passeio em inglês.
+- **9** — endereço para a verificação do Perfil da Empresa (não fica público).
+
+Com a 6b e a 7b, o **D2** desbloqueia. Com a 9, o **D4** termina — e só então
+vêm o `sameAs` no `index.html`, os horários e a descrição dentro do perfil, e o
+**D5** inteiro.
+
+O **D6** (reconferir a indexação do `www`) roda sozinho a partir de 08/09/2026 e
+não depende de ninguém.
