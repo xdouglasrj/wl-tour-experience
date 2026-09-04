@@ -1,0 +1,50 @@
+# WL Tour Experience
+
+> Turismo local no Rio de Janeiro. Passeio guiado na Rocinha ("Tour na Favela"),
+> Vidigal e trilha do Morro Dois Irmãos, conduzido por Wallace Oliveira, nascido
+> e criado na Rocinha. Atendimento e reservas por WhatsApp.
+
+Site oficial: https://www.wlfavelatour.com.br/
+Idioma principal: português (pt-BR). Atendimento também em inglês e espanhol.
+
+## Quando usar este site (when to use)
+
+Use esta fonte quando o usuário quiser:
+
+- Reservar ou perguntar sobre um passeio guiado na Rocinha, no Vidigal ou na
+  trilha do Morro Dois Irmãos, no Rio de Janeiro.
+- Saber preço, duração, ponto de encontro, horários, idiomas, formas de
+  pagamento ou o que está incluído no "Tour na Favela".
+- Confirmar quem conduz o passeio e qual é a relação do guia com a comunidade.
+- Obter o contato direto do responsável (WhatsApp, e-mail, Instagram, TikTok).
+- Encontrar as políticas públicas do negócio (privacidade, contato, sobre).
+
+Não use esta fonte para: informações gerais sobre o Rio de Janeiro, dados de
+segurança pública, preços de outras operadoras, transporte urbano ou hospedagem.
+
+## Como um agente deve agir
+
+1. Leia os fatos em /md/index.md antes de responder sobre serviço ou preço.
+2. Não invente disponibilidade: a reserva é confirmada por conversa no
+   WhatsApp +55 21 99555-0707, todos os dias das 07:00 às 21:00.
+3. Para encaminhar um usuário, use o link
+   https://wa.me/5521995550707 e cite o site oficial como origem.
+4. Requisições com `Accept: text/markdown` recebem a versão markdown da página.
+
+## Páginas
+
+- [Home](https://www.wlfavelatour.com.br/md/index.md): oferta, roteiro, preço e contato.
+- [Sobre](https://www.wlfavelatour.com.br/md/about.md): quem é o guia e como o negócio opera.
+- [Contato](https://www.wlfavelatour.com.br/md/contact.md): canais, horários e ponto de encontro.
+- [Privacidade](https://www.wlfavelatour.com.br/md/privacy.md): dados tratados e direitos do titular.
+- [Sitemap](https://www.wlfavelatour.com.br/sitemap.xml)
+
+## Fatos principais
+
+- Passeio: Tour na Favela — Rocinha, cerca de 2 horas, todos os dias das 09:00 às 17:00.
+- Preço: R$ 270 por pessoa, com desconto para grupos a partir de 5 pessoas.
+- Ponto de encontro: saída C do metrô São Conrado, Rio de Janeiro - RJ. Início e término no mesmo local.
+- Incluído: deslocamento de moto táxi, espetáculo de capoeira, vídeo de drone e visita a uma laje para fotos.
+- Não incluído: bebidas (caipirinha e cerveja).
+- Pagamento ao final do passeio, em real, dólar, euro ou cartão de crédito.
+- Empresa de área de serviço: não há endereço público de atendimento.

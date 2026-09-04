@@ -53,6 +53,11 @@ function getLinkHref(html, rel) {
   return m ? m[1] : null;
 }
 
+function temTipo(no, tipo) {
+  const t = no['@type'];
+  return t === tipo || (Array.isArray(t) && t.includes(tipo));
+}
+
 const distHtml = readFile('dist/index.html');
 const rootContent = extractRootDiv(distHtml);
 
@@ -103,17 +108,24 @@ if (jsonLd['@context'] !== 'https://schema.org') {
 }
 
 const graph = jsonLd['@graph'];
-const types = graph.map(n => n['@type']).filter(Boolean);
 const typeCounts = {};
-for (const t of types) typeCounts[t] = (typeCounts[t] || 0) + 1;
+for (const n of graph) {
+  const t = n['@type'];
+  if (!t) continue;
+  if (Array.isArray(t)) {
+    for (const item of t) typeCounts[item] = (typeCounts[item] || 0) + 1;
+  } else {
+    typeCounts[t] = (typeCounts[t] || 0) + 1;
+  }
+}
 
 if (typeCounts['TravelAgency'] !== 1) fail('Deve haver exatamente 1 TravelAgency');
 if (typeCounts['TouristTrip'] !== 1) fail('Deve haver exatamente 1 TouristTrip');
 if (typeCounts['WebSite'] !== 1) fail('Deve haver exatamente 1 WebSite');
 
-const org = graph.find(n => n['@type'] === 'TravelAgency');
-const trip = graph.find(n => n['@type'] === 'TouristTrip');
-const site = graph.find(n => n['@type'] === 'WebSite');
+const org = graph.find(n => temTipo(n, 'TravelAgency'));
+const trip = graph.find(n => temTipo(n, 'TouristTrip'));
+const site = graph.find(n => temTipo(n, 'WebSite'));
 
 if (!org['@id'] || !org['@id'].endsWith('#organizacao')) fail('TravelAgency @id deve terminar em #organizacao');
 if (!trip['@id'] || !trip['@id'].endsWith('#passeio-rocinha')) fail('TouristTrip @id deve terminar em #passeio-rocinha');
@@ -132,14 +144,14 @@ const allSrc = readFile('src/App.js') + readFile('src/App.css') + readFile('src/
 if (allSrc.includes('expériences')) fail('Termo "expériences" encontrado');
 
 const robots = readFile('dist/robots.txt').replace(/\r\n/g, '\n').trim();
-const expectedRobots = 'User-agent: *\nAllow: /\n\nSitemap: https://www.wlfavelatour.com.br/sitemap.xml';
+const expectedRobots = 'User-agent: *\nAllow: /\n\nSitemap: https://www.wlfavelatour.com.br/sitemap.xml\n\n# llms.txt: https://www.wlfavelatour.com.br/llms.txt';
 if (robots !== expectedRobots) fail('robots.txt não normalizado');
 
 const sitemap = readFile('dist/sitemap.xml');
 if (!sitemap.startsWith('<?xml')) fail('Sitemap deve ter declaração XML');
 if (!sitemap.includes('<urlset')) fail('Sitemap deve ter urlset');
 const locMatches = sitemap.match(/<loc>([^<]+)<\/loc>/g);
-if (!locMatches || locMatches.length !== 1) fail('Sitemap deve ter exatamente um <loc>');
+if (!locMatches || locMatches.length !== 4) fail('Sitemap deve ter exatamente 4 <loc>');
 const locUrl = locMatches[0].match(/<loc>([^<]+)<\/loc>/)[1];
 if (locUrl !== 'https://www.wlfavelatour.com.br/') fail('Sitemap <loc> deve ser URL oficial');
 

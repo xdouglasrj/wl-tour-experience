@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.wlfavelatour.com.br/sitemap.xml
+
+# llms.txt: https://www.wlfavelatour.com.br/llms.txt
