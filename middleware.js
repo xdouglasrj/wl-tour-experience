@@ -1,4 +1,4 @@
-export const config = { matcher: ["/", "/about", "/contact", "/privacy"] };
+export const config = { matcher: ["/((?!assets/|img/|md/|favicon|robots|sitemap|llms).*)"] };
 
 export default async function middleware(request) {
   try {
@@ -9,7 +9,10 @@ export default async function middleware(request) {
         "/": "/md/index.md",
         "/about": "/md/about.md",
         "/contact": "/md/contact.md",
-        "/privacy": "/md/privacy.md"
+        "/privacy": "/md/privacy.md",
+        "/sobre": "/md/about.md",
+        "/contato": "/md/contact.md",
+        "/privacidade": "/md/privacy.md"
       };
 
       const { pathname } = new URL(request.url);
@@ -31,6 +34,29 @@ export default async function middleware(request) {
               "Vary": "Accept, Accept-Encoding",
               "Cache-Control": "public, max-age=0, must-revalidate",
               "Link": "<https://www.wlfavelatour.com.br/llms.txt>; rel=\"alternate\"; type=\"text/plain\""
+            }
+          });
+        } catch (error) {
+          // Em caso de erro, continuar com o HTML normal
+          return undefined;
+        }
+      }
+
+      // Caminho fora do mapa: o 404 também tem versão markdown
+      if (!pathname.includes(".")) {
+        try {
+          const markdownResponse = await fetch(new URL("/md/404.md", request.url));
+          if (!markdownResponse.ok) {
+            return undefined;
+          }
+
+          const markdownContent = await markdownResponse.text();
+          return new Response(markdownContent, {
+            status: 404,
+            headers: {
+              "Content-Type": "text/markdown; charset=utf-8",
+              "Vary": "Accept, Accept-Encoding",
+              "Cache-Control": "public, max-age=0, must-revalidate"
             }
           });
         } catch (error) {
