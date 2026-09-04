@@ -1,0 +1,1 @@
+Um ajuste só em `middleware.js`: a linha `} catch (error) {` do bloco novo do 404 está encostada na margem esquerda. Recue para 8 espaços, alinhada ao `});` acima dela. Nada mais muda. Nenhum commit, nenhum outro arquivo.
