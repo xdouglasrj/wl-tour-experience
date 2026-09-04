@@ -122,7 +122,7 @@ function checkJsonLdOrganization(html) {
     throw new Error('Endereço PostalAddress não encontrado ou inválido no nó Organization');
   }
   
-  const requiredAddressFields = ['addressLocality', 'addressRegion', 'addressCountry', 'postalCode'];
+  const requiredAddressFields = ['addressLocality', 'addressRegion', 'addressCountry'];
   for (const field of requiredAddressFields) {
     if (!addressNode[field]) {
       throw new Error(`Campo obrigatório ${field} não encontrado no endereço PostalAddress`);
