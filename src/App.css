@@ -899,6 +899,30 @@ main section.instagram {
 .footer-contact a:hover {
   color: var(--yellow);
 }
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.footer-links a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #9A9A9A;
+}
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: #E8A521;
+}
+.footer-links a:focus-visible {
+  outline: 1px solid #E8A521;
+  outline-offset: 3px;
+}
 .footer-note {
   grid-column: 1/-1;
   border-top: 1px solid var(--line);

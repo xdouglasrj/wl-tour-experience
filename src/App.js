@@ -352,8 +352,11 @@ const localized = {
       gallery: "GALERIA",
       testimonials: "DEPOIMENTOS",
       contact: "CONTATO",
+      contactPage: "CONTATO",
       instagram: "SIGA NO INSTAGRAM",
       motto: "CAMINHO · CULTURA · MEMÓRIA",
+      about: "SOBRE",
+      privacy: "PRIVACIDADE",
     },
     benefits,
   },
@@ -388,8 +391,11 @@ const localized = {
       gallery: "GALLERY",
       testimonials: "TESTIMONIALS",
       contact: "CONTACT",
+      contactPage: "CONTACT",
       instagram: "FOLLOW ON INSTAGRAM",
       motto: "ROAD · CULTURE · MEMORY",
+      about: "ABOUT",
+      privacy: "PRIVACY",
     },
     benefits: [
       [
@@ -438,8 +444,11 @@ const localized = {
       gallery: "GALERÍA",
       testimonials: "TESTIMONIOS",
       contact: "CONTACTO",
+      contactPage: "CONTACTO",
       instagram: "SIGUE EN INSTAGRAM",
       motto: "CAMINO · CULTURA · MEMORIA",
+      about: "SOBRE",
+      privacy: "PRIVACIDAD",
     },
     benefits: [
       [
@@ -1174,6 +1183,11 @@ function App() {
           </a>
         </div>
         <div className="footer-note">
+          <div className="footer-links">
+            <a href="/about">{l.labels.about}</a>
+            <a href="/contact">{l.labels.contactPage}</a>
+            <a href="/privacy">{l.labels.privacy}</a>
+          </div>
           {l.footerNote}
           <br />
           <span>© 2025 WL TOUR EXPERIENCE · RIO DE JANEIRO, BRASIL</span>
