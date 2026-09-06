@@ -58,7 +58,7 @@ Existe idade mínima para participar?
 | 4 | Horário do WhatsApp | Das 07:00 às 21:00 — corrige o 6h–23h que constava antes | 01/09/2026 |
 | 5 | Descrição | Palavras do cliente: "Uma experiência incrível que ficará guardada na memória. Total segurança para nossos clientes, passa confiança e mostra outro lado da favela que eles não conhecem." | 01/09/2026 |
 | 6 | Regra de chuva | Em dia de chuva é melhor adiar o passeio: a filmagem de drone não acontece e andar de moto na chuva fica perigoso. Avisa com **pelo menos 2 dias** de antecedência, e a saída é **remarcar**: adiantar o passeio ou adiar para um dia sem chuva. **Sem resposta:** o que acontece se o cliente não puder na data nova — devolve o dinheiro? | 06/09/2026 |
-| 7 | Inglês | Suporte 100% em inglês. **Sem resposta:** quem conduz o passeio em inglês | 01/09/2026 |
+| 7 | Inglês | Suporte 100% em inglês. O passeio em inglês é conduzido por **um funcionário, junto com o Wallace** — não é o Wallace sozinho | 06/09/2026 |
 | 8 | Idade mínima | Não há idade mínima, desde que acompanhado de responsável legal maior de 18 anos | 01/09/2026 |
 
 ## Ainda em aberto
@@ -69,7 +69,8 @@ Duas perguntas voltaram pela metade. Reenviar só estas duas:
 remarca, adiantando ou adiando. Falta: e se o cliente não puder na data nova, e
 já tiver pago alguma coisa — devolve o dinheiro?
 
-**7b.** Quem conduz o passeio em inglês — você mesmo, ou outra pessoa da equipe?
+**7b.** Respondida em 06/09/2026: um funcionário conduz em inglês, junto com o
+Wallace. Falta o nome do funcionário, se ele quiser que apareça no site.
 
 ---
 

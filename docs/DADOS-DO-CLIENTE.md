@@ -60,7 +60,7 @@ por convite.
 | Atendimento no WhatsApp | Todos os dias, das 07:00 às 21:00 | Confirmado pelo cliente em 01/09/2026 (D1); corrige o 6h–23h anterior |
 | Tempo habitual de resposta | 5 a 10 minutos | Confirmado pelo cliente |
 | Idiomas no WhatsApp | Português, inglês e espanhol | Confirmado pelo cliente |
-| Idiomas conduzidos pessoalmente | Português e espanhol | Inglês durante o passeio precisa ser explicado, pois também foi citado em outras respostas |
+| Idiomas conduzidos pessoalmente | Português e espanhol | O passeio em inglês é conduzido por um funcionário, junto com o Wallace (06/09/2026) |
 
 ### Responsável e confiança
 
@@ -460,7 +460,7 @@ das perguntas está em `docs/PERGUNTAS-D1.md`.
 | Atendimento no WhatsApp | Das 07:00 às 21:00 | **Corrige** o 6h–23h registrado antes |
 | Descrição do passeio | “Uma experiência incrível que ficará guardada na memória. Total segurança para nossos clientes, passa confiança e mostra outro lado da favela que eles não conhecem.” | Palavras do cliente; precisa de redação final antes de publicar |
 | Regra de chuva | Em dia de chuva o passeio é adiado: a filmagem de drone não acontece e andar de moto na chuva fica perigoso. Aviso com **pelo menos 2 dias**, e a saída é remarcar: adiantar o passeio ou adiar para um dia sem chuva | Declarado pelo cliente em 06/09/2026. **Pendente:** o que acontece se o cliente não puder na data nova |
-| Inglês | Suporte 100% em inglês | Quem conduz o passeio em inglês continua **pendente** |
+| Inglês | Suporte 100% em inglês. O passeio em inglês é conduzido por **um funcionário, junto com o Wallace** | Declarado pelo cliente em 06/09/2026. O nome do funcionário não foi informado |
 | Idade mínima | Não há idade mínima, desde que acompanhado de responsável legal maior de 18 anos | Confirmado |
 
 ---
