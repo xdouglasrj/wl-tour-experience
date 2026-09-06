@@ -357,8 +357,56 @@ const localized = {
       motto: "CAMINHO · CULTURA · MEMÓRIA",
       about: "SOBRE",
       privacy: "PRIVACIDADE",
+      faq: "PERGUNTAS FREQUENTES",
     },
     benefits,
+    faq: [
+      {
+        q: "Quanto tempo dura o passeio?",
+        a: "Aproximadamente 2 horas, do começo ao fim.",
+      },
+      {
+        q: "Onde o passeio começa e termina?",
+        a: "Na saída C do metrô São Conrado. O começo e o fim são no mesmo lugar.",
+      },
+      {
+        q: "Em quais dias e horários o passeio acontece?",
+        a: "Todos os dias, das 09:00 às 17:00.",
+      },
+      {
+        q: "O que está incluído?",
+        a: "Deslocamento de moto táxi, espetáculo de capoeira, vídeo de drone e visita a uma laje para fotos.",
+      },
+      {
+        q: "O que não está incluído?",
+        a: "Bebidas, como caipirinha e cerveja.",
+      },
+      {
+        q: "O passeio é privado ou compartilhado?",
+        a: "Existem os dois formatos: privado ou compartilhado.",
+      },
+      {
+        q: "Quem conduz o passeio?",
+        a: "Wallace Oliveira, nascido e criado na Rocinha.",
+      },
+      {
+        q: "Em quais idiomas o passeio é conduzido?",
+        a: "O Wallace conduz em português e espanhol. O atendimento também é feito em inglês.",
+      },
+      { q: "Como funciona o pagamento?", a: "O pagamento é feito ao final do passeio." },
+      {
+        q: "Quais formas de pagamento são aceitas?",
+        a: "Real, dólar, euro e cartão de crédito.",
+      },
+      {
+        q: "Quem pode participar?",
+        a: "Pessoas sozinhas, casais, famílias, crianças, idosos e grupos privados. Não há idade mínima, desde que a criança esteja acompanhada de um responsável legal maior de 18 anos.",
+      },
+      {
+        q: "E se chover?",
+        a: "Em dia de muita chuva o passeio é adiado: a filmagem de drone não acontece e andar de moto na chuva é perigoso.",
+      },
+    ],
   },
   en: {
     reserve: "Book",
@@ -396,6 +444,7 @@ const localized = {
       motto: "ROAD · CULTURE · MEMORY",
       about: "ABOUT",
       privacy: "PRIVACY",
+      faq: "FREQUENTLY ASKED QUESTIONS",
     },
     benefits: [
       [
@@ -411,6 +460,50 @@ const localized = {
         "Video / aerial record",
         "When possible, record the experience from above.",
       ],
+    ],
+    faq: [
+      { q: "How long is the tour?", a: "About 2 hours, from start to finish." },
+      {
+        q: "Where does the tour start and end?",
+        a: "At exit C of the São Conrado metro station. It starts and ends at the same place.",
+      },
+      {
+        q: "Which days and times does the tour run?",
+        a: "Every day, from 9:00 to 17:00.",
+      },
+      {
+        q: "What is included?",
+        a: "Motorcycle taxi ride, a capoeira performance, a drone video and a visit to a rooftop for photos.",
+      },
+      {
+        q: "What is not included?",
+        a: "Drinks, such as caipirinha and beer.",
+      },
+      {
+        q: "Is the tour private or shared?",
+        a: "Both formats exist: private or shared.",
+      },
+      {
+        q: "Who guides the tour?",
+        a: "Wallace Oliveira, born and raised in Rocinha.",
+      },
+      {
+        q: "Which languages is the tour guided in?",
+        a: "Wallace guides in Portuguese and Spanish. Support is also available in English.",
+      },
+      { q: "How does payment work?", a: "Payment is made at the end of the tour." },
+      {
+        q: "Which payment methods are accepted?",
+        a: "Brazilian real, US dollar, euro and credit card.",
+      },
+      {
+        q: "Who can join the tour?",
+        a: "Solo travellers, couples, families, children, older people and private groups. There is no minimum age, as long as a child is accompanied by a legal guardian over 18.",
+      },
+      {
+        q: "What happens if it rains?",
+        a: "On a very rainy day the tour is postponed: the drone cannot film and riding a motorcycle in the rain is dangerous.",
+      },
     ],
   },
   es: {
@@ -449,6 +542,7 @@ const localized = {
       motto: "CAMINO · CULTURA · MEMORIA",
       about: "SOBRE",
       privacy: "PRIVACIDAD",
+      faq: "PREGUNTAS FRECUENTES",
     },
     benefits: [
       [
@@ -467,6 +561,56 @@ const localized = {
         "Vídeo / registro aéreo",
         "Cuando sea posible, registra la experiencia desde el aire.",
       ],
+    ],
+    faq: [
+      {
+        q: "¿Cuánto dura el paseo?",
+        a: "Aproximadamente 2 horas, de principio a fin.",
+      },
+      {
+        q: "¿Dónde empieza y termina el paseo?",
+        a: "En la salida C del metro São Conrado. Empieza y termina en el mismo lugar.",
+      },
+      {
+        q: "¿Qué días y horarios funciona el paseo?",
+        a: "Todos los días, de 09:00 a 17:00.",
+      },
+      {
+        q: "¿Qué incluye?",
+        a: "Traslado en mototaxi, espectáculo de capoeira, video con dron y visita a una azotea para fotos.",
+      },
+      {
+        q: "¿Qué no incluye?",
+        a: "Bebidas, como caipiriña y cerveza.",
+      },
+      {
+        q: "¿El paseo es privado o compartido?",
+        a: "Existen los dos formatos: privado o compartido.",
+      },
+      {
+        q: "¿Quién guía el paseo?",
+        a: "Wallace Oliveira, nacido y criado en la Rocinha.",
+      },
+      {
+        q: "¿En qué idiomas se guía el paseo?",
+        a: "Wallace guía en portugués y español. La atención también se hace en inglés.",
+      },
+      {
+        q: "¿Cómo funciona el pago?",
+        a: "El pago se hace al final del paseo.",
+      },
+      {
+        q: "¿Qué formas de pago se aceptan?",
+        a: "Real, dólar, euro y tarjeta de crédito.",
+      },
+      {
+        q: "¿Quién puede participar?",
+        a: "Personas solas, parejas, familias, niños, personas mayores y grupos privados. No hay edad mínima, siempre que el niño esté acompañado por un responsable legal mayor de 18 años.",
+      },
+      {
+        q: "¿Y si llueve?",
+        a: "En día de mucha lluvia el paseo se aplaza: el dron no puede filmar y andar en moto bajo la lluvia es peligroso.",
+      },
     ],
   },
 };
@@ -1115,6 +1259,21 @@ function App() {
               <Instagram size={18} /> @wl.rocinha95 <ArrowUpRight size={18} />
             </a>
             <p className="micro qr-text">{l.scan}</p>
+          </div>
+        </section>
+        <section className="faq section-pad" id="faq" data-testid="faq-section">
+          <div className="section-label">{l.labels.faq}</div>
+          <div className="faq-list">
+            {l.faq.map((item, i) => (
+              <details
+                key={item.q}
+                className="faq-item reveal"
+                style={{ transitionDelay: revealDelays[i % revealDelays.length] }}
+              >
+                <summary>{item.q}</summary>
+                <p>{item.a}</p>
+              </details>
+            ))}
           </div>
         </section>
         <section

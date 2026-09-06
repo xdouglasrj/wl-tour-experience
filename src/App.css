@@ -1270,3 +1270,28 @@ main section.instagram {
     transition-duration: 0.01ms !important;
   }
 }
+.faq .section-label {
+  margin-bottom: 20px;
+}
+.faq-list {
+  max-width: 760px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 4px 0;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 14px 0;
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item p {
+  color: var(--muted);
+  margin: 0 0 16px;
+  line-height: 1.6;
+  max-width: 640px;
+}
