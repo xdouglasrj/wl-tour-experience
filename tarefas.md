@@ -3,28 +3,25 @@
 As medidas e as regras deste produto estão em `docs/PRODUTO.md`.
 O método de trabalho é global, em `~/.claude/CLAUDE.md`.
 
-## Onde o projeto parou (01/09/2026)
+## Onde o projeto parou (06/09/2026)
 
-O `main` foi publicado. O `origin` já tinha dois commits com o mesmo trabalho
-de GTM e SEO, feitos por outro caminho; o `index.html` era idêntico ao local, e
-os dois lados foram juntados por merge. O site no ar está em `8165b67`.
+O site no ar já traz o dado estruturado completo e a seção de perguntas
+frequentes. Fechados nesta sessão, todos em `main` e ainda **sem push**:
 
-Conferido no navegador em `https://www.wlfavelatour.com.br/`, sem erro no
-console: o `gtm.js?id=GTM-5B2SLVVG` responde `200`, a tag de configuração do
-GA4 `G-G9SGTTXK6F` já está publicada no contêiner e manda o `page_view`, e o
-`dataLayer` recebe os nove cliques da página.
+- **D3** — nó `Person` do Wallace no `@graph`, referenciado por `founder` e
+  `employee` a partir da organização. Agora existe um humano citável.
+- **D8** — o preço saiu dos quatro arquivos que a IA e o buscador leem
+  (`public/llms.txt`, `public/about.html`, `public/md/about.md`,
+  `public/md/index.md`). O valor passa a ser informado no atendimento.
+- **D2** — doze perguntas frequentes visíveis em `<details>`/`<summary>`, nos
+  três idiomas, mais o nó `FAQPage` com o mesmo texto palavra por palavra.
 
-Conferido também dentro dos painéis, em 01/09/2026, pela conta
-`xdouglasdj@gmail.com`:
+A baseline de testes subiu de 36 para **42 verificações** no
+`verify-agents.cjs`, com seis checagens novas que leem o JSON-LD já parseado.
 
-- **GTM:** contêiner `GTM-5B2SLVVG` na conta "WL Favela Tour", versão 2 ativa,
-  publicada em 31/08. Duas tags — `GA4 - Configuração - Todas as páginas` e
-  `GA4 - Eventos de contato` — e um acionador de evento personalizado,
-  `Contato - WhatsApp, telefone e Instagram`. Zero alteração pendente.
-- **GA4:** o tempo real registrou `whatsapp_click` 10, `instagram_click` 6 e
-  `phone_click` 2, batendo exatamente com os dois testes feitos no navegador.
-- **Search Console:** o sitemap na forma `www` foi enviado e já consta
-  `Processado`, com 1 página e sem erro.
+O GTM, o GA4 e o Search Console continuam como em 01/09/2026: contêiner
+`GTM-5B2SLVVG` publicado, GA4 `G-G9SGTTXK6F` recebendo os cliques, e o sitemap
+na forma `www` processado sem erro.
 
 ## Objetivo do trabalho atual
 
@@ -79,47 +76,6 @@ PRONTO QUANDO: as oito estão respondidas e escritas no
 `docs/DADOS-DO-CLIENTE.md`, cada uma com a data.
 FORA DE ESCOPO: as outras 34 pendências do questionário grande. Aqui é só o que
 trava.
-
-### D2. Perguntas frequentes visíveis na página
-
-OBJETIVO: a página responder por escrito o que as pessoas perguntam antes de
-reservar, e o mesmo conteúdo existir como dado estruturado `FAQPage`.
-ARQUIVOS: `src/App.js` (seção nova e os três dicionários de idioma),
-`index.html` (novo nó no `@graph`).
-REGRAS APLICÁVEIS: **nenhum valor, em nenhum idioma, em nenhum campo** — nem
-"a partir de", nem faixa. O site é trilíngue: todo texto novo entra em pt-BR, en
-e es. O acabamento aprovado não muda; a seção nova segue as medidas de
-`docs/PRODUTO.md`.
-CONTEÚDO, só do que o Wallace já confirmou: duração de cerca de 2 horas; ponto
-de encontro na saída C do metrô São Conrado, com início e fim no mesmo lugar; o
-que está incluso (moto táxi, capoeira, vídeo de drone, laje para fotos); o que
-não está (caipirinha e cerveja); privado ou compartilhado; quem é o guia;
-pagamento ao final; formas de pagamento aceitas; quem pode participar.
-DEPENDE DO D1: dias e horários, regra da chuva, idade mínima e o idioma inglês.
-Enquanto não vierem, essas perguntas **não entram** — nem com texto provisório.
-CASOS DE BORDA: o Google desconsidera `FAQPage` cujo texto não aparece na tela;
-o dado estruturado tem que espelhar palavra por palavra o que está visível.
-PRONTO QUANDO: a seção aparece nos três idiomas em 390 px e em desktop; o
-`FAQPage` valida no Rich Results Test sem erro; `npm run build` verde e
-`node quick-verify.cjs` passa.
-FORA DE ESCOPO: preço, avaliações, depoimentos.
-
-### D3. Dizer quem é o Wallace, para máquina
-
-OBJETIVO: existir um `Person` no dado estruturado, ligado à organização como
-fundador e guia. É o que dá à IA um humano para citar.
-ARQUIVOS: `index.html` — novo nó no `@graph` e referência a partir da
-`TravelAgency`.
-REGRAS APLICÁVEIS: só fato já autorizado pelo cliente. **Não entram** Cadastur,
-cursos e seguro — ele mesmo pediu para não publicar antes da comprovação.
-CONTEÚDO CONFIRMADO: nome Wallace Oliveira; nasceu e foi criado na Rocinha,
-autorizado para publicação; guia e anfitrião do passeio; conduz em português e
-espanhol.
-CASOS DE BORDA: "2 anos e meio de experiência" envelhece sozinho. Publicar o ano
-de início, não a duração — e o mês e ano exatos ainda são pendência do cliente.
-PRONTO QUANDO: o `Person` valida sem erro, está ligado por `founder` e
-`employee` à `TravelAgency`, e nenhuma credencial não comprovada aparece.
-FORA DE ESCOPO: foto do Wallace, biografia visível na página.
 
 ### D4. Perfil da Empresa no Google
 
@@ -233,4 +189,4 @@ não é reserva fechada. Depende do Douglas dizer o que conta como conversão.
 
 Categoria, dias e horários e descrição para o Perfil da Empresa no Google. Vira
 o **D1**, que quebra o pedido em oito perguntas de uma coisa só e diz por que a
-forma anterior falhou. Sem essas respostas, D2 e D4 não fecham.
+forma anterior falhou. Sem essas respostas, o D4 não fecha.

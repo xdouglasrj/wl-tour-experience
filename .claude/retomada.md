@@ -1,62 +1,63 @@
-# Retomada — 04/09/2026 (tarde)
+# Retomada — 06/09/2026
 
 ## Última parte concluída
 
-Fechados os dois pontos que faltavam da auditoria "Is Agentic" (95/100):
-404 amigável a agentes e nomes alternativos da marca.
+Três tarefas fechadas, auditadas e mescladas em `main`, **sem push**:
 
-Commits em `main`, ainda **sem push**:
+- **D3** — nó `Person` (`@id` `#wallace`) no `@graph`, com `founder` e
+  `employee` da organização apontando para ele. Diff de 16 inserções.
+- **D8** — preço fora de `public/llms.txt`, `public/about.html`,
+  `public/md/about.md` e `public/md/index.md`.
+- **D2** — seção `#faq` com doze perguntas em `<details>`/`<summary>`, nos três
+  idiomas, mais o nó `FAQPage` (`@id` `#perguntas`) com o mesmo texto pt-BR
+  palavra por palavra, e seis verificações novas no `verify-agents.cjs`.
 
-- `e519a46` — merge: 404 em markdown (`middleware.js` + `scripts/test-middleware.mjs`)
-- `669b51a` — prompts da tarefa
-- `551e873` — merge: `alternateName` no JSON-LD
-- último — prompt dos nomes alternativos
-
-## O que mudou
-
-- `middleware.js`: matcher passou a cobrir qualquer caminho sem extensão.
-  Caminho fora do mapa com `Accept: text/markdown` recebe `/md/404.md` com
-  status **404** e `Content-Type: text/markdown`. As rotas em português
-  (`/sobre`, `/contato`, `/privacidade`), que existem por rewrite do
-  `vercel.json`, entraram no mapa para não caírem no ramo do 404.
-- `index.html`: `alternateName` no nó `Organization` — "WL Favela Tour",
-  "WL Rocinha Tour", "Tour na Favela Rocinha".
-
-## Baseline de testes (04/09/2026)
+## Baseline de testes (06/09/2026)
 
 - `node quick-verify.cjs` → `OK: Todas as validações passaram`
-- `node verify-agents.cjs` → `OK: 36 verificações`
-- `node scripts/test-middleware.mjs` → `OK: 13 verificações` (novo)
+- `node verify-agents.cjs` → `OK: 42 verificações` (era 36; seis novas do D2)
+- `node scripts/test-middleware.mjs` → `OK: 13 verificações`
 - `npm run build` → verde
 
-Mutação conferida duas vezes no teste novo: trocar `status: 404` por `200` e
-remover a chave `/sobre` derrubam o teste.
+Mutação conferida nas verificações novas: esvaziar o `name` de uma pergunta
+derruba com "Item do FAQPage deve ter name e acceptedAnswer.text não vazios";
+remover o `employee` da organização derruba com "Organization deve referenciar
+Wallace como employee". As duas foram restauradas.
 
 ## Verificado clicando
 
-`vercel dev` na porta 3999, no worktree da tarefa. Medido com `curl`:
-`/` e `/sobre` em markdown → 200; `/nao-existe-123` e `/outra/coisa` em
-markdown → 404 `text/markdown` com o corpo de `/md/404.md`; em HTML seguem o
-fluxo normal.
+`npm run preview` na porta 4177, no `main` já mesclado. Clique real de mouse em
+"Em quais dias e horários o passeio acontece?" abriu o item. Em 375 px de
+largura não há rolagem horizontal e a lista fica com 322 px. Trocando o idioma
+pelo botão do topo: `FREQUENTLY ASKED QUESTIONS` / "How long is the tour?" e
+`PREGUNTAS FRECUENTES` / "¿Cuánto dura el paseo?", doze itens em cada idioma.
 
-## Estado
+O painel de navegador devolve captura preta nessa faixa da página; a conferência
+foi feita por geometria e estilo computado do DOM mais o clique de mouse, que
+funcionaram. Não é defeito da página.
 
-Push feito em 04/09/2026. Deploy da Vercel no ar e conferido em producao:
-`/nao-existe-123` e `/outra/coisa` com `Accept: text/markdown` respondem
-404 `text/markdown` com o corpo de `/md/404.md`; em HTML seguem o 404 HTML;
-`/`, `/sobre` e `/about` intactos. O `alternateName` esta publicado no JSON-LD.
+## Delegação
 
-## Proximo passo
+O `nemotron-3-super-120b-a12b` entregou o D8 e depois travou no D2 inteiro,
+gerando JSON inválido. Quem fechou o D2, em duas partes, foi o
+`deepseek-ai/deepseek-v4-flash-0731`. O `stepfun-ai/step-3.7-flash` está morto:
+`410 Gone`, fim de vida em 28/08/2026.
 
-Nada pendente nesta tarefa.
+Quebrar o D2 em duas delegações (tela primeiro, dado estruturado depois) foi o
+que destravou. Uma delegação só, com quatro arquivos, travou duas vezes.
 
-## Pendências que não são de código
+## Próximo passo
 
-O item "Brand name discoverability" da auditoria não se resolve no site: exige
-Perfil da Empresa no Google, citações com NAP consistente e menções externas
-apontando para o domínio. É o D4/D5 do `tarefas.md`.
+Nada de código pendente sem depender do cliente. Restam **D1**, **D4**, **D5**,
+**D6** e **D7**, todos travados por resposta do Wallace, por painel do Google ou
+por decisão do Douglas.
 
-## Sujeira conhecida
+## Pendências que dependem do Douglas
 
-`_descartavel/wt-404md/` ficou no disco (o Windows travou a pasta durante a
-remoção do worktree). O worktree já foi removido do git; sobrou só a pasta.
+- **Push.** Cinco commits em `main` esperando autorização.
+- **D6.** A extensão do Chrome não está conectada, então não dá para abrir o
+  Search Console logado e conferir o canônico do `www`.
+- **Cópia local do harness.** `scripts/harness/` e `.claude/hooks/` são cópias
+  de 24/08 do harness global, que é de 01/09, e o `.claude/settings.json` está
+  modificado apontando para elas. A remoção foi negada na sessão; ficam como
+  estão até ele decidir.
