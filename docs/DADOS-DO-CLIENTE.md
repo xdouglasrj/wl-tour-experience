@@ -94,7 +94,7 @@ por convite.
 | Idiomas anunciados no passeio | Português, inglês e espanhol | Conflita com a resposta de condução pessoal somente em português e espanhol; confirmar quem conduz em inglês |
 | Incluído | Moto táxi, espetáculo de capoeira, vídeo de drone e visita a uma laje para fotos | Confirmado como oferta, sujeito às pendências de segurança, operação e drone |
 | Não incluído | Caipirinha e cerveja | Confirmado pelo cliente |
-| Cancelamento por clima | Muita chuva | Falta regra objetiva de aviso e remarcação |
+| Cancelamento por clima | Muita chuva | Aviso com pelo menos 2 dias; remarca — adianta ou adia para dia sem chuva (06/09/2026). Falta a regra de devolução |
 | Pagamento | Ao final do passeio | Não responde integralmente cancelamento, atraso, ausência ou reembolso |
 | Formas de pagamento | Real, dólar, euro e cartão de crédito | Confirmado pelo cliente |
 | Preço | R$ 270 por pessoa; desconto a partir de 5 pessoas | Falta informar valor ou regra do desconto |
@@ -459,7 +459,7 @@ das perguntas está em `docs/PERGUNTAS-D1.md`.
 | Horários do passeio | Das 09:00 às 17:00 | Confirmado |
 | Atendimento no WhatsApp | Das 07:00 às 21:00 | **Corrige** o 6h–23h registrado antes |
 | Descrição do passeio | “Uma experiência incrível que ficará guardada na memória. Total segurança para nossos clientes, passa confiança e mostra outro lado da favela que eles não conhecem.” | Palavras do cliente; precisa de redação final antes de publicar |
-| Regra de chuva | Em dia de chuva o passeio é adiado: a filmagem de drone não acontece e andar de moto na chuva fica perigoso | Antecedência do aviso e a escolha entre remarcar e devolver continuam **pendentes** |
+| Regra de chuva | Em dia de chuva o passeio é adiado: a filmagem de drone não acontece e andar de moto na chuva fica perigoso. Aviso com **pelo menos 2 dias**, e a saída é remarcar: adiantar o passeio ou adiar para um dia sem chuva | Declarado pelo cliente em 06/09/2026. **Pendente:** o que acontece se o cliente não puder na data nova |
 | Inglês | Suporte 100% em inglês | Quem conduz o passeio em inglês continua **pendente** |
 | Idade mínima | Não há idade mínima, desde que acompanhado de responsável legal maior de 18 anos | Confirmado |
 
