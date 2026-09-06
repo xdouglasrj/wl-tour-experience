@@ -15,7 +15,7 @@ por Wallace Oliveira, nascido e criado na Rocinha.
 | --- | --- |
 | Duração | Aproximadamente 2 horas |
 | Dias e horários | Todos os dias, das 09:00 às 17:00 |
-| Preço | R$ 270 por pessoa, com desconto para grupos a partir de 5 pessoas |
+| Preço | Informado no atendimento pelo WhatsApp; varia conforme o grupo e a data |
 | Formato | Privado ou compartilhado |
 | Ponto de encontro | Saída C do metrô São Conrado — início e término no mesmo local |
 | Áreas | Rocinha, Vidigal e trilha do Morro Dois Irmãos |
