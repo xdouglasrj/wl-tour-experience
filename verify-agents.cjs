@@ -254,6 +254,83 @@ function checkSitemapXml() {
   return true;
 }
 
+function parseJsonLd(html) {
+  const match = html.match(/<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/i);
+  if (!match) {
+    throw new Error('JSON-LD não encontrado no index.html');
+  }
+  let jsonLd;
+  try {
+    jsonLd = JSON.parse(match[1]);
+  } catch (e) {
+    throw new Error('JSON-LD inválido: ' + e.message);
+  }
+  if (!jsonLd || !jsonLd['@graph']) {
+    throw new Error('Estrutura JSON-LD inválida: @graph não encontrado');
+  }
+  return jsonLd;
+}
+
+function findGraphNode(jsonLd, id) {
+  return jsonLd['@graph'].find(n => n['@id'] === id);
+}
+
+function checkFaqPage(jsonLd) {
+  const faq = findGraphNode(jsonLd, 'https://www.wlfavelatour.com.br/#perguntas');
+  if (!faq) {
+    throw new Error('Nó FAQPage não encontrado no JSON-LD');
+  }
+  if (faq['@type'] !== 'FAQPage') {
+    throw new Error('Nó de perguntas não é do tipo FAQPage');
+  }
+  if (!faq.mainEntity || !Array.isArray(faq.mainEntity) || faq.mainEntity.length !== 12) {
+    throw new Error(`FAQPage deve ter exatamente 12 itens em mainEntity (atual: ${faq.mainEntity ? faq.mainEntity.length : 0})`);
+  }
+  for (const item of faq.mainEntity) {
+    if (!item.name || !item.acceptedAnswer || !item.acceptedAnswer.text) {
+      throw new Error('Item do FAQPage deve ter name e acceptedAnswer.text não vazios');
+    }
+  }
+  return true;
+}
+
+function checkPersonAndReferences(jsonLd) {
+  const person = findGraphNode(jsonLd, 'https://www.wlfavelatour.com.br/#wallace');
+  if (!person) {
+    throw new Error('Nó Person com @id #wallace não encontrado no JSON-LD');
+  }
+  const org = findGraphNode(jsonLd, 'https://www.wlfavelatour.com.br/#organizacao');
+  if (!org) {
+    throw new Error('Nó Organization #organizacao não encontrado no JSON-LD');
+  }
+  if (!org.founder || org.founder['@id'] !== 'https://www.wlfavelatour.com.br/#wallace') {
+    throw new Error('Organization deve referenciar Wallace como founder');
+  }
+  if (!org.employee || org.employee['@id'] !== 'https://www.wlfavelatour.com.br/#wallace') {
+    throw new Error('Organization deve referenciar Wallace como employee');
+  }
+  return true;
+}
+
+function checkNoPricing(jsonLd) {
+  if (JSON.stringify(jsonLd).match(/price|Offer|priceRange|priceSpecification/i)) {
+    throw new Error('JSON-LD não deve conter price, Offer, priceRange nem priceSpecification');
+  }
+  return true;
+}
+
+function checkFaqVisibleInDist() {
+  const html = readFile(path.join(process.cwd(), 'dist', 'index.html'));
+  const text = removeTags(html);
+  const required = ['Quanto tempo dura o passeio?', 'E se chover?'];
+  for (const phrase of required) {
+    if (!text.includes(phrase)) {
+      throw new Error(`dist/index.html deve conter o texto visível: ${phrase}`);
+    }
+  }
+  return true;
+}
+
 function runChecks() {
   let checkCount = 0;
   
@@ -344,7 +421,25 @@ function runChecks() {
     // 9. Check sitemap.xml
     checkSitemapXml();
     checkCount += 1; // This check covers multiple assertions
-    
+
+    // 10. Check FAQPage node in index.html JSON-LD
+    const rootIndexHtml = readFile(path.join(process.cwd(), 'index.html'));
+    const rootJsonLd = parseJsonLd(rootIndexHtml);
+    checkFaqPage(rootJsonLd);
+    checkCount += 2; // Node + 12 items and completeness
+
+    // 11. Check Person node and founder/employee references
+    checkPersonAndReferences(rootJsonLd);
+    checkCount += 2; // Person node + founder/employee references
+
+    // 12. Check no pricing fields in JSON-LD
+    checkNoPricing(rootJsonLd);
+    checkCount += 1;
+
+    // 13. Check FAQ questions visible in dist/index.html
+    checkFaqVisibleInDist();
+    checkCount += 1;
+
     console.log(`OK: ${checkCount} verificações`);
     return true;
     
