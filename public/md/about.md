@@ -24,8 +24,9 @@ S e por uma rua popular. Também são atendidos o Vidigal e a trilha do Morro Do
 Irmãos.
 
 O passeio acontece todos os dias, das 09:00 às 17:00, no formato privado ou
-compartilhado, por R$ 270 por pessoa, com desconto para grupos a partir de cinco
-pessoas. O pagamento é feito ao final, em real, dólar, euro ou cartão de crédito.
+compartilhado. O valor é informado no atendimento pelo WhatsApp, porque varia
+conforme o grupo e a data. O pagamento é feito ao final, em real, dólar, euro
+ou cartão de crédito.
 
 ## Quem é atendido
 
