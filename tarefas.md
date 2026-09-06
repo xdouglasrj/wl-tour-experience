@@ -18,6 +18,11 @@ frequentes. Fechados nesta sessão, todos em `main` e ainda **sem push**:
 
 A baseline de testes subiu de 36 para **42 verificações** no
 `verify-agents.cjs`, com seis checagens novas que leem o JSON-LD já parseado.
+Tudo isso já está no ar: push feito em 06/09/2026 e conferido em produção.
+
+Fechados também, fora do código: o **D1** — as oito perguntas ao Wallace estão
+respondidas e registradas em `docs/PERGUNTAS-D1.md` — e o **H2**, o convite do
+Google Tag Manager, aceito por `wlfavelatour@gmail.com` em 06/09/2026.
 
 O GTM, o GA4 e o Search Console continuam como em 01/09/2026: contêiner
 `GTM-5B2SLVVG` publicado, GA4 `G-G9SGTTXK6F` recebendo os cliques, e o sitemap
@@ -40,65 +45,41 @@ Decidido em 01/09/2026, em planejamento com o Douglas:
 
 ## Tarefas pendentes
 
-### D1. Pedido curto ao Wallace: o que trava tudo
-
-OBJETIVO: obter as respostas que hoje impedem o Perfil da Empresa e a seção de
-perguntas frequentes de existirem.
-ARQUIVOS: `docs/DADOS-DO-CLIENTE.md` — registrar as respostas quando chegarem.
-Mais nenhum.
-REGRAS APLICÁVEIS: dado público não se inventa; resposta do cliente entra como
-declaração dele, não como fato verificado.
-
-POR QUE ELE NÃO RESPONDEU ANTES: o questionário de 137 perguntas marcou a 116
-como obrigatória, mas ela pede quatro coisas num campo só — "categoria, área de
-atendimento, telefone e horário". O Wallace escreveu o telefone, o campo ficou
-preenchido, e o sistema contou como respondida. Categoria, área e horário nunca
-vieram. **Não é falta de esforço do cliente; é defeito do instrumento.** Ver D7.
-
-O QUE PERGUNTAR, UMA COISA POR PERGUNTA:
-
-1. Qual categoria o negócio deve ter no Google? Sugestão: `Agência de turismo`.
-2. Em quais dias da semana o passeio acontece?
-3. De que horas a que horas, em cada um desses dias?
-4. O atendimento no WhatsApp é mesmo todos os dias das 6h às 23h?
-5. Escreva em duas ou três frases o que a WL Tour faz, como você falaria para um
-   turista que nunca ouviu falar.
-6. Com chuva, qual é a regra? Avisa com quanta antecedência, e remarca ou
-   devolve o dinheiro?
-7. Quem conduz o passeio em inglês? Você respondeu que conduz em português e
-   espanhol, mas o site anuncia inglês também.
-8. Existe idade mínima para participar?
-
-CASOS DE BORDA: se ele responder tudo junto num texto só, quebrar na hora e
-devolver o que ficou sem resposta — foi assim que a 116 passou batido. Resposta
-por áudio vale, mas o registro final vira texto no `docs/DADOS-DO-CLIENTE.md`.
-PRONTO QUANDO: as oito estão respondidas e escritas no
-`docs/DADOS-DO-CLIENTE.md`, cada uma com a data.
-FORA DE ESCOPO: as outras 34 pendências do questionário grande. Aqui é só o que
-trava.
-
 ### D4. Perfil da Empresa no Google
 
-OBJETIVO: existir um perfil do WL Tour no Google, sem duplicidade e sem dado
-inventado. **É a peça que mais pesa para busca local e para IA** — mais do que
-qualquer coisa feita dentro do site.
-ARQUIVOS: nenhum no repositório. Painel do Perfil da Empresa.
+ESTADO: **o perfil existe desde 02/09/2026** e está parado na verificação. O
+registro completo está em `docs/DADOS-DO-CLIENTE.md`, na seção
+"Perfil da Empresa no Google (D4)".
+
+OBJETIVO: o perfil sair de "verificação obrigatória" e passar a aparecer na
+Pesquisa e no Maps. **É a peça que mais pesa para busca local e para IA** — mais
+do que qualquer coisa feita dentro do site.
+ARQUIVOS: `index.html` (o `sameAs` da `TravelAgency`, depois que houver URL
+pública) e `docs/DADOS-DO-CLIENTE.md`. Mais o painel do Perfil da Empresa.
 REGRAS APLICÁVEIS: nunca criar perfil público com informação presumida; o
 negócio atende sem endereço público, então é empresa de área de serviço e nenhum
 endereço residencial vai para o ar.
-DEPENDE DO D1: categoria, horários e descrição.
-DADOS JÁ CONFIRMADOS: responsável Wallace Oliveira; telefone
-`+55 21 99555-0707`; área de atendimento Rocinha, Vidigal e trilha do Morro Dois
-Irmãos; ponto de encontro na saída C do metrô São Conrado; site
-`https://www.wlfavelatour.com.br/`.
-CASOS DE BORDA: antes de criar, procurar perfil existente no Search, no Maps e
-no gerenciador — duplicado é difícil de desfazer. Depois de criar, acrescentar a
-URL pública do perfil ao `sameAs` da `TravelAgency` no `index.html`: é isso que
-amarra site e perfil como a mesma identidade.
-PRONTO QUANDO: o perfil existe com os campos acima, o Wallace consta como
-proprietário principal, `xdouglasdj@gmail.com` como administrador, o estado da
-verificação está registrado, e o `sameAs` já aponta para ele.
-FORA DE ESCOPO: verificação por vídeo, telefone ou correspondência — é do
+
+O QUE JÁ ESTÁ PREENCHIDO: nome "WL Favela Tour" (não "WL Tour": já existe uma
+empresa com esse nome em Inhaúma), categoria Agência de turismo, telefone
+`+55 21 99555-0707`, área de atendimento Rocinha, Vidigal e São Conrado, site
+`https://www.wlfavelatour.com.br/`, código da loja `11038970354485641720`.
+
+O QUE TRAVA, E É DO TITULAR: o Google pede um endereço de correspondência para
+liberar os métodos de verificação. O endereço **não fica público**, e caixa
+postal não é aceita. É a pergunta 9 de `docs/PERGUNTAS-D1.md`.
+
+CASOS DE BORDA: o método provável para empresa de área de serviço é **vídeo**,
+não carta — a tela só diz qual depois que o endereço entra. Se cair em carta,
+entrega na Rocinha é irregular e cartão que não chega significa recomeçar.
+
+DEPOIS DA VERIFICAÇÃO, E AÍ É TRABALHO MEU: horários (todos os dias, 09:00 às
+17:00), descrição do negócio, fotos, e o `sameAs` do perfil no `index.html` —
+é isso que amarra site e perfil como a mesma identidade.
+
+PRONTO QUANDO: o perfil está verificado e visível na Pesquisa, os três campos
+acima estão preenchidos, e o `sameAs` aponta para a URL pública dele.
+FORA DE ESCOPO: a verificação em si — vídeo, telefone ou correspondência é do
 titular.
 
 ### D5. Loop de avaliação, repetível
@@ -172,21 +153,19 @@ pessoalmente.
 - Deploy, hospedagem, domínio e DNS.
 - Qualquer credencial, chave de API ou configuração em provedor externo.
 
-### H2. Aceite do convite do Google Tag Manager
-
-Conferido no painel em 01/09/2026: em Administrador > Gerenciamento de usuários
-da conta, `wlfavelatour@gmail.com` consta como **Administrador** com status
-**Convite pendente**. O Wallace precisa abrir o e-mail nessa caixa e aceitar.
-Nada mais depende disso — o contêiner já está publicado pela conta
-`xdouglasdj@gmail.com`, que tem acesso.
-
 ### H3. Quais eventos viram conversão no GA4
 
 Marcar `whatsapp_click` como conversão é decisão de negócio, não técnica: clique
 não é reserva fechada. Depende do Douglas dizer o que conta como conversão.
 
-### H4. Dados públicos que faltam do cliente
+### H4. Três respostas menores, ainda com o Wallace
 
-Categoria, dias e horários e descrição para o Perfil da Empresa no Google. Vira
-o **D1**, que quebra o pedido em oito perguntas de uma coisa só e diz por que a
-forma anterior falhou. Sem essas respostas, o D4 não fecha.
+O D1 fechou em 06/09/2026: as oito perguntas estão respondidas e registradas em
+`docs/PERGUNTAS-D1.md`. Sobraram três coisas menores:
+
+1. **Endereço para o Google** (pergunta 9). Esta trava o D4, e o D5 atrás dele.
+2. **Devolução na chuva.** Ele disse que avisa com pelo menos 2 dias e remarca,
+   adiantando ou adiando. Não disse o que acontece se o cliente não puder na data
+   nova. Sem isso, nenhuma política de cancelamento vai ao ar.
+3. **Nome do funcionário** que conduz o passeio em inglês, se ele quiser que
+   apareça no site.

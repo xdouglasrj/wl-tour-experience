@@ -465,6 +465,14 @@ das perguntas está em `docs/PERGUNTAS-D1.md`.
 
 ---
 
+## Google Tag Manager — convite aceito (06/09/2026)
+
+O convite da conta "WL Favela Tour" (`6374178139`) foi aceito por
+`wlfavelatour@gmail.com`, conferido na tela do gerenciador: a conta passou a
+aparecer na lista dessa caixa, com o contêiner `GTM-5B2SLVVG`. O
+`xdouglasdj@gmail.com` continua como administrador, e nada nas tags publicadas
+mudou.
+
 ## Perfil da Empresa no Google (D4) — criado em 02/09/2026
 
 Criado com autorização do Douglas, pela conta `xdouglasdj@gmail.com` (perfil
